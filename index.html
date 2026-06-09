@@ -76,7 +76,7 @@
       z-index: 3;
     }
 
-    /* Desktop specific spacing - 0.5cm from top */
+    /* Uniform spacing - consistent across mobile & desktop (0.5cm from top on all devices) */
     @media (min-width: 768px) {
       .container {
         padding-top: 0.5cm;
@@ -84,16 +84,6 @@
       .hero {
         margin-bottom: 1.8rem;
         padding: 1.5rem 2rem;
-      }
-      .niche-grid {
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-      }
-      .series-grid {
-        gap: 1.5rem;
-      }
-      .series-card {
-        width: 220px;
       }
     }
 
@@ -509,7 +499,7 @@
       font-size: 0.7rem;
     }
 
-    /* Niche Selection Portal - Vertical stack on both mobile AND desktop */
+    /* Niche Selection Portal - VERTICAL STACKING ON ALL DEVICES (mobile AND desktop) */
     .niche-portal {
       min-height: auto;
       display: flex;
@@ -553,7 +543,7 @@
       margin-bottom: 0.8rem;
     }
     
-    /* Force vertical stacking - NOT horizontal line */
+    /* FORCE vertical stacking - identical on mobile and desktop (no horizontal rows ever) */
     .niche-grid {
       display: flex;
       flex-direction: column;
@@ -563,7 +553,7 @@
       width: 100%;
     }
     
-    /* Desktop: maintain vertical stacking like mobile */
+    /* Desktop: EXACT same vertical stacking as mobile, same card width constraints */
     @media (min-width: 768px) {
       .niche-grid {
         flex-direction: column;
@@ -574,13 +564,18 @@
         max-width: 420px;
         width: 100%;
       }
-      /* Ensure scrollable content */
+      /* Full scrollability */
       body {
         overflow-y: auto;
       }
       .container {
         overflow-y: visible;
       }
+      /* Keep series grid flexible but consistent with mobile */
+      .series-card {
+        width: 200px;
+      }
+      /* No horizontal niche layout - keep vertical */
     }
     
     .niche-card-image {
@@ -621,7 +616,7 @@
     
     .hidden-view { display: none; }
     
-    /* Top spacing control */
+    /* Top spacing control - uniform */
     .pt-fix { padding-top: 0; }
     #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
       padding-top: 0.3rem;
@@ -638,7 +633,7 @@
       overflow: visible;
     }
     
-    /* Fix desktop width constraints - not too broad */
+    /* Desktop width constraints - not overly broad, similar to mobile behavior */
     @media (min-width: 1024px) {
       .container {
         max-width: 1000px;
@@ -673,7 +668,7 @@
   </div>
 
   <div class="niche-grid">
-    <!-- Webtoon Card (FIRST) -->
+    <!-- Webtoon Card (FIRST) - vertical stacking -->
     <div class="niche-card" data-niche="webtoon">
       <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
       <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
@@ -681,7 +676,7 @@
       <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
     </div>
 
-    <!-- Manhwa Card (SECOND) -->
+    <!-- Manhwa Card (SECOND) - vertical stacking -->
     <div class="niche-card" data-niche="manhwa">
       <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
       <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
@@ -689,7 +684,7 @@
       <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
     </div>
 
-    <!-- Manga Card (THIRD) -->
+    <!-- Manga Card (THIRD) - vertical stacking -->
     <div class="niche-card" data-niche="manga">
       <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
       <h3 style="color: #e63946;">MANGA PREMIUM</h3>
