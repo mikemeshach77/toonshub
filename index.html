@@ -69,11 +69,32 @@
     }
 
     .container {
-      max-width: 1280px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 1rem 1.5rem 2rem;
       position: relative;
       z-index: 3;
+    }
+
+    /* Desktop specific spacing - 0.5cm from top */
+    @media (min-width: 768px) {
+      .container {
+        padding-top: 0.5cm;
+      }
+      .hero {
+        margin-bottom: 1.8rem;
+        padding: 1.5rem 2rem;
+      }
+      .niche-grid {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      .series-grid {
+        gap: 1.5rem;
+      }
+      .series-card {
+        width: 220px;
+      }
     }
 
     /* Hero Section */
@@ -89,7 +110,7 @@
     }
 
     .hero h1 {
-      font-size: 3.2rem;
+      font-size: 3rem;
       font-weight: 900;
       background: linear-gradient(135deg, #FFFFFF, #00D564, #a0ffc0);
       background-clip: text;
@@ -488,9 +509,9 @@
       font-size: 0.7rem;
     }
 
-    /* Niche Selection Portal */
+    /* Niche Selection Portal - Vertical stack on both mobile AND desktop */
     .niche-portal {
-      min-height: 100vh;
+      min-height: auto;
       display: flex;
       flex-direction: column;
     }
@@ -504,32 +525,73 @@
       cursor: pointer;
       transition: all 0.3s ease;
       border: 1px solid rgba(0,213,100,0.3);
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
     }
+    
     .niche-card:hover {
       transform: translateY(-6px);
       border-color: #00D564;
       box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
     }
+    
     .niche-icon {
       font-size: 2.8rem;
       margin-bottom: 0.6rem;
     }
+    
     .niche-card h3 {
       font-size: 1.5rem;
       font-weight: 800;
       margin-bottom: 0.4rem;
     }
+    
     .niche-card p {
       font-size: 0.85rem;
       color: #cbd5e1;
       margin-bottom: 0.8rem;
     }
+    
+    /* Force vertical stacking - NOT horizontal line */
     .niche-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 1.5rem;
       margin-top: 1.8rem;
+      width: 100%;
     }
+    
+    /* Desktop: maintain vertical stacking like mobile */
+    @media (min-width: 768px) {
+      .niche-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+      }
+      .niche-card {
+        max-width: 420px;
+        width: 100%;
+      }
+      /* Ensure scrollable content */
+      body {
+        overflow-y: auto;
+      }
+      .container {
+        overflow-y: visible;
+      }
+    }
+    
+    .niche-card-image {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      margin: 0 auto 0.8rem;
+      display: block;
+      object-fit: cover;
+    }
+    
     .back-btn {
       position: fixed;
       top: 15px;
@@ -550,37 +612,44 @@
       color: black;
     }
 
-    @media (max-width: 760px) {
-      .container { padding: 0.8rem 1rem 1.5rem; }
-      .hero { padding: 1.2rem 1rem; margin-bottom: 1.2rem; }
-      .hero h1 { font-size: 1.8rem; flex-direction: column; gap: 6px; }
-      .hero-logo { width: 42px; height: 42px; }
-      .hero h2 { font-size: 1.3rem; }
-      .btn-premium { font-size: 0.9rem; padding: 0.6rem 1.5rem; }
-      .section-title h3 { font-size: 1.3rem; }
-      .series-card { width: 170px; padding: 1rem 0.6rem; }
-      .series-card h4 { font-size: 0.85rem; }
-      .premium-card h2 { font-size: 1.4rem; }
-      .new-price { font-size: 1.8rem; }
-      .old-price { font-size: 1.3rem; }
-      .niche-card h3 { font-size: 1.3rem; }
+    /* Ensure full scrollability */
+    html, body {
+      height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
     }
-
+    
     .hidden-view { display: none; }
     
-    /* Top alignment */
+    /* Top spacing control */
     .pt-fix { padding-top: 0; }
     #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
       padding-top: 0.3rem;
     }
     
-    .niche-card-image {
-      width: 55px;
-      height: 55px;
-      border-radius: 14px;
-      margin: 0 auto 0.8rem;
-      display: block;
-      object-fit: cover;
+    @media (min-width: 768px) {
+      #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
+        padding-top: 0.5cm;
+      }
+    }
+    
+    /* Make all content scrollable and not static */
+    main, .container, .hero, .premium-originals, .trending-categories, .premium-activation {
+      overflow: visible;
+    }
+    
+    /* Fix desktop width constraints - not too broad */
+    @media (min-width: 1024px) {
+      .container {
+        max-width: 1000px;
+      }
+      .series-card {
+        width: 210px;
+      }
+      .trending-grid {
+        max-width: 800px;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
@@ -594,7 +663,7 @@
 
 <!-- ==================== HOME SCREEN: NICHE SELECTION PORTAL ==================== -->
 <div id="homeScreen" class="container pt-fix">
-  <div class="hero" style="margin-top: 0.3rem;">
+  <div class="hero">
     <h1>ToonHub Premium</h1>
     <div class="hero-badge"><i class="fas fa-infinity"></i> 100% FREE ACCESS</div>
     <h2>Unlock Premium Access to <span class="gradient-prem">Your Favorite Comics</span> — $0</h2>
@@ -616,7 +685,7 @@
     <div class="niche-card" data-niche="manhwa">
       <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
       <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
-      <p>Solo Leveling, ORV, Eleceed — all fast passes unlocked.</p>
+      <p>Solo Leveling: Ragnarok, ORV, Eleceed — all fast passes unlocked.</p>
       <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
     </div>
 
@@ -629,12 +698,12 @@
     </div>
   </div>
 
-  <div class="footer-bottom" style="margin-top: 2.5rem;">
+  <div class="footer-bottom">
     <p><i class="far fa-copyright"></i> 2026 ToonHub Premium — Choose your niche and unlock unlimited reading.</p>
   </div>
 </div>
 
-<!-- ==================== WEBTOON LANDING PAGE (Updated with trending comics) ==================== -->
+<!-- ==================== WEBTOON LANDING PAGE ==================== -->
 <div id="webtoonScreen" class="container pt-fix hidden-view">
   <div class="hero">
     <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -649,7 +718,6 @@
     </div>
   </div>
   
-  <!-- Trending Webtoon Comics - Updated -->
   <div class="premium-originals">
     <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Webtoons</h3><p>Most read this week — exclusive to Webtoon Premium+</p></div>
     <div class="series-grid">
@@ -669,11 +737,11 @@
     </div>
   </div>
 
-  <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Webtoon Premium+ Access</h2><div class="price-tag"><span class="old-price">$9.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium webtoons</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read episodes weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & daily pass unlocked</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam. Just stories.</p></div></div>
+  <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Webtoon Premium+ Access</h2><div class="price-tag"><span class="old-price">$9.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium webtoons</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read episodes weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & daily pass unlocked</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
   <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
 </div>
 
-<!-- ==================== MANHWA LANDING PAGE (Updated with trending comics) ==================== -->
+<!-- ==================== MANHWA LANDING PAGE ==================== -->
 <div id="manhwaScreen" class="container pt-fix hidden-view">
   <div class="hero">
     <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
@@ -684,7 +752,6 @@
     <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
   </div>
   
-  <!-- Trending Manhwa Comics - Updated -->
   <div class="premium-originals">
     <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manhwa</h3><p>Most read this week — exclusive to Manhwa Premium+</p></div>
     <div class="series-grid">
@@ -708,7 +775,7 @@
   <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
 </div>
 
-<!-- ==================== MANGA LANDING PAGE (Updated with trending comics) ==================== -->
+<!-- ==================== MANGA LANDING PAGE ==================== -->
 <div id="mangaScreen" class="container pt-fix hidden-view">
   <div class="hero">
     <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
@@ -719,7 +786,6 @@
     <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
   </div>
   
-  <!-- Trending Manga Comics - Updated -->
   <div class="premium-originals">
     <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manga</h3><p>Most read this week — exclusive to Manga Premium+</p></div>
     <div class="series-grid">
