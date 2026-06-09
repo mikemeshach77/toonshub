@@ -68,39 +68,29 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
+    /* Container - consistent max-width for all devices, centered */
     .container {
-      max-width: 1200px;
+      max-width: 550px;
       margin: 0 auto;
-      padding: 1rem 1.5rem 2rem;
+      padding: 0.8rem 1rem 2rem;
       position: relative;
       z-index: 3;
-    }
-
-    /* Uniform spacing - consistent across mobile & desktop (0.5cm from top on all devices) */
-    @media (min-width: 768px) {
-      .container {
-        padding-top: 0.5cm;
-      }
-      .hero {
-        margin-bottom: 1.8rem;
-        padding: 1.5rem 2rem;
-      }
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
-      margin-bottom: 2rem;
-      padding: 1.8rem 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1.2rem 1rem;
       background: rgba(10, 20, 35, 0.55);
       backdrop-filter: blur(16px);
-      border-radius: 60px;
+      border-radius: 32px;
       border: 1px solid rgba(0, 213, 100, 0.35);
       box-shadow: 0 30px 45px -20px rgba(0,0,0,0.6);
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 1.8rem;
       font-weight: 900;
       background: linear-gradient(135deg, #FFFFFF, #00D564, #a0ffc0);
       background-clip: text;
@@ -111,14 +101,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       flex-wrap: wrap;
     }
 
     .hero-logo {
-      width: 50px;
-      height: 50px;
-      border-radius: 16px;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 0 20px rgba(0,213,100,0.4);
       background: #1a1a2e;
@@ -128,18 +118,18 @@
     .hero-badge {
       background: rgba(0,213,100,0.2);
       display: inline-block;
-      padding: 0.35rem 1.4rem;
+      padding: 0.25rem 1rem;
       border-radius: 60px;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-weight: 600;
-      margin: 0.8rem 0;
+      margin: 0.5rem 0;
       backdrop-filter: blur(4px);
     }
 
     .hero h2 {
-      font-size: 2rem;
+      font-size: 1.3rem;
       font-weight: 800;
-      margin: 0.6rem 0;
+      margin: 0.4rem 0;
     }
 
     .gradient-prem {
@@ -150,36 +140,37 @@
     }
 
     .hero-description {
-      max-width: 650px;
-      margin: 1rem auto;
-      font-size: 1rem;
+      max-width: 100%;
+      margin: 0.8rem auto;
+      font-size: 0.85rem;
       line-height: 1.4;
       color: #cddcf2;
+      padding: 0 0.5rem;
     }
 
     .stats-row {
       display: flex;
       justify-content: center;
-      gap: 1.8rem;
+      gap: 1rem;
       flex-wrap: wrap;
-      margin-top: 1.2rem;
+      margin-top: 1rem;
     }
 
     .stat-item {
       background: rgba(0,0,0,0.4);
-      padding: 0.4rem 1.2rem;
+      padding: 0.3rem 0.8rem;
       border-radius: 48px;
       backdrop-filter: blur(4px);
     }
 
     .stat-number {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: #00D564;
     }
 
     .stat-label {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
@@ -187,18 +178,18 @@
     .btn-premium {
       background: linear-gradient(105deg, #00D564, #00a14a);
       border: none;
-      padding: 0.8rem 2.2rem;
-      font-size: 1.1rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
       font-weight: 800;
       border-radius: 80px;
       color: white;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       transition: 0.25s ease;
       box-shadow: 0 20px 35px -10px rgba(0,213,100,0.5);
-      margin-top: 0.8rem;
+      margin-top: 0.6rem;
       font-family: inherit;
     }
 
@@ -209,38 +200,44 @@
 
     /* Premium Originals */
     .premium-originals {
-      margin: 2.5rem 0 2rem;
+      margin: 1.8rem 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.2rem;
     }
 
     .section-title h3 {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       font-weight: 800;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: rgba(0,213,100,0.1);
-      padding: 0.4rem 1.8rem;
+      padding: 0.3rem 1.2rem;
       border-radius: 60px;
+    }
+
+    .section-title p {
+      font-size: 0.7rem;
+      margin-top: 0.3rem;
+      color: #9aaec9;
     }
 
     .series-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
+      gap: 0.8rem;
       justify-content: center;
     }
 
     .series-card {
       background: rgba(15, 25, 40, 0.7);
       backdrop-filter: blur(12px);
-      border-radius: 28px;
-      padding: 1.2rem 0.8rem;
-      width: 200px;
+      border-radius: 20px;
+      padding: 0.8rem 0.5rem;
+      width: 150px;
       text-align: center;
       border: 1px solid rgba(0,213,100,0.3);
       transition: 0.3s;
@@ -252,41 +249,45 @@
     }
 
     .rank {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 800;
       background: #00D56420;
       display: inline-block;
-      width: 44px;
+      width: 36px;
       border-radius: 50px;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }
 
     .series-card h4 {
-      font-size: 1rem;
-      margin: 0.3rem 0;
+      font-size: 0.85rem;
+      margin: 0.2rem 0;
+    }
+
+    .series-card div {
+      font-size: 0.7rem;
     }
 
     .premium-badge {
       background: #00D564;
-      padding: 3px 10px;
+      padding: 2px 8px;
       border-radius: 40px;
-      font-size: 0.65rem;
+      font-size: 0.55rem;
       font-weight: 700;
       display: inline-block;
-      margin-top: 0.3rem;
+      margin-top: 0.2rem;
     }
 
     /* Premium Activation Section */
     .premium-activation {
-      margin: 2.5rem 0;
+      margin: 1.8rem 0;
     }
 
     .premium-card {
       background: linear-gradient(135deg, rgba(0, 213, 100, 0.15), rgba(0, 100, 50, 0.2));
       backdrop-filter: blur(12px);
-      border-radius: 44px;
+      border-radius: 28px;
       border: 1px solid rgba(0, 213, 100, 0.5);
-      padding: 1.8rem;
+      padding: 1.2rem;
       text-align: center;
       box-shadow: 0 30px 50px -20px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
@@ -300,32 +301,32 @@
     .free-badge {
       display: inline-block;
       background: #00D564;
-      padding: 0.25rem 1rem;
+      padding: 0.2rem 0.8rem;
       border-radius: 60px;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       font-weight: 700;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.6rem;
     }
 
     .premium-card h2 {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       font-weight: 800;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }
 
     .price-tag {
-      margin: 0.8rem 0;
+      margin: 0.6rem 0;
     }
 
     .old-price {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       text-decoration: line-through;
       color: #ff8888;
-      margin-right: 0.8rem;
+      margin-right: 0.5rem;
     }
 
     .new-price {
-      font-size: 2.2rem;
+      font-size: 1.6rem;
       font-weight: 900;
       color: #00D564;
       text-shadow: 0 0 15px rgba(0,213,100,0.5);
@@ -333,48 +334,42 @@
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.8rem;
-      max-width: 550px;
-      margin: 1.2rem auto;
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+      max-width: 100%;
+      margin: 1rem auto;
       text-align: left;
-    }
-
-    @media (max-width: 550px) {
-      .features-grid { grid-template-columns: 1fr; gap: 0.6rem; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero-logo { width: 40px; height: 40px; }
     }
 
     .feature-item {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       color: #e2e8f0;
     }
 
     .feature-item i {
       color: #00D564;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       width: 20px;
     }
 
     .activate-btn {
       background: linear-gradient(105deg, #00D564, #00a14a);
       border: none;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.85rem;
       font-weight: 800;
       border-radius: 60px;
       color: white;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       transition: 0.25s ease;
       box-shadow: 0 15px 30px -8px rgba(0,213,100,0.4);
-      margin: 0.8rem 0 0.4rem;
+      margin: 0.6rem 0 0.3rem;
       font-family: inherit;
     }
 
@@ -384,32 +379,26 @@
     }
 
     .small-note {
-      font-size: 0.65rem;
+      font-size: 0.55rem;
       color: #9aaec9;
     }
 
     /* Trending Categories */
     .trending-categories {
-      margin: 2.5rem 0;
+      margin: 1.8rem 0;
     }
 
     .trending-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(250px, 340px));
-      gap: 1.2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
       justify-content: center;
       align-items: stretch;
     }
 
-    @media (max-width: 700px) {
-      .trending-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
-      .category-overlay { font-size: 1.1rem; padding: 0.5rem 0; }
-      .category-img { height: 120px; }
-    }
-
     .category-card {
       background: rgba(0, 0, 0, 0.55);
-      border-radius: 22px;
+      border-radius: 18px;
       overflow: hidden;
       border: 1px solid rgba(0,213,100,0.45);
       transition: all 0.3s ease;
@@ -421,7 +410,7 @@
     }
 
     .category-img {
-      height: 150px;
+      height: 110px;
       background-size: cover;
       background-position: center;
       position: relative;
@@ -434,22 +423,22 @@
       background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4) 60%, transparent);
       width: 100%;
       text-align: center;
-      padding: 0.6rem 0;
+      padding: 0.4rem 0;
       font-weight: 800;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: white;
     }
 
     .category-info {
-      padding: 0.6rem;
+      padding: 0.4rem;
       text-align: center;
       background: rgba(0, 0, 0, 0.5);
     }
 
     .category-info p {
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -460,46 +449,20 @@
     .trending-badge {
       background: #00D564;
       border-radius: 30px;
-      padding: 2px 8px;
-      font-size: 0.55rem;
+      padding: 2px 6px;
+      font-size: 0.5rem;
       font-weight: 700;
     }
 
-    /* Testimonials */
-    .testimonials-section {
-      margin: 2.5rem 0;
-    }
-    .testimonial-flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      justify-content: center;
-    }
-    .testimonial {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(8px);
-      border-radius: 24px;
-      padding: 1.2rem;
-      width: 240px;
-      border-bottom: 3px solid #00D564;
-    }
-    .testimonial i {
-      color: #00D564;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .testimonial p {
-      font-size: 0.8rem;
-    }
     .footer-bottom {
-      margin-top: 2.5rem;
+      margin-top: 1.8rem;
       text-align: center;
-      padding: 1.2rem;
+      padding: 0.8rem;
       border-top: 1px solid rgba(0,213,100,0.2);
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
 
-    /* Niche Selection Portal - VERTICAL STACKING ON ALL DEVICES (mobile AND desktop) */
+    /* Niche Selection Portal - VERTICAL STACKING ON ALL DEVICES */
     .niche-portal {
       min-height: auto;
       display: flex;
@@ -509,15 +472,15 @@
     .niche-card {
       background: rgba(10, 20, 35, 0.75);
       backdrop-filter: blur(16px);
-      border-radius: 36px;
-      padding: 1.5rem;
+      border-radius: 28px;
+      padding: 1.2rem;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
       border: 1px solid rgba(0,213,100,0.3);
       width: 100%;
-      max-width: 380px;
-      margin: 0 auto;
+      max-width: 100%;
+      margin: 0;
     }
     
     .niche-card:hover {
@@ -527,78 +490,53 @@
     }
     
     .niche-icon {
-      font-size: 2.8rem;
-      margin-bottom: 0.6rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     
     .niche-card h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 800;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }
     
     .niche-card p {
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       color: #cbd5e1;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.6rem;
     }
     
-    /* FORCE vertical stacking - identical on mobile and desktop (no horizontal rows ever) */
+    /* Force vertical stacking - identical on all devices */
     .niche-grid {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem;
-      margin-top: 1.8rem;
+      gap: 1rem;
+      margin-top: 1rem;
       width: 100%;
     }
     
-    /* Desktop: EXACT same vertical stacking as mobile, same card width constraints */
-    @media (min-width: 768px) {
-      .niche-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.8rem;
-      }
-      .niche-card {
-        max-width: 420px;
-        width: 100%;
-      }
-      /* Full scrollability */
-      body {
-        overflow-y: auto;
-      }
-      .container {
-        overflow-y: visible;
-      }
-      /* Keep series grid flexible but consistent with mobile */
-      .series-card {
-        width: 200px;
-      }
-      /* No horizontal niche layout - keep vertical */
-    }
-    
     .niche-card-image {
-      width: 55px;
-      height: 55px;
-      border-radius: 14px;
-      margin: 0 auto 0.8rem;
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+      margin: 0 auto 0.6rem;
       display: block;
       object-fit: cover;
     }
     
     .back-btn {
       position: fixed;
-      top: 15px;
-      left: 15px;
+      top: 10px;
+      left: 10px;
       z-index: 100;
       background: rgba(0,0,0,0.75);
       backdrop-filter: blur(10px);
-      padding: 8px 18px;
+      padding: 6px 14px;
       border-radius: 50px;
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 0.7rem;
       border: 1px solid #00D564;
       transition: 0.2s;
     }
@@ -619,33 +557,16 @@
     /* Top spacing control - uniform */
     .pt-fix { padding-top: 0; }
     #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-      padding-top: 0.3rem;
+      padding-top: 0.2rem;
     }
     
-    @media (min-width: 768px) {
-      #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-        padding-top: 0.5cm;
-      }
-    }
-    
-    /* Make all content scrollable and not static */
+    /* Make all content scrollable */
     main, .container, .hero, .premium-originals, .trending-categories, .premium-activation {
       overflow: visible;
     }
-    
-    /* Desktop width constraints - not overly broad, similar to mobile behavior */
-    @media (min-width: 1024px) {
-      .container {
-        max-width: 1000px;
-      }
-      .series-card {
-        width: 210px;
-      }
-      .trending-grid {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-    }
+
+    /* Remove ALL desktop-specific widening - keep consistent with mobile */
+    /* No media queries that change sizing - everything stays the same */
   </style>
 </head>
 <body>
@@ -668,7 +589,7 @@
   </div>
 
   <div class="niche-grid">
-    <!-- Webtoon Card (FIRST) - vertical stacking -->
+    <!-- Webtoon Card -->
     <div class="niche-card" data-niche="webtoon">
       <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
       <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
@@ -676,7 +597,7 @@
       <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
     </div>
 
-    <!-- Manhwa Card (SECOND) - vertical stacking -->
+    <!-- Manhwa Card -->
     <div class="niche-card" data-niche="manhwa">
       <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
       <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
@@ -684,7 +605,7 @@
       <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
     </div>
 
-    <!-- Manga Card (THIRD) - vertical stacking -->
+    <!-- Manga Card -->
     <div class="niche-card" data-niche="manga">
       <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
       <h3 style="color: #e63946;">MANGA PREMIUM</h3>
