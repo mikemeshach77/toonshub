@@ -585,22 +585,22 @@
       font-size: 0.9rem;
     }
 
-    /* ========== DESKTOP MODE ONLY (1024px+) - EXACT 3X ENLARGEMENT ========== */
-    /* Everything is scaled exactly 3 times the original mobile size */
+    /* ========== DESKTOP MODE ONLY (1024px+) - ENLARGE LENGTH & FONTS 3X, WIDTH UNCHANGED ========== */
+    /* Only vertical spacing, padding, margins, and fonts are scaled 3x - container width stays same as mobile */
     @media (min-width: 1024px) {
-      /* Main container */
+      /* Container keeps the same max-width as mobile (centered, not wide) */
       .container {
-        max-width: 1400px;
-        padding: 3rem 3rem 6rem;
+        max-width: 560px;
+        padding: 3rem 1rem 6rem;
         margin-left: auto;
         margin-right: auto;
       }
       
-      /* Hero - exactly 3x padding and radius */
+      /* Hero - vertical padding increased 3x, width unchanged */
       .hero {
-        padding: 5.4rem 4.5rem;
+        padding: 5.4rem 1.5rem;
         margin-bottom: 6rem;
-        border-radius: 180px;
+        border-radius: 60px;
       }
       
       .hero h1 {
@@ -630,17 +630,17 @@
       
       .hero-description {
         font-size: 2.7rem;
-        max-width: 1000px;
+        max-width: 500px;
         margin: 3rem auto;
         line-height: 1.5;
       }
       
       .btn-premium {
-        padding: 2.4rem 6.6rem;
+        padding: 2.4rem 2.2rem;
         font-size: 3.3rem;
         gap: 30px;
         margin-top: 2.4rem;
-        border-radius: 240px;
+        border-radius: 80px;
       }
       
       .stats-row {
@@ -662,10 +662,10 @@
         border-radius: 144px;
       }
       
-      /* Niche Cards - 3x */
+      /* Niche Cards - vertical padding 3x, width unchanged (max-width 380px) */
       .niche-card {
-        max-width: 1140px;
-        padding: 4.5rem 4rem;
+        max-width: 380px;
+        padding: 4.5rem 1.5rem;
         border-radius: 108px;
       }
       
@@ -685,9 +685,7 @@
         font-size: 2.55rem;
         margin-bottom: 2.4rem;
         line-height: 1.5;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
       }
       
       .niche-grid {
@@ -701,26 +699,26 @@
       }
       
       .section-title h3 {
-        font-size: 4.5rem;
-        padding: 1.2rem 5.4rem;
+        font-size: 4rem;
+        padding: 1.2rem 1.8rem;
         gap: 30px;
         border-radius: 180px;
       }
       
       .section-title p {
-        font-size: 2.55rem;
+        font-size: 2rem;
         margin-top: 1.5rem;
       }
       
-      /* Series Cards - 3x */
+      /* Series Cards - width unchanged (200px) */
       .series-card {
-        width: 600px;
-        padding: 3.6rem 2rem;
+        width: 200px;
+        padding: 3.6rem 0.8rem;
         border-radius: 84px;
       }
       
       .series-card h4 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 1.2rem 0;
       }
       
@@ -733,31 +731,31 @@
       
       .premium-badge {
         font-size: 1.95rem;
-        padding: 9px 30px;
+        padding: 9px 10px;
         margin-top: 1rem;
         border-radius: 120px;
       }
       
       .series-grid {
-        gap: 3.6rem;
+        gap: 3rem;
       }
       
       .series-card div {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
       
-      /* Trending Categories - 3x */
+      /* Trending Categories - width unchanged */
       .trending-grid {
-        grid-template-columns: repeat(2, minmax(540px, 680px));
-        gap: 3.6rem;
+        grid-template-columns: repeat(2, minmax(250px, 340px));
+        gap: 2.4rem;
       }
       
       .category-img {
-        height: 450px;
+        height: 150px;
       }
       
       .category-overlay {
-        font-size: 3.6rem;
+        font-size: 3rem;
         padding: 1.8rem 0;
       }
       
@@ -766,40 +764,40 @@
       }
       
       .category-info p {
-        font-size: 2.25rem;
+        font-size: 2rem;
         gap: 15px;
       }
       
       .trending-badge {
-        font-size: 1.65rem;
-        padding: 6px 24px;
+        font-size: 1.4rem;
+        padding: 6px 16px;
         border-radius: 90px;
       }
       
-      /* Premium Activation Card - 3x */
+      /* Premium Activation Card - vertical padding 3x */
       .premium-card {
-        padding: 5.4rem 4rem;
+        padding: 5.4rem 1.8rem;
         border-radius: 132px;
       }
       
       .premium-card h2 {
-        font-size: 5.4rem;
+        font-size: 4.5rem;
         margin-bottom: 1.2rem;
       }
       
       .free-badge {
-        font-size: 2.25rem;
-        padding: 0.75rem 3rem;
+        font-size: 2rem;
+        padding: 0.75rem 1rem;
         margin-bottom: 2.4rem;
         border-radius: 180px;
       }
       
       .old-price {
-        font-size: 4.8rem;
+        font-size: 4rem;
       }
       
       .new-price {
-        font-size: 6.6rem;
+        font-size: 5.5rem;
       }
       
       .price-tag {
@@ -807,55 +805,55 @@
       }
       
       .features-grid {
-        max-width: 1100px;
-        gap: 2.4rem;
-        margin: 3.6rem auto;
+        max-width: 500px;
+        gap: 2rem;
+        margin: 3rem auto;
       }
       
       .feature-item {
-        font-size: 2.55rem;
-        gap: 24px;
+        font-size: 2rem;
+        gap: 20px;
       }
       
       .feature-item i {
-        font-size: 2.7rem;
-        width: 60px;
+        font-size: 2.2rem;
+        width: 50px;
       }
       
       .activate-btn {
-        padding: 2.4rem 6rem;
-        font-size: 3rem;
+        padding: 2.4rem 2rem;
+        font-size: 2.5rem;
         gap: 24px;
         margin: 2.4rem 0 1.2rem;
         border-radius: 180px;
       }
       
       .small-note {
-        font-size: 1.95rem;
+        font-size: 1.6rem;
       }
       
-      /* Spacing between major sections - 3x */
+      /* Spacing between major sections - vertical 3x */
       .premium-originals, .trending-categories, .premium-activation {
         margin: 7.5rem 0;
       }
       
-      /* Footer - 3x */
+      /* Footer - vertical 3x */
       .footer-bottom {
         margin-top: 7.5rem;
-        padding: 3.6rem;
-        font-size: 2.1rem;
-        border-radius: 100px;
+        padding: 3.6rem 1.2rem;
+        font-size: 1.8rem;
+        border-radius: 60px;
         background: rgba(0,0,0,0.4);
         backdrop-filter: blur(12px);
       }
       
-      /* Back button - 3x */
+      /* Back button - 3x size but positioned */
       .back-btn {
-        top: 40px;
-        left: 40px;
-        padding: 24px 48px;
-        font-size: 2.55rem;
-        border-radius: 150px;
+        top: 30px;
+        left: 30px;
+        padding: 24px 36px;
+        font-size: 2rem;
+        border-radius: 100px;
       }
       
       /* All icons increased 3x */
@@ -871,7 +869,7 @@
         font-size: 3rem;
       }
       
-      /* Hover effects enhanced for 3x */
+      /* Hover effects enhanced */
       .btn-premium:hover, .activate-btn:hover {
         transform: scale(1.03);
       }
@@ -888,21 +886,31 @@
         transform: translateY(-12px);
       }
       
-      /* Stats row additional */
+      /* Additional stats enhancements */
       .stat-number {
-        font-size: 5.4rem;
+        font-size: 4.8rem;
       }
       
       .stat-label {
-        font-size: 2.1rem;
+        font-size: 2rem;
+      }
+      
+      /* Ensure series grid stays centered and compact width */
+      .series-grid {
+        justify-content: center;
+      }
+      
+      /* Category card width preserved */
+      .category-card {
+        width: 100%;
       }
     }
     
-    /* Medium tablets/laptops (768px - 1023px) - moderate scaling (1.5x) */
+    /* Medium tablets/laptops (768px - 1023px) - moderate vertical scaling (1.5x) */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
-        max-width: 750px;
-        padding: 1.8rem 2rem;
+        max-width: 560px;
+        padding: 1.8rem 1rem;
       }
       
       .hero h1 {
@@ -923,13 +931,13 @@
       }
       
       .btn-premium {
-        padding: 1rem 3rem;
+        padding: 1rem 2.2rem;
         font-size: 1.3rem;
       }
       
       .niche-card {
-        max-width: 540px;
-        padding: 2rem 1.8rem;
+        max-width: 380px;
+        padding: 2rem 1.5rem;
       }
       
       .niche-card h3 {
@@ -945,7 +953,7 @@
       }
       
       .series-card {
-        width: 240px;
+        width: 200px;
       }
       
       .premium-card h2 {
