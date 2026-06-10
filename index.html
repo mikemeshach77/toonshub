@@ -71,7 +71,7 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Main content wrapper for footer push */
+    /* Main content wrapper */
     .main-content {
       flex: 1;
       position: relative;
@@ -79,7 +79,7 @@
       width: 100%;
     }
 
-    /* ========== BASE STYLES (Mobile/Android Mode - COMPACT, ORIGINAL, UNTOUCHED) ========== */
+    /* ========== MOBILE/ANDROID MODE (Original - Compact, Untouched) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -88,7 +88,6 @@
       z-index: 3;
     }
 
-    /* Hero Section - Mobile Default */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -208,7 +207,6 @@
       background: linear-gradient(105deg, #00f36e, #00b855);
     }
 
-    /* Premium Originals */
     .premium-originals {
       margin: 2.5rem 0 2rem;
     }
@@ -283,7 +281,6 @@
       margin-top: 0.3rem;
     }
 
-    /* Premium Activation Section */
     .premium-activation {
       margin: 2.5rem 0;
     }
@@ -349,8 +346,6 @@
 
     @media (max-width: 550px) {
       .features-grid { grid-template-columns: 1fr; gap: 0.6rem; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero-logo { width: 40px; height: 40px; }
     }
 
     .feature-item {
@@ -395,7 +390,6 @@
       color: #9aaec9;
     }
 
-    /* Trending Categories */
     .trending-categories {
       margin: 2.5rem 0;
     }
@@ -472,7 +466,6 @@
       font-weight: 700;
     }
 
-    /* Footer Styling */
     .footer-bottom {
       margin-top: 2.5rem;
       text-align: center;
@@ -481,13 +474,6 @@
       font-size: 0.7rem;
     }
 
-    /* Niche Portal - vertical stacking base (mobile) */
-    .niche-portal {
-      min-height: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    
     .niche-card {
       background: rgba(10, 20, 35, 0.75);
       backdrop-filter: blur(16px);
@@ -506,11 +492,6 @@
       transform: translateY(-6px);
       border-color: #00D564;
       box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
-    }
-    
-    .niche-icon {
-      font-size: 2.8rem;
-      margin-bottom: 0.6rem;
     }
     
     .niche-card h3 {
@@ -563,345 +544,298 @@
       color: black;
     }
 
-    html, body {
-      height: auto;
-      min-height: 100vh;
-      overflow-y: auto;
-    }
-    
     .hidden-view { display: none; }
-    
     .pt-fix { padding-top: 0; }
     #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
       padding-top: 0.3rem;
     }
-    
-    /* Additional mobile fine-tuning */
-    .series-card div {
-      font-size: 0.85rem;
-    }
-    
-    .btn-premium i, .activate-btn i {
-      font-size: 0.9rem;
-    }
 
-    /* ========== DESKTOP MODE ONLY (1024px+) - EXTREME ENLARGEMENT (BIGGER THAN MOBILE BY FAR) ========== */
+    /* ========== DESKTOP MODE (1024px+) - ZOOMED OUT, BIGGER, SPACIOUS ========== */
     @media (min-width: 1024px) {
-      /* Base container - maximum width with massive padding for long scrolling */
+      /* Wider container for zoomed-out feel */
       .container {
-        max-width: 1800px;
-        width: 90%;
-        margin: 0 auto;
-        padding: 5rem 5rem 15rem;
-      }
-
-      /* Hero section - gigantic with huge internal padding */
-      .hero {
-        padding: 8rem 8rem;
-        margin-bottom: 10rem;
-        border-radius: 180px;
-        box-shadow: 0 60px 100px -30px rgba(0,0,0,0.8);
-      }
-
-      .hero h1 {
-        font-size: 8rem;
-        gap: 50px;
-        margin-bottom: 2rem;
-      }
-
-      .hero-logo {
-        width: 180px;
-        height: 180px;
-        border-radius: 60px;
-      }
-
-      .hero-badge {
-        font-size: 2.8rem;
-        padding: 1.5rem 4rem;
-        margin: 2rem 0;
-        border-radius: 150px;
-      }
-
-      .hero h2 {
-        font-size: 5rem;
-        margin: 2.5rem 0;
-        line-height: 1.4;
-      }
-
-      .hero-description {
-        font-size: 2.5rem;
-        max-width: 1300px;
-        margin: 3rem auto;
-        line-height: 1.6;
-      }
-
-      /* Buttons - enormous and prominent */
-      .btn-premium,
-      .activate-btn {
-        padding: 2.5rem 6rem;
-        font-size: 3rem;
-        gap: 35px;
-        border-radius: 200px;
-        margin-top: 2rem;
-      }
-
-      .btn-premium i,
-      .activate-btn i {
-        font-size: 3rem;
-      }
-
-      /* Stats row - spread wide with huge numbers */
-      .stats-row {
-        gap: 8rem;
-        margin-top: 4rem;
-      }
-
-      .stat-item {
-        padding: 1.5rem 4rem;
-        border-radius: 120px;
-      }
-
-      .stat-number {
-        font-size: 5rem;
-      }
-
-      .stat-label {
-        font-size: 2rem;
-        letter-spacing: 4px;
-      }
-
-      /* Niche grid - horizontal row of MASSIVE cards */
-      .niche-grid {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6rem;
-        margin-top: 6rem;
-      }
-
-      .niche-card {
-        max-width: 850px;
-        width: 100%;
-        padding: 5rem 4rem;
-        border-radius: 100px;
-      }
-
-      .niche-card-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 50px;
-        margin-bottom: 2.5rem;
-      }
-
-      .niche-card h3 {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .niche-card p {
-        font-size: 2.2rem;
-        margin-bottom: 2.5rem;
-        max-width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.5;
-      }
-
-      /* Series grid - huge cards with big typography */
-      .series-grid {
-        gap: 5rem;
-        margin: 4rem 0;
-      }
-
-      .series-card {
-        width: 520px;
-        padding: 3.5rem 2rem;
-        border-radius: 80px;
-      }
-
-      .series-card h4 {
-        font-size: 2.8rem;
-        margin: 1.5rem 0;
-      }
-
-      .rank {
-        font-size: 4.5rem;
-        width: 130px;
-        margin-bottom: 1.5rem;
-      }
-
-      .premium-badge {
-        font-size: 1.6rem;
-        padding: 10px 28px;
-        margin-top: 1.2rem;
-        border-radius: 100px;
-      }
-
-      .series-card div {
-        font-size: 2rem;
-      }
-
-      /* Trending categories - massive grid with tall images */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(650px, 850px));
-        gap: 5rem;
-        margin: 4rem auto;
-      }
-
-      .category-img {
-        height: 400px;
-      }
-
-      .category-overlay {
-        font-size: 3.5rem;
-        padding: 2rem 0;
-      }
-
-      .category-info {
-        padding: 2rem;
-      }
-
-      .category-info p {
-        font-size: 2rem;
-        gap: 25px;
-      }
-
-      .trending-badge {
-        font-size: 1.5rem;
-        padding: 8px 24px;
-        border-radius: 80px;
-      }
-
-      /* Premium activation card - absolutely gigantic */
-      .premium-card {
-        padding: 6rem 5rem;
-        border-radius: 150px;
-        max-width: 1500px;
-        margin: 0 auto;
-      }
-
-      .premium-card h2 {
-        font-size: 5rem;
-        margin-bottom: 2rem;
-      }
-
-      .free-badge {
-        font-size: 2.2rem;
-        padding: 1rem 3rem;
-        margin-bottom: 2rem;
-        border-radius: 150px;
-      }
-
-      .old-price {
-        font-size: 4rem;
-      }
-
-      .new-price {
-        font-size: 6rem;
-      }
-
-      .price-tag {
-        margin: 2.5rem 0;
-      }
-
-      .features-grid {
-        max-width: 1300px;
-        gap: 2.5rem;
-        margin: 4rem auto;
-      }
-
-      .feature-item {
-        font-size: 2.2rem;
-        gap: 25px;
-      }
-
-      .feature-item i {
-        font-size: 2.5rem;
-        width: 60px;
-      }
-
-      .small-note {
-        font-size: 1.8rem;
-      }
-
-      /* Section titles - enormous */
-      .section-title {
-        margin-bottom: 6rem;
-      }
-
-      .section-title h3 {
-        font-size: 4.5rem;
-        padding: 1.5rem 4rem;
-        gap: 30px;
-        border-radius: 150px;
-      }
-
-      .section-title p {
-        font-size: 2.2rem;
-        margin-top: 1.5rem;
-      }
-
-      /* Spacing between major sections - ensures massive scrolling */
-      .premium-originals,
-      .trending-categories,
-      .premium-activation {
-        margin: 10rem 0;
-      }
-
-      /* Footer - huge and prominent */
-      .footer-bottom {
-        margin-top: 10rem;
-        padding: 4rem 3rem;
-        font-size: 2rem;
-        border-radius: 120px;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(16px);
-      }
-
-      /* Back button - large and accessible */
-      .back-btn {
-        top: 50px;
-        left: 50px;
-        padding: 22px 50px;
-        font-size: 2.2rem;
-        border-radius: 120px;
-      }
-
-      /* Strong hover effects for desktop */
-      .btn-premium:hover,
-      .activate-btn:hover {
-        transform: scale(1.05);
-      }
-
-      .niche-card:hover {
-        transform: translateY(-20px);
-      }
-
-      .series-card:hover {
-        transform: translateY(-20px);
-      }
-
-      .category-card:hover {
-        transform: translateY(-20px);
-      }
-
-      /* Additional height to sections for more scrolling */
-      .hero, .premium-originals, .trending-categories, .premium-activation {
-        scroll-margin-top: 3rem;
+        max-width: 1400px;
+        padding: 2rem 3rem 4rem;
       }
       
-      /* Ensure categories have enough height */
-      .category-card {
-        min-height: auto;
+      /* Hero section - much larger and spacious */
+      .hero {
+        padding: 4rem 5rem;
+        margin-bottom: 4rem;
+        border-radius: 100px;
+      }
+      
+      .hero h1 {
+        font-size: 5rem;
+        gap: 30px;
+        margin-bottom: 1.5rem;
+      }
+      
+      .hero-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+      }
+      
+      .hero-badge {
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
+        margin: 1.5rem 0;
+        border-radius: 100px;
+      }
+      
+      .hero h2 {
+        font-size: 3.2rem;
+        margin: 1.5rem 0;
+      }
+      
+      .hero-description {
+        font-size: 1.5rem;
+        max-width: 900px;
+        margin: 2rem auto;
+        line-height: 1.5;
+      }
+      
+      .btn-premium {
+        padding: 1.5rem 4rem;
+        font-size: 1.8rem;
+        gap: 18px;
+        margin-top: 1.8rem;
+        border-radius: 120px;
+      }
+      
+      .stats-row {
+        gap: 3rem;
+        margin-top: 2.5rem;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
+      }
+      
+      .stat-label {
+        font-size: 1.1rem;
+      }
+      
+      .stat-item {
+        padding: 0.8rem 2rem;
+        border-radius: 80px;
+      }
+      
+      /* Niche Cards - much wider and taller */
+      .niche-card {
+        max-width: 800px;
+        padding: 3.5rem 3rem;
+        border-radius: 90px;
+      }
+      
+      .niche-card-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1.8rem;
+        border-radius: 35px;
+      }
+      
+      .niche-card h3 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+      }
+      
+      .niche-card p {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .niche-grid {
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+      
+      /* Section Titles */
+      .section-title {
+        margin-bottom: 3rem;
+      }
+      
+      .section-title h3 {
+        font-size: 2.6rem;
+        padding: 1rem 3rem;
+        gap: 20px;
+        border-radius: 100px;
+      }
+      
+      .section-title p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      
+      /* Series Cards - bigger and wider */
+      .series-card {
+        width: 320px;
+        padding: 2rem 1.5rem;
+        border-radius: 50px;
+      }
+      
+      .series-card h4 {
+        font-size: 1.6rem;
+        margin: 0.8rem 0;
+      }
+      
+      .rank {
+        font-size: 2.2rem;
+        width: 70px;
+        margin-bottom: 0.8rem;
+        border-radius: 70px;
+      }
+      
+      .premium-badge {
+        font-size: 0.9rem;
+        padding: 6px 18px;
+        border-radius: 60px;
+      }
+      
+      .series-grid {
+        gap: 2rem;
+      }
+      
+      .series-card div {
+        font-size: 1.2rem;
+      }
+      
+      /* Trending Categories - much larger */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(450px, 550px));
+        gap: 2.5rem;
+      }
+      
+      .category-img {
+        height: 280px;
+      }
+      
+      .category-overlay {
+        font-size: 2rem;
+        padding: 1.2rem 0;
+      }
+      
+      .category-info {
+        padding: 1.2rem;
+      }
+      
+      .category-info p {
+        font-size: 1.2rem;
+        gap: 12px;
+      }
+      
+      .trending-badge {
+        font-size: 0.85rem;
+        padding: 5px 16px;
+        border-radius: 50px;
+      }
+      
+      /* Premium Card - bigger and more spacious */
+      .premium-card {
+        padding: 3.5rem 3rem;
+        border-radius: 90px;
+      }
+      
+      .premium-card h2 {
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+      }
+      
+      .free-badge {
+        font-size: 1.2rem;
+        padding: 0.7rem 2.2rem;
+        margin-bottom: 1.2rem;
+        border-radius: 100px;
+      }
+      
+      .old-price {
+        font-size: 2.8rem;
+      }
+      
+      .new-price {
+        font-size: 4rem;
+      }
+      
+      .price-tag {
+        margin: 1.5rem 0;
+      }
+      
+      .features-grid {
+        max-width: 800px;
+        gap: 1.5rem;
+        margin: 2rem auto;
+      }
+      
+      .feature-item {
+        font-size: 1.3rem;
+        gap: 15px;
+      }
+      
+      .feature-item i {
+        font-size: 1.4rem;
+        width: 30px;
+      }
+      
+      .activate-btn {
+        padding: 1.4rem 3.8rem;
+        font-size: 1.6rem;
+        gap: 16px;
+        margin: 1.5rem 0 0.8rem;
+        border-radius: 100px;
+      }
+      
+      .small-note {
+        font-size: 1rem;
+      }
+      
+      /* Spacing between sections */
+      .premium-originals, .trending-categories, .premium-activation {
+        margin: 5rem 0;
+      }
+      
+      /* Footer - larger */
+      .footer-bottom {
+        margin-top: 4rem;
+        padding: 2rem;
+        font-size: 1.1rem;
+        border-radius: 50px;
+      }
+      
+      /* Back button */
+      .back-btn {
+        top: 25px;
+        left: 25px;
+        padding: 12px 28px;
+        font-size: 1.2rem;
+        border-radius: 70px;
+      }
+      
+      /* Icons larger */
+      .hero-badge i, .btn-premium i, .activate-btn i {
+        font-size: 1.6rem;
+      }
+      
+      /* Niche card button */
+      .niche-card .btn-premium {
+        font-size: 1.5rem;
+        padding: 1.2rem 3rem;
+      }
+      
+      /* Better hover effects */
+      .btn-premium:hover, .activate-btn:hover {
+        transform: scale(1.03);
       }
     }
     
-    /* Medium tablets/laptops (768px - 1023px) - moderate scaling (1.5x) - UNTOUCHED from original */
+    /* Medium devices (tablets) */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
-        max-width: 700px;
-        padding: 1.8rem 1rem;
+        max-width: 720px;
+        padding: 1.5rem 2rem;
       }
       
       .hero h1 {
@@ -922,13 +856,13 @@
       }
       
       .btn-premium {
-        padding: 1rem 2.2rem;
+        padding: 1rem 3rem;
         font-size: 1.3rem;
       }
       
       .niche-card {
-        max-width: 500px;
-        padding: 2rem 1.5rem;
+        max-width: 540px;
+        padding: 2rem;
       }
       
       .niche-card h3 {
@@ -944,7 +878,7 @@
       }
       
       .series-card {
-        width: 220px;
+        width: 240px;
       }
       
       .premium-card h2 {
@@ -954,13 +888,9 @@
       .feature-item {
         font-size: 1rem;
       }
-      
-      .footer-bottom {
-        font-size: 0.85rem;
-      }
     }
     
-    /* Mobile devices (<768px) - keep original untouched compact android style */
+    /* Mobile - keep original */
     @media (max-width: 767px) {
       .container {
         max-width: 100%;
@@ -972,13 +902,12 @@
 <body>
 <div class="anime-bg" id="animeBg"></div>
 
-<!-- Back to Portal Button -->
 <div id="backBtn" class="back-btn hidden-view" onclick="showHomeScreen()">
   <i class="fas fa-arrow-left"></i> ← Portal
 </div>
 
 <div class="main-content">
-  <!-- ==================== HOME SCREEN: NICHE SELECTION PORTAL ==================== -->
+  <!-- HOME SCREEN -->
   <div id="homeScreen" class="container pt-fix">
     <div class="hero">
       <h1>ToonHub Premium</h1>
@@ -990,7 +919,6 @@
     </div>
 
     <div class="niche-grid">
-      <!-- Webtoon Card -->
       <div class="niche-card" data-niche="webtoon">
         <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
         <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
@@ -998,7 +926,6 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <!-- Manhwa Card -->
       <div class="niche-card" data-niche="manhwa">
         <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
         <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
@@ -1006,7 +933,6 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <!-- Manga Card -->
       <div class="niche-card" data-niche="manga">
         <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
         <h3 style="color: #e63946;">MANGA PREMIUM</h3>
@@ -1016,11 +942,11 @@
     </div>
 
     <div class="footer-bottom">
-      <p><i class="far fa-copyright"></i> 2026 ToonHub Premium — Choose your niche and unlock unlimited reading. This is a fan project for educational purposes only. All content and trademarks are property of their respective owners.</p>
+      <p><i class="far fa-copyright"></i> 2026 ToonHub Premium — Choose your niche and unlock unlimited reading.</p>
     </div>
   </div>
 
-  <!-- ==================== WEBTOON LANDING PAGE ==================== -->
+  <!-- WEBTOON LANDING PAGE -->
   <div id="webtoonScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -1054,11 +980,11 @@
       </div>
     </div>
 
-    <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Webtoon Premium+ Access</h2><div class="price-tag"><span class="old-price">$9.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium webtoons</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read episodes weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & daily pass unlocked</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam. 100% free forever.</p></div></div>
-    <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost. This is a fan project for educational purposes only. All content and trademarks are property of their respective owners.</p></div>
+    <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Webtoon Premium+ Access</h2><div class="price-tag"><span class="old-price">$9.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium webtoons</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read episodes weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & daily pass unlocked</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
+    <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANHWA LANDING PAGE ==================== -->
+  <!-- MANHWA LANDING PAGE -->
   <div id="manhwaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
@@ -1088,11 +1014,11 @@
       </div>
     </div>
 
-    <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manhwa Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manhwa</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam. 100% free forever.</p></div></div>
-    <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost. This is a fan project for educational purposes only. All content and trademarks are property of their respective owners.</p></div>
+    <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manhwa Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manhwa</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
+    <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANGA LANDING PAGE ==================== -->
+  <!-- MANGA LANDING PAGE -->
   <div id="mangaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
@@ -1122,8 +1048,8 @@
       </div>
     </div>
 
-    <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manga Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manga</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam. 100% free forever.</p></div></div>
-    <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manga Premium+ — Unlimited reading, zero cost. This is a fan project for educational purposes only. All content and trademarks are property of their respective owners.</p></div>
+    <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manga Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manga</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
+    <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manga Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 </div>
 
