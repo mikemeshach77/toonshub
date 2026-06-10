@@ -37,7 +37,6 @@
       background-position: center center;
       background-repeat: no-repeat;
       z-index: 0;
-      transition: background-image 0.4s ease;
     }
     
     .anime-bg::after {
@@ -47,14 +46,14 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.72);
+      background: rgba(0, 0, 0, 0.75);
       z-index: 1;
     }
 
     /* Floating Particles */
     .particle {
       position: absolute;
-      background: rgba(0, 213, 100, 0.5);
+      background: rgba(0, 213, 100, 0.4);
       width: 4px;
       height: 4px;
       border-radius: 50%;
@@ -71,7 +70,7 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Main content wrapper for footer push */
+    /* Main content wrapper */
     .main-content {
       flex: 1;
       position: relative;
@@ -79,7 +78,7 @@
       width: 100%;
     }
 
-    /* ========== BASE MOBILE STYLES (Compact, original Android look - UNTOUCHED) ========== */
+    /* ========== BASE MOBILE STYLES (Original compact Android mode - UNTOUCHED) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -88,7 +87,6 @@
       z-index: 3;
     }
 
-    /* Hero Section - Mobile Default */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -97,7 +95,6 @@
       backdrop-filter: blur(16px);
       border-radius: 60px;
       border: 1px solid rgba(0, 213, 100, 0.35);
-      box-shadow: 0 30px 45px -20px rgba(0,0,0,0.6);
     }
 
     .hero h1 {
@@ -107,11 +104,9 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      letter-spacing: -0.02em;
       margin-bottom: 0.5rem;
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
     }
@@ -121,9 +116,6 @@
       height: 40px;
       border-radius: 16px;
       object-fit: cover;
-      box-shadow: 0 0 20px rgba(0,213,100,0.4);
-      background: #1a1a2e;
-      padding: 2px;
     }
 
     .hero-badge {
@@ -134,7 +126,6 @@
       font-size: 0.8rem;
       font-weight: 600;
       margin: 0.8rem 0;
-      backdrop-filter: blur(4px);
     }
 
     .hero h2 {
@@ -154,7 +145,6 @@
       max-width: 650px;
       margin: 1rem auto;
       font-size: 0.9rem;
-      line-height: 1.4;
       color: #cddcf2;
     }
 
@@ -170,7 +160,6 @@
       background: rgba(0,0,0,0.4);
       padding: 0.4rem 1.2rem;
       border-radius: 48px;
-      backdrop-filter: blur(4px);
     }
 
     .stat-number {
@@ -182,7 +171,6 @@
     .stat-label {
       font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
     .btn-premium {
@@ -198,789 +186,388 @@
       align-items: center;
       gap: 10px;
       transition: 0.25s ease;
-      box-shadow: 0 20px 35px -10px rgba(0,213,100,0.5);
       margin-top: 0.8rem;
       font-family: inherit;
     }
 
-    .btn-premium:hover {
-      transform: scale(1.02);
-      background: linear-gradient(105deg, #00f36e, #00b855);
-    }
-
-    /* Premium Originals */
-    .premium-originals {
-      margin: 2.5rem 0 2rem;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 1.8rem;
-    }
-
-    .section-title h3 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(0,213,100,0.1);
-      padding: 0.4rem 1.8rem;
-      border-radius: 60px;
-    }
-
-    .section-title p {
-      font-size: 0.85rem;
-      color: #cddcf2;
-      margin-top: 0.3rem;
-    }
-
-    .series-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      justify-content: center;
-    }
-
-    .series-card {
-      background: rgba(15, 25, 40, 0.7);
-      backdrop-filter: blur(12px);
-      border-radius: 28px;
-      padding: 1.2rem 0.8rem;
-      width: 200px;
-      text-align: center;
-      border: 1px solid rgba(0,213,100,0.3);
-      transition: 0.3s;
-    }
-
-    .series-card:hover {
-      transform: translateY(-5px);
-      border-color: #00D564;
-    }
-
-    .rank {
-      font-size: 1.6rem;
-      font-weight: 800;
-      background: #00D56420;
-      display: inline-block;
-      width: 44px;
-      border-radius: 50px;
-      margin-bottom: 0.4rem;
-    }
-
-    .series-card h4 {
-      font-size: 1rem;
-      margin: 0.3rem 0;
-    }
-
-    .premium-badge {
-      background: #00D564;
-      padding: 3px 10px;
-      border-radius: 40px;
-      font-size: 0.65rem;
-      font-weight: 700;
-      display: inline-block;
-      margin-top: 0.3rem;
-    }
-
-    /* Premium Activation Section */
-    .premium-activation {
-      margin: 2.5rem 0;
-    }
-
-    .premium-card {
-      background: linear-gradient(135deg, rgba(0, 213, 100, 0.15), rgba(0, 100, 50, 0.2));
-      backdrop-filter: blur(12px);
-      border-radius: 44px;
-      border: 1px solid rgba(0, 213, 100, 0.5);
-      padding: 1.8rem;
-      text-align: center;
-      box-shadow: 0 30px 50px -20px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
-
-    .premium-card:hover {
-      transform: translateY(-4px);
-      border-color: #00D564;
-    }
-
-    .free-badge {
-      display: inline-block;
-      background: #00D564;
-      padding: 0.25rem 1rem;
-      border-radius: 60px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      margin-bottom: 0.8rem;
-    }
-
-    .premium-card h2 {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 0.4rem;
-    }
-
-    .price-tag {
-      margin: 0.8rem 0;
-    }
-
-    .old-price {
-      font-size: 1.6rem;
-      text-decoration: line-through;
-      color: #ff8888;
-      margin-right: 0.8rem;
-    }
-
-    .new-price {
-      font-size: 2.2rem;
-      font-weight: 900;
-      color: #00D564;
-      text-shadow: 0 0 15px rgba(0,213,100,0.5);
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.8rem;
-      max-width: 550px;
-      margin: 1.2rem auto;
-      text-align: left;
-    }
-
-    @media (max-width: 550px) {
-      .features-grid { grid-template-columns: 1fr; gap: 0.6rem; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero-logo { width: 40px; height: 40px; }
-    }
-
-    .feature-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      color: #e2e8f0;
-    }
-
-    .feature-item i {
-      color: #00D564;
-      font-size: 0.9rem;
-      width: 20px;
-    }
-
-    .activate-btn {
-      background: linear-gradient(105deg, #00D564, #00a14a);
-      border: none;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      font-weight: 800;
-      border-radius: 60px;
-      color: white;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: 0.25s ease;
-      box-shadow: 0 15px 30px -8px rgba(0,213,100,0.4);
-      margin: 0.8rem 0 0.4rem;
-      font-family: inherit;
-    }
-
-    .activate-btn:hover {
-      transform: scale(1.02);
-      background: linear-gradient(105deg, #00f36e, #00b855);
-    }
-
-    .small-note {
-      font-size: 0.65rem;
-      color: #9aaec9;
-    }
-
-    /* Trending Categories */
-    .trending-categories {
-      margin: 2.5rem 0;
-    }
-
-    .trending-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(250px, 340px));
-      gap: 1.2rem;
-      justify-content: center;
-      align-items: stretch;
-    }
-
-    @media (max-width: 700px) {
-      .trending-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
-      .category-overlay { font-size: 1.1rem; padding: 0.5rem 0; }
-      .category-img { height: 120px; }
-    }
-
-    .category-card {
-      background: rgba(0, 0, 0, 0.55);
-      border-radius: 22px;
-      overflow: hidden;
-      border: 1px solid rgba(0,213,100,0.45);
-      transition: all 0.3s ease;
-    }
-
-    .category-card:hover {
-      transform: translateY(-5px);
-      border-color: #00D564;
-    }
-
-    .category-img {
-      height: 150px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-    }
-
-    .category-overlay {
-      background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4) 60%, transparent);
-      width: 100%;
-      text-align: center;
-      padding: 0.6rem 0;
-      font-weight: 800;
-      font-size: 1.2rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: white;
-    }
-
-    .category-info {
-      padding: 0.6rem;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .category-info p {
-      font-size: 0.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      flex-wrap: wrap;
-    }
-
-    .trending-badge {
-      background: #00D564;
-      border-radius: 30px;
-      padding: 2px 8px;
-      font-size: 0.55rem;
-      font-weight: 700;
-    }
-
-    /* Footer Styling */
-    .footer-bottom {
-      margin-top: 2.5rem;
-      text-align: center;
-      padding: 1.2rem;
-      border-top: 1px solid rgba(0,213,100,0.2);
-      font-size: 0.7rem;
-    }
-
-    /* Niche Portal - vertical stacking base (mobile) */
-    .niche-portal {
-      min-height: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .niche-card {
-      background: rgba(10, 20, 35, 0.75);
-      backdrop-filter: blur(16px);
-      border-radius: 36px;
-      padding: 1.5rem;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(0,213,100,0.3);
-      width: 100%;
-      max-width: 380px;
-      margin: 0 auto;
-    }
-    
-    .niche-card:hover {
-      transform: translateY(-6px);
-      border-color: #00D564;
-      box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
-    }
-    
-    .niche-icon {
-      font-size: 2.8rem;
-      margin-bottom: 0.6rem;
-    }
-    
-    .niche-card h3 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 0.4rem;
-    }
-    
-    .niche-card p {
-      font-size: 0.85rem;
-      color: #cbd5e1;
-      margin-bottom: 0.8rem;
-    }
-    
-    .niche-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      margin-top: 1.8rem;
-      width: 100%;
-    }
-    
-    .niche-card-image {
-      width: 55px;
-      height: 55px;
-      border-radius: 14px;
-      margin: 0 auto 0.8rem;
-      display: block;
-      object-fit: cover;
-    }
-    
-    .back-btn {
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      z-index: 100;
-      background: rgba(0,0,0,0.75);
-      backdrop-filter: blur(10px);
-      padding: 8px 18px;
-      border-radius: 50px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.85rem;
-      border: 1px solid #00D564;
-      transition: 0.2s;
-    }
-    .back-btn:hover {
-      background: #00D564;
-      color: black;
-    }
-
-    html, body {
-      height: auto;
-      min-height: 100vh;
-      overflow-y: auto;
-    }
-    
+    .premium-originals { margin: 2.5rem 0 2rem; }
+    .section-title { text-align: center; margin-bottom: 1.8rem; }
+    .section-title h3 { font-size: 1.5rem; font-weight: 800; display: inline-flex; align-items: center; gap: 10px; background: rgba(0,213,100,0.1); padding: 0.4rem 1.8rem; border-radius: 60px; }
+    .section-title p { font-size: 0.85rem; color: #cddcf2; margin-top: 0.3rem; }
+    .series-grid { display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; }
+    .series-card { background: rgba(15,25,40,0.7); backdrop-filter: blur(12px); border-radius: 28px; padding: 1.2rem 0.8rem; width: 200px; text-align: center; border: 1px solid rgba(0,213,100,0.3); }
+    .rank { font-size: 1.6rem; font-weight: 800; background: #00D56420; display: inline-block; width: 44px; border-radius: 50px; margin-bottom: 0.4rem; }
+    .series-card h4 { font-size: 1rem; margin: 0.3rem 0; }
+    .premium-badge { background: #00D564; padding: 3px 10px; border-radius: 40px; font-size: 0.65rem; font-weight: 700; display: inline-block; margin-top: 0.3rem; }
+    .premium-activation { margin: 2.5rem 0; }
+    .premium-card { background: linear-gradient(135deg, rgba(0,213,100,0.15), rgba(0,100,50,0.2)); backdrop-filter: blur(12px); border-radius: 44px; border: 1px solid rgba(0,213,100,0.5); padding: 1.8rem; text-align: center; }
+    .free-badge { display: inline-block; background: #00D564; padding: 0.25rem 1rem; border-radius: 60px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.8rem; }
+    .premium-card h2 { font-size: 1.8rem; font-weight: 800; }
+    .price-tag { margin: 0.8rem 0; }
+    .old-price { font-size: 1.6rem; text-decoration: line-through; color: #ff8888; margin-right: 0.8rem; }
+    .new-price { font-size: 2.2rem; font-weight: 900; color: #00D564; }
+    .features-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.8rem; max-width: 550px; margin: 1.2rem auto; text-align: left; }
+    @media (max-width:550px){ .features-grid { grid-template-columns:1fr; } }
+    .feature-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #e2e8f0; }
+    .feature-item i { color: #00D564; width: 20px; }
+    .activate-btn { background: linear-gradient(105deg,#00D564,#00a14a); border: none; padding: 0.8rem 2rem; font-size: 1rem; font-weight: 800; border-radius: 60px; color: white; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; margin: 0.8rem 0 0.4rem; font-family: inherit; }
+    .small-note { font-size: 0.65rem; color: #9aaec9; }
+    .trending-categories { margin: 2.5rem 0; }
+    .trending-grid { display: grid; grid-template-columns: repeat(2, minmax(250px,340px)); gap: 1.2rem; justify-content: center; }
+    @media (max-width:700px){ .trending-grid { grid-template-columns: repeat(2,1fr); } .category-img { height: 120px; } }
+    .category-card { background: rgba(0,0,0,0.55); border-radius: 22px; overflow: hidden; border: 1px solid rgba(0,213,100,0.45); }
+    .category-img { height: 150px; background-size: cover; background-position: center; position: relative; display: flex; align-items: flex-end; justify-content: center; }
+    .category-overlay { background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4) 60%, transparent); width: 100%; text-align: center; padding: 0.6rem 0; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; color: white; }
+    .category-info { padding: 0.6rem; text-align: center; background: rgba(0,0,0,0.5); }
+    .category-info p { font-size: 0.75rem; display: flex; align-items: center; justify-content: center; gap: 5px; flex-wrap: wrap; }
+    .trending-badge { background: #00D564; border-radius: 30px; padding: 2px 8px; font-size: 0.55rem; font-weight: 700; }
+    .footer-bottom { margin-top: 2.5rem; text-align: center; padding: 1.2rem; border-top: 1px solid rgba(0,213,100,0.2); font-size: 0.7rem; }
+    .niche-card { background: rgba(10,20,35,0.75); backdrop-filter: blur(16px); border-radius: 36px; padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease; border: 1px solid rgba(0,213,100,0.3); width: 100%; max-width: 380px; margin: 0 auto; }
+    .niche-card h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .niche-card p { font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.8rem; }
+    .niche-grid { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin-top: 1.8rem; width: 100%; }
+    .niche-card-image { width: 55px; height: 55px; border-radius: 14px; margin: 0 auto 0.8rem; display: block; object-fit: cover; }
+    .back-btn { position: fixed; top: 15px; left: 15px; z-index: 100; background: rgba(0,0,0,0.75); backdrop-filter: blur(10px); padding: 8px 18px; border-radius: 50px; cursor: pointer; font-weight: 600; font-size: 0.85rem; border: 1px solid #00D564; }
     .hidden-view { display: none; }
-    
     .pt-fix { padding-top: 0; }
-    #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-      padding-top: 0.3rem;
-    }
-    
-    /* Additional mobile fine-tuning */
-    .series-card div {
-      font-size: 0.85rem;
-    }
-    
-    .btn-premium i, .activate-btn i {
-      font-size: 0.9rem;
-    }
 
-    /* ========== BRAND NEW DESKTOP MODE (1024px+) — MASSIVE, ZOOMED OUT, READABLE ========== */
-    /* COMPLETELY REDESIGNED: Everything is EXTRA LARGE, blocks huge, fonts massive */
+    /* ========== DESKTOP MODE - MASSIVE ZOOMED OUT, 5X BIGGER, READABLE ========== */
+    /* Everything enlarged: fonts, blocks, buttons, spacing. Blocks overflow beyond viewport height (scroll required) */
     @media (min-width: 1024px) {
-      /* Main container — ultra wide, lots of breathing room */
+      /* Base container — extra wide, increased padding */
       .container {
         max-width: 1600px;
-        padding: 3rem 5rem 7rem;
+        padding: 3rem 5rem 8rem;
         margin: 0 auto;
       }
 
-      /* Hero section — enormous, inviting */
+      /* Hero section — MASSIVE */
       .hero {
-        padding: 6rem 5rem;
-        margin-bottom: 6rem;
-        border-radius: 120px;
-        background: rgba(10, 20, 35, 0.65);
+        padding: 7rem 6rem;
+        margin-bottom: 8rem;
+        border-radius: 160px;
+        background: rgba(10, 20, 35, 0.7);
       }
       
       .hero h1 {
-        font-size: 6.5rem;
-        gap: 2.5rem;
-        margin-bottom: 2rem;
+        font-size: 8rem;
+        gap: 3rem;
+        margin-bottom: 2.5rem;
       }
       
       .hero-logo {
-        width: 150px;
-        height: 150px;
-        border-radius: 48px;
+        width: 200px;
+        height: 200px;
+        border-radius: 60px;
       }
       
       .hero-badge {
-        font-size: 2.2rem;
-        padding: 1.2rem 3.5rem;
-        margin: 1.5rem 0;
-        border-radius: 140px;
+        font-size: 2.8rem;
+        padding: 1.5rem 4rem;
+        margin: 2rem 0;
+        border-radius: 160px;
       }
       
       .hero h2 {
-        font-size: 4.2rem;
-        margin: 1.8rem 0;
+        font-size: 5rem;
+        margin: 2rem 0;
         line-height: 1.3;
       }
       
       .hero-description {
-        font-size: 2rem;
-        max-width: 1200px;
-        margin: 2.5rem auto;
+        font-size: 2.4rem;
+        max-width: 1300px;
+        margin: 3rem auto;
         line-height: 1.6;
       }
       
       .btn-premium {
-        padding: 2.2rem 6rem;
-        font-size: 2.4rem;
-        gap: 1.8rem;
-        margin-top: 2.5rem;
-        border-radius: 160px;
+        padding: 2.5rem 7rem;
+        font-size: 2.8rem;
+        gap: 2rem;
+        margin-top: 3rem;
+        border-radius: 180px;
       }
       
       .stats-row {
-        gap: 5rem;
-        margin-top: 3rem;
+        gap: 6rem;
+        margin-top: 3.5rem;
       }
       
       .stat-number {
-        font-size: 4.2rem;
+        font-size: 5rem;
       }
       
       .stat-label {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
       }
       
       .stat-item {
-        padding: 1.2rem 3rem;
-        border-radius: 100px;
+        padding: 1.5rem 3.5rem;
+        border-radius: 120px;
       }
       
-      /* Niche Cards — MASSIVE blocks for each platform */
+      /* Niche Cards — EXTREMELY MASSIVE (each block takes half screen height, forces scroll) */
       .niche-card {
-        max-width: 1100px;
-        padding: 5rem 4rem;
-        border-radius: 110px;
+        max-width: 1300px;
+        padding: 6rem 5rem;
+        border-radius: 140px;
         margin: 0 auto;
       }
       
       .niche-card-image {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 2.5rem;
-        border-radius: 60px;
+        width: 260px;
+        height: 260px;
+        margin-bottom: 3rem;
+        border-radius: 80px;
       }
       
       .niche-card h3 {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
+        font-size: 5rem;
+        margin-bottom: 2rem;
       }
       
       .niche-card p {
-        font-size: 1.9rem;
-        margin-bottom: 2.5rem;
-        line-height: 1.5;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        line-height: 1.6;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
       }
       
       .niche-grid {
-        gap: 5rem;
-        margin-top: 4rem;
+        gap: 7rem;
+        margin-top: 5rem;
       }
       
-      /* Section Titles — bold & prominent */
+      /* Section Titles — huge */
       .section-title {
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
       }
       
       .section-title h3 {
-        font-size: 3.5rem;
-        padding: 1.5rem 4rem;
-        gap: 1.8rem;
-        border-radius: 140px;
+        font-size: 4rem;
+        padding: 1.8rem 5rem;
+        gap: 2rem;
+        border-radius: 160px;
       }
       
       .section-title p {
-        font-size: 1.7rem;
-        margin-top: 1.5rem;
+        font-size: 2rem;
+        margin-top: 1.8rem;
       }
       
-      /* Series Cards — big, legible ranking */
+      /* Series Cards — giant */
       .series-card {
-        width: 420px;
-        padding: 3rem 1.5rem;
-        border-radius: 80px;
-      }
-      
-      .series-card h4 {
-        font-size: 2.2rem;
-        margin: 1.2rem 0;
-      }
-      
-      .rank {
-        font-size: 3.8rem;
-        width: 110px;
-        margin-bottom: 1.5rem;
-        border-radius: 90px;
-      }
-      
-      .premium-badge {
-        font-size: 1.3rem;
-        padding: 10px 28px;
-        margin-top: 1.2rem;
-        border-radius: 80px;
-      }
-      
-      .series-grid {
-        gap: 3.5rem;
-      }
-      
-      .series-card div {
-        font-size: 1.5rem;
-      }
-      
-      /* Trending Categories — huge panels */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(600px, 750px));
-        gap: 3.5rem;
-      }
-      
-      .category-img {
-        height: 380px;
-      }
-      
-      .category-overlay {
-        font-size: 2.8rem;
-        padding: 1.8rem 0;
-      }
-      
-      .category-info {
-        padding: 2rem;
-      }
-      
-      .category-info p {
-        font-size: 1.7rem;
-        gap: 1.5rem;
-      }
-      
-      .trending-badge {
-        font-size: 1.2rem;
-        padding: 8px 22px;
-        border-radius: 70px;
-      }
-      
-      /* Premium Activation Card — giant pricing, huge features */
-      .premium-card {
-        padding: 5rem 4.5rem;
-        border-radius: 130px;
-      }
-      
-      .premium-card h2 {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-      }
-      
-      .free-badge {
-        font-size: 1.7rem;
-        padding: 1rem 3rem;
-        margin-bottom: 1.8rem;
-        border-radius: 130px;
-      }
-      
-      .old-price {
-        font-size: 3.5rem;
-      }
-      
-      .new-price {
-        font-size: 5.2rem;
-      }
-      
-      .price-tag {
-        margin: 2rem 0;
-      }
-      
-      .features-grid {
-        max-width: 1050px;
-        gap: 2rem;
-        margin: 3rem auto;
-      }
-      
-      .feature-item {
-        font-size: 1.8rem;
-        gap: 1.3rem;
-      }
-      
-      .feature-item i {
-        font-size: 2.2rem;
-        width: 42px;
-      }
-      
-      .activate-btn {
-        padding: 2rem 5rem;
-        font-size: 2.2rem;
-        gap: 1.5rem;
-        margin: 2.2rem 0 1rem;
-        border-radius: 140px;
-      }
-      
-      .small-note {
-        font-size: 1.3rem;
-      }
-      
-      /* Spacing between sections */
-      .premium-originals, .trending-categories, .premium-activation {
-        margin: 7rem 0;
-      }
-      
-      /* Footer — massive, clear */
-      .footer-bottom {
-        margin-top: 7rem;
-        padding: 3.5rem;
-        font-size: 1.6rem;
-        border-radius: 90px;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(12px);
-      }
-      
-      /* Back button — extra large & usable */
-      .back-btn {
-        top: 45px;
-        left: 45px;
-        padding: 20px 45px;
-        font-size: 1.8rem;
+        width: 520px;
+        padding: 3.5rem 2rem;
         border-radius: 100px;
       }
       
-      /* All icons massive */
-      .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
-        font-size: 2.2rem;
+      .series-card h4 {
+        font-size: 2.8rem;
+        margin: 1.5rem 0;
       }
       
-      .niche-card .btn-premium {
-        margin-top: 1rem;
+      .rank {
+        font-size: 4.5rem;
+        width: 140px;
+        margin-bottom: 1.8rem;
+        border-radius: 110px;
+      }
+      
+      .premium-badge {
+        font-size: 1.6rem;
+        padding: 12px 32px;
+        margin-top: 1.5rem;
+        border-radius: 90px;
+      }
+      
+      .series-grid {
+        gap: 4.5rem;
+      }
+      
+      .series-card div {
+        font-size: 1.8rem;
+      }
+      
+      /* Trending Categories — massive panels */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(750px, 900px));
+        gap: 5rem;
+      }
+      
+      .category-img {
+        height: 480px;
+      }
+      
+      .category-overlay {
+        font-size: 3.5rem;
+        padding: 2.2rem 0;
+      }
+      
+      .category-info {
+        padding: 2.5rem;
+      }
+      
+      .category-info p {
+        font-size: 2rem;
+        gap: 1.8rem;
+      }
+      
+      .trending-badge {
+        font-size: 1.4rem;
+        padding: 10px 26px;
+        border-radius: 80px;
+      }
+      
+      /* Premium Activation Card — gigantic */
+      .premium-card {
+        padding: 6rem 5rem;
+        border-radius: 160px;
+      }
+      
+      .premium-card h2 {
+        font-size: 4.8rem;
+        margin-bottom: 1.8rem;
+      }
+      
+      .free-badge {
+        font-size: 2rem;
+        padding: 1.2rem 3.5rem;
+        margin-bottom: 2rem;
+        border-radius: 150px;
+      }
+      
+      .old-price {
+        font-size: 4rem;
+      }
+      
+      .new-price {
+        font-size: 6rem;
+      }
+      
+      .price-tag {
+        margin: 2.5rem 0;
+      }
+      
+      .features-grid {
+        max-width: 1200px;
+        gap: 2.5rem;
+        margin: 3.5rem auto;
+      }
+      
+      .feature-item {
+        font-size: 2.2rem;
+        gap: 1.5rem;
+      }
+      
+      .feature-item i {
+        font-size: 2.6rem;
+        width: 50px;
+      }
+      
+      .activate-btn {
+        padding: 2.5rem 6rem;
+        font-size: 2.6rem;
+        gap: 1.8rem;
+        margin: 2.5rem 0 1.2rem;
+        border-radius: 160px;
+      }
+      
+      .small-note {
+        font-size: 1.5rem;
+      }
+      
+      /* Spacing between major sections */
+      .premium-originals, .trending-categories, .premium-activation {
+        margin: 9rem 0;
+      }
+      
+      /* Footer — huge */
+      .footer-bottom {
+        margin-top: 8rem;
+        padding: 4rem;
+        font-size: 2rem;
+        border-radius: 110px;
+        background: rgba(0,0,0,0.5);
+      }
+      
+      /* Back button — enormous */
+      .back-btn {
+        top: 50px;
+        left: 50px;
+        padding: 24px 55px;
+        font-size: 2.2rem;
+        border-radius: 120px;
+      }
+      
+      /* All icons scaled up */
+      .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
+        font-size: 2.8rem;
       }
       
       .btn-premium i, .activate-btn i {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
       }
       
-      /* Hover effects enhanced */
+      /* Hover effects */
       .btn-premium:hover, .activate-btn:hover {
         transform: scale(1.05);
       }
       
       .niche-card:hover {
+        transform: translateY(-18px);
+      }
+      
+      .series-card:hover, .category-card:hover {
         transform: translateY(-15px);
       }
       
-      .series-card:hover {
-        transform: translateY(-12px);
-      }
-      
-      .category-card:hover {
-        transform: translateY(-12px);
-      }
-      
-      /* All text extremely readable */
+      /* Ensure all text is extremely legible */
       p, .hero-description, .feature-item, .category-info p, .small-note {
         line-height: 1.5;
         font-weight: 500;
       }
       
-      /* Stats numbers pop */
       .stat-number {
-        font-size: 4.5rem;
+        font-size: 5.2rem;
       }
       
-      /* Inner card content alignment */
-      .series-card .rank {
-        line-height: 1.2;
-      }
-      
-      /* Hero description weight */
+      /* Extra polish for readability */
       .hero-description {
         font-weight: 500;
-        letter-spacing: -0.2px;
+        letter-spacing: -0.3px;
+      }
+      
+      .niche-card .btn-premium {
+        margin-top: 1.2rem;
       }
     }
     
     /* Medium tablets/laptops (768px - 1023px) — comfortable scaling */
     @media (min-width: 768px) and (max-width: 1023px) {
-      .container {
-        max-width: 900px;
-        padding: 2rem 2rem 3rem;
-      }
-      
-      .hero h1 {
-        font-size: 3rem;
-      }
-      
-      .hero-logo {
-        width: 70px;
-        height: 70px;
-      }
-      
-      .hero h2 {
-        font-size: 2.2rem;
-      }
-      
-      .hero-description {
-        font-size: 1.2rem;
-      }
-      
-      .btn-premium {
-        padding: 1.2rem 3rem;
-        font-size: 1.5rem;
-      }
-      
-      .niche-card {
-        max-width: 650px;
-        padding: 2.5rem 2rem;
-      }
-      
-      .niche-card h3 {
-        font-size: 2.3rem;
-      }
-      
-      .niche-card p {
-        font-size: 1.2rem;
-      }
-      
-      .section-title h3 {
-        font-size: 2.2rem;
-      }
-      
-      .series-card {
-        width: 260px;
-      }
-      
-      .premium-card h2 {
-        font-size: 2.5rem;
-      }
-      
-      .feature-item {
-        font-size: 1.1rem;
-      }
-      
-      .footer-bottom {
-        font-size: 1rem;
-      }
+      .container { max-width: 950px; padding: 2rem 2rem 3rem; }
+      .hero h1 { font-size: 3rem; }
+      .hero-logo { width: 70px; height: 70px; }
+      .hero h2 { font-size: 2.2rem; }
+      .hero-description { font-size: 1.2rem; }
+      .btn-premium { padding: 1.2rem 3rem; font-size: 1.5rem; }
+      .niche-card { max-width: 680px; padding: 2.5rem 2rem; }
+      .niche-card h3 { font-size: 2.3rem; }
+      .niche-card p { font-size: 1.2rem; }
+      .section-title h3 { font-size: 2.2rem; }
+      .series-card { width: 280px; }
+      .premium-card h2 { font-size: 2.5rem; }
+      .feature-item { font-size: 1.1rem; }
+      .footer-bottom { font-size: 1rem; }
     }
     
-    /* Mobile devices (<768px) — keep original untouched compact android style */
+    /* Mobile devices (<768px) — original untouched compact android style */
     @media (max-width: 767px) {
-      .container {
-        max-width: 100%;
-        padding: 1rem 1rem 2rem;
-      }
+      .container { max-width: 100%; padding: 1rem 1rem 2rem; }
     }
   </style>
 </head>
@@ -993,7 +580,7 @@
 </div>
 
 <div class="main-content">
-  <!-- ==================== HOME SCREEN: NICHE SELECTION PORTAL ==================== -->
+  <!-- HOME SCREEN: NICHE SELECTION PORTAL -->
   <div id="homeScreen" class="container pt-fix">
     <div class="hero">
       <h1>ToonHub Premium</h1>
@@ -1035,7 +622,7 @@
     </div>
   </div>
 
-  <!-- ==================== WEBTOON LANDING PAGE ==================== -->
+  <!-- WEBTOON LANDING PAGE -->
   <div id="webtoonScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -1043,37 +630,20 @@
       <h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$9.99</span> <span class="gradient-prem">$0</span></h2>
       <div class="hero-description">Join 85 million readers worldwide. Unlock daily passes, fast passes, and binge trending webtoons — no credit card required.</div>
       <button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button>
-      <div class="stats-row">
-        <div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div>
-        <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div>
-        <div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div>
-      </div>
+      <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
     </div>
-    
-    <div class="premium-originals">
-      <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Webtoons</h3><p>Most read this week — exclusive to Webtoon Premium+</p></div>
-      <div class="series-grid">
-        <div class="series-card"><div class="rank">#1</div><h4>Lore Olympus</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div>
-        <div class="series-card"><div class="rank">#2</div><h4>unOrdinary</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div>
-        <div class="series-card"><div class="rank">#3</div><h4>The Remarried Empress</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div>
-        <div class="series-card"><div class="rank">#4</div><h4>The Mafia Nanny</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div>
-      </div>
-    </div>
-
+    <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Webtoons</h3><p>Most read this week — exclusive to Webtoon Premium+</p></div>
+    <div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>Lore Olympus</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>unOrdinary</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>The Remarried Empress</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>The Mafia Nanny</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
     <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div>
-      <div class="trending-grid">
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #1 Romance · <span class="trending-badge">+340k readers</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #2 Action · <span class="trending-badge">+257k binges</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Fantasy · <span class="trending-badge">+199k fans</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">😱 THRILLER</div></div><div class="category-info"><p><i class="fas fa-eye"></i> #4 Thriller · <span class="trending-badge">+88k readers</span></p></div></div>
-      </div>
-    </div>
-
+    <div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #1 Romance · <span class="trending-badge">+340k readers</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #2 Action · <span class="trending-badge">+257k binges</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Fantasy · <span class="trending-badge">+199k fans</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">😱 THRILLER</div></div><div class="category-info"><p><i class="fas fa-eye"></i> #4 Thriller · <span class="trending-badge">+88k readers</span></p></div></div></div></div>
     <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Webtoon Premium+ Access</h2><div class="price-tag"><span class="old-price">$9.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium webtoons</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read episodes weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & daily pass unlocked</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANHWA LANDING PAGE ==================== -->
+  <!-- MANHWA LANDING PAGE -->
   <div id="manhwaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
@@ -1083,31 +653,18 @@
       <button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button>
       <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
     </div>
-    
-    <div class="premium-originals">
-      <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manhwa</h3><p>Most read this week — exclusive to Manhwa Premium+</p></div>
-      <div class="series-grid">
-        <div class="series-card"><div class="rank">#1</div><h4>Solo Leveling: Ragnarok</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div>
-        <div class="series-card"><div class="rank">#2</div><h4>Omniscient Reader's Viewpoint</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div>
-        <div class="series-card"><div class="rank">#3</div><h4>The Greatest Estate Developer</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div>
-        <div class="series-card"><div class="rank">#4</div><h4>Eleceed</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div>
-      </div>
-    </div>
-
+    <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manhwa</h3><p>Most read this week — exclusive to Manhwa Premium+</p></div>
+    <div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>Solo Leveling: Ragnarok</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>Omniscient Reader's Viewpoint</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>The Greatest Estate Developer</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>Eleceed</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
     <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div>
-      <div class="trending-grid">
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Action · <span class="trending-badge">+189k readers</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #2 Fantasy · <span class="trending-badge">+156k fans</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 DRAMA</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #3 Drama · <span class="trending-badge">+112k emotions</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">💘 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+89k hearts</span></p></div></div>
-      </div>
-    </div>
-
+    <div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Action · <span class="trending-badge">+189k readers</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #2 Fantasy · <span class="trending-badge">+156k fans</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 DRAMA</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #3 Drama · <span class="trending-badge">+112k emotions</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">💘 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+89k hearts</span></p></div></div></div></div>
     <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manhwa Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manhwa</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANGA LANDING PAGE ==================== -->
+  <!-- MANGA LANDING PAGE -->
   <div id="mangaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
@@ -1117,26 +674,13 @@
       <button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button>
       <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
     </div>
-    
-    <div class="premium-originals">
-      <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manga</h3><p>Most read this week — exclusive to Manga Premium+</p></div>
-      <div class="series-grid">
-        <div class="series-card"><div class="rank">#1</div><h4>One Piece</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div>
-        <div class="series-card"><div class="rank">#2</div><h4>Boruto: Two Blue Vortex</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div>
-        <div class="series-card"><div class="rank">#3</div><h4>Sakamoto Days</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div>
-        <div class="series-card"><div class="rank">#4</div><h4>Kagurabachi</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div>
-      </div>
-    </div>
-
+    <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manga</h3><p>Most read this week — exclusive to Manga Premium+</p></div>
+    <div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>One Piece</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>Boruto: Two Blue Vortex</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>Sakamoto Days</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>Kagurabachi</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
     <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div>
-      <div class="trending-grid">
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ SHONEN</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Shonen · <span class="trending-badge">+310k readers</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 SEINEN</div></div><div class="category-info"><p><i class="fas fa-brain"></i> #2 Seinen · <span class="trending-badge">+187k fans</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ ISEKAI</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Isekai · <span class="trending-badge">+233k binges</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+158k hearts</span></p></div></div>
-      </div>
-    </div>
-
+    <div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ SHONEN</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Shonen · <span class="trending-badge">+310k readers</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 SEINEN</div></div><div class="category-info"><p><i class="fas fa-brain"></i> #2 Seinen · <span class="trending-badge">+187k fans</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ ISEKAI</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Isekai · <span class="trending-badge">+233k binges</span></p></div></div>
+    <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+158k hearts</span></p></div></div></div></div>
     <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manga Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manga</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manga Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
@@ -1189,16 +733,16 @@
   
   function initParticles() {
     const bgDiv = document.querySelector('.anime-bg');
-    for(let i = 0; i < 50; i++) {
+    for(let i = 0; i < 60; i++) {
       let particle = document.createElement('div');
       particle.classList.add('particle');
-      let size = Math.random() * 5 + 2;
+      let size = Math.random() * 6 + 2;
       particle.style.width = size + 'px';
       particle.style.height = size + 'px';
       particle.style.left = Math.random() * 100 + '%';
       particle.style.animationDelay = Math.random() * 20 + 's';
-      particle.style.animationDuration = 10 + Math.random() * 16 + 's';
-      particle.style.opacity = Math.random() * 0.6;
+      particle.style.animationDuration = 10 + Math.random() * 18 + 's';
+      particle.style.opacity = Math.random() * 0.5;
       bgDiv.appendChild(particle);
     }
   }
