@@ -71,7 +71,6 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Main content wrapper for footer push */
     .main-content {
       flex: 1;
       position: relative;
@@ -79,7 +78,7 @@
       width: 100%;
     }
 
-    /* ========== BASE STYLES (Mobile/Android Mode - COMPACT, ORIGINAL, UNTOUCHED) ========== */
+    /* ========== BASE STYLES (MOBILE/ANDROID MODE - COMPACT, ORIGINAL) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -88,7 +87,6 @@
       z-index: 3;
     }
 
-    /* Hero Section - Mobile Default */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -208,7 +206,6 @@
       background: linear-gradient(105deg, #00f36e, #00b855);
     }
 
-    /* Premium Originals */
     .premium-originals {
       margin: 2.5rem 0 2rem;
     }
@@ -283,7 +280,6 @@
       margin-top: 0.3rem;
     }
 
-    /* Premium Activation Section */
     .premium-activation {
       margin: 2.5rem 0;
     }
@@ -395,7 +391,6 @@
       color: #9aaec9;
     }
 
-    /* Trending Categories */
     .trending-categories {
       margin: 2.5rem 0;
     }
@@ -472,7 +467,6 @@
       font-weight: 700;
     }
 
-    /* Footer Styling */
     .footer-bottom {
       margin-top: 2.5rem;
       text-align: center;
@@ -481,13 +475,6 @@
       font-size: 0.7rem;
     }
 
-    /* Niche Portal - vertical stacking base (mobile) */
-    .niche-portal {
-      min-height: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    
     .niche-card {
       background: rgba(10, 20, 35, 0.75);
       backdrop-filter: blur(16px);
@@ -506,11 +493,6 @@
       transform: translateY(-6px);
       border-color: #00D564;
       box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
-    }
-    
-    .niche-icon {
-      font-size: 2.8rem;
-      margin-bottom: 0.6rem;
     }
     
     .niche-card h3 {
@@ -576,7 +558,6 @@
       padding-top: 0.3rem;
     }
     
-    /* Additional mobile fine-tuning */
     .series-card div {
       font-size: 0.85rem;
     }
@@ -585,345 +566,315 @@
       font-size: 0.9rem;
     }
 
-    /* ========== DESKTOP MODE ONLY (1024px+) - ENLARGE LENGTH & FONTS 3X, WIDTH UNCHANGED ========== */
-    /* Only vertical spacing, padding, margins, and fonts are scaled 3x - container width stays same as mobile */
+    /* ========== DESKTOP MODE (1024px+) - FULLY ENLARGED, BOLD, READABLE ========== */
     @media (min-width: 1024px) {
-      /* Container keeps the same max-width as mobile (centered, not wide) */
       .container {
-        max-width: 560px;
-        padding: 3rem 1rem 6rem;
+        max-width: 1400px;
+        padding: 2rem 3rem 4rem;
         margin-left: auto;
         margin-right: auto;
       }
       
-      /* Hero - vertical padding increased 3x, width unchanged */
       .hero {
-        padding: 5.4rem 1.5rem;
-        margin-bottom: 6rem;
-        border-radius: 60px;
+        padding: 4rem 3rem;
+        margin-bottom: 4rem;
+        border-radius: 80px;
       }
       
       .hero h1 {
-        font-size: 5.4rem;
-        gap: 36px;
-        margin-bottom: 1.5rem;
+        font-size: 4.5rem;
+        gap: 24px;
+        margin-bottom: 1rem;
       }
       
       .hero-logo {
-        width: 120px;
-        height: 120px;
-        border-radius: 48px;
+        width: 90px;
+        height: 90px;
+        border-radius: 28px;
       }
       
       .hero-badge {
-        font-size: 2.4rem;
-        padding: 1.05rem 4.2rem;
-        margin: 2.4rem 0;
-        border-radius: 180px;
+        font-size: 1.6rem;
+        padding: 0.8rem 2.5rem;
+        margin: 1.5rem 0;
+        border-radius: 100px;
       }
       
       .hero h2 {
-        font-size: 4.5rem;
-        margin: 1.8rem 0;
-        line-height: 1.4;
+        font-size: 3rem;
+        margin: 1.2rem 0;
       }
       
       .hero-description {
-        font-size: 2.7rem;
-        max-width: 500px;
-        margin: 3rem auto;
+        font-size: 1.6rem;
+        max-width: 800px;
+        margin: 1.8rem auto;
         line-height: 1.5;
       }
       
       .btn-premium {
-        padding: 2.4rem 2.2rem;
-        font-size: 3.3rem;
-        gap: 30px;
-        margin-top: 2.4rem;
-        border-radius: 80px;
+        padding: 1.5rem 4rem;
+        font-size: 2rem;
+        gap: 16px;
+        margin-top: 1.5rem;
+        border-radius: 100px;
       }
       
       .stats-row {
-        gap: 5.4rem;
-        margin-top: 3.6rem;
+        gap: 3rem;
+        margin-top: 2rem;
       }
       
       .stat-number {
-        font-size: 4.8rem;
+        font-size: 2.8rem;
       }
       
       .stat-label {
-        font-size: 2.1rem;
-        letter-spacing: 3px;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
       }
       
       .stat-item {
-        padding: 1.2rem 3.6rem;
-        border-radius: 144px;
+        padding: 0.8rem 2rem;
+        border-radius: 80px;
       }
       
-      /* Niche Cards - vertical padding 3x, width unchanged (max-width 380px) */
       .niche-card {
-        max-width: 380px;
-        padding: 4.5rem 1.5rem;
-        border-radius: 108px;
+        max-width: 700px;
+        padding: 3rem 2.5rem;
+        border-radius: 70px;
       }
       
       .niche-card-image {
-        width: 165px;
-        height: 165px;
-        margin-bottom: 2.4rem;
-        border-radius: 42px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1.5rem;
+        border-radius: 30px;
       }
       
       .niche-card h3 {
-        font-size: 4.5rem;
-        margin-bottom: 1.2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
       
       .niche-card p {
-        font-size: 2.55rem;
-        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
         line-height: 1.5;
-        max-width: 100%;
       }
       
       .niche-grid {
-        gap: 4.5rem;
-        margin-top: 5.4rem;
+        gap: 3rem;
+        margin-top: 3rem;
       }
       
-      /* Section Titles */
       .section-title {
-        margin-bottom: 5.4rem;
+        margin-bottom: 3rem;
       }
       
       .section-title h3 {
-        font-size: 4rem;
-        padding: 1.2rem 1.8rem;
-        gap: 30px;
-        border-radius: 180px;
+        font-size: 2.8rem;
+        padding: 0.8rem 3rem;
+        gap: 16px;
+        border-radius: 100px;
       }
       
       .section-title p {
-        font-size: 2rem;
-        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        margin-top: 0.8rem;
       }
       
-      /* Series Cards - width unchanged (200px) */
       .series-card {
-        width: 200px;
-        padding: 3.6rem 0.8rem;
-        border-radius: 84px;
+        width: 280px;
+        padding: 2rem 1rem;
+        border-radius: 45px;
       }
       
       .series-card h4 {
-        font-size: 2.5rem;
-        margin: 1.2rem 0;
+        font-size: 1.6rem;
+        margin: 0.8rem 0;
       }
       
       .rank {
-        font-size: 4.8rem;
-        width: 132px;
-        margin-bottom: 1.2rem;
-        border-radius: 150px;
+        font-size: 2.8rem;
+        width: 70px;
+        margin-bottom: 0.8rem;
       }
       
       .premium-badge {
-        font-size: 1.95rem;
-        padding: 9px 10px;
-        margin-top: 1rem;
-        border-radius: 120px;
+        font-size: 1rem;
+        padding: 6px 16px;
+        margin-top: 0.6rem;
       }
       
       .series-grid {
-        gap: 3rem;
+        gap: 2rem;
       }
       
       .series-card div {
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
       
-      /* Trending Categories - width unchanged */
       .trending-grid {
-        grid-template-columns: repeat(2, minmax(250px, 340px));
-        gap: 2.4rem;
+        grid-template-columns: repeat(2, minmax(380px, 480px));
+        gap: 2rem;
       }
       
       .category-img {
-        height: 150px;
+        height: 220px;
       }
       
       .category-overlay {
-        font-size: 3rem;
-        padding: 1.8rem 0;
+        font-size: 2rem;
+        padding: 1rem 0;
       }
       
       .category-info {
-        padding: 1.8rem;
+        padding: 1.2rem;
       }
       
       .category-info p {
-        font-size: 2rem;
-        gap: 15px;
+        font-size: 1.3rem;
+        gap: 12px;
       }
       
       .trending-badge {
-        font-size: 1.4rem;
-        padding: 6px 16px;
-        border-radius: 90px;
+        font-size: 0.9rem;
+        padding: 4px 14px;
       }
       
-      /* Premium Activation Card - vertical padding 3x */
       .premium-card {
-        padding: 5.4rem 1.8rem;
-        border-radius: 132px;
+        padding: 3rem 2.5rem;
+        border-radius: 70px;
       }
       
       .premium-card h2 {
-        font-size: 4.5rem;
-        margin-bottom: 1.2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
       
       .free-badge {
-        font-size: 2rem;
-        padding: 0.75rem 1rem;
-        margin-bottom: 2.4rem;
-        border-radius: 180px;
+        font-size: 1.3rem;
+        padding: 0.5rem 1.8rem;
+        margin-bottom: 1.2rem;
       }
       
       .old-price {
-        font-size: 4rem;
+        font-size: 2.5rem;
       }
       
       .new-price {
-        font-size: 5.5rem;
+        font-size: 3.8rem;
       }
       
       .price-tag {
-        margin: 2.4rem 0;
+        margin: 1.5rem 0;
       }
       
       .features-grid {
-        max-width: 500px;
-        gap: 2rem;
-        margin: 3rem auto;
+        max-width: 700px;
+        gap: 1.5rem;
+        margin: 2rem auto;
       }
       
       .feature-item {
-        font-size: 2rem;
-        gap: 20px;
+        font-size: 1.4rem;
+        gap: 14px;
       }
       
       .feature-item i {
-        font-size: 2.2rem;
-        width: 50px;
+        font-size: 1.6rem;
+        width: 35px;
       }
       
       .activate-btn {
-        padding: 2.4rem 2rem;
-        font-size: 2.5rem;
-        gap: 24px;
-        margin: 2.4rem 0 1.2rem;
-        border-radius: 180px;
+        padding: 1.5rem 3.5rem;
+        font-size: 1.8rem;
+        gap: 16px;
+        margin: 1.5rem 0 0.8rem;
+        border-radius: 100px;
       }
       
       .small-note {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
       }
       
-      /* Spacing between major sections - vertical 3x */
       .premium-originals, .trending-categories, .premium-activation {
-        margin: 7.5rem 0;
+        margin: 4rem 0;
       }
       
-      /* Footer - vertical 3x */
       .footer-bottom {
-        margin-top: 7.5rem;
-        padding: 3.6rem 1.2rem;
-        font-size: 1.8rem;
-        border-radius: 60px;
+        margin-top: 4rem;
+        padding: 2rem;
+        font-size: 1.2rem;
+        border-radius: 50px;
         background: rgba(0,0,0,0.4);
         backdrop-filter: blur(12px);
       }
       
-      /* Back button - 3x size but positioned */
       .back-btn {
-        top: 30px;
-        left: 30px;
-        padding: 24px 36px;
-        font-size: 2rem;
-        border-radius: 100px;
+        top: 25px;
+        left: 25px;
+        padding: 14px 28px;
+        font-size: 1.3rem;
+        border-radius: 80px;
       }
       
-      /* All icons increased 3x */
       .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
-        font-size: 3rem;
+        font-size: 1.8rem;
       }
       
       .niche-card .btn-premium {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
       }
       
       .btn-premium i, .activate-btn i {
-        font-size: 3rem;
+        font-size: 1.8rem;
       }
       
-      /* Hover effects enhanced */
       .btn-premium:hover, .activate-btn:hover {
         transform: scale(1.03);
       }
       
       .niche-card:hover {
-        transform: translateY(-12px);
-      }
-      
-      .series-card:hover {
         transform: translateY(-10px);
       }
       
-      .category-card:hover {
-        transform: translateY(-12px);
+      .series-card:hover {
+        transform: translateY(-8px);
       }
       
-      /* Additional stats enhancements */
+      .category-card:hover {
+        transform: translateY(-10px);
+      }
+      
       .stat-number {
-        font-size: 4.8rem;
+        font-size: 3rem;
       }
       
       .stat-label {
-        font-size: 2rem;
-      }
-      
-      /* Ensure series grid stays centered and compact width */
-      .series-grid {
-        justify-content: center;
-      }
-      
-      /* Category card width preserved */
-      .category-card {
-        width: 100%;
+        font-size: 1.3rem;
       }
     }
     
-    /* Medium tablets/laptops (768px - 1023px) - moderate vertical scaling (1.5x) */
+    /* Tablet mode (768px - 1023px) - moderate scaling */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
-        max-width: 560px;
-        padding: 1.8rem 1rem;
+        max-width: 750px;
+        padding: 1.5rem 1.5rem 2.5rem;
       }
       
       .hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
       }
       
       .hero-logo {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
       }
       
       .hero h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       
       .hero-description {
@@ -931,13 +882,13 @@
       }
       
       .btn-premium {
-        padding: 1rem 2.2rem;
+        padding: 1rem 2.8rem;
         font-size: 1.3rem;
       }
       
       .niche-card {
-        max-width: 380px;
-        padding: 2rem 1.5rem;
+        max-width: 500px;
+        padding: 2rem 1.8rem;
       }
       
       .niche-card h3 {
@@ -945,7 +896,7 @@
       }
       
       .niche-card p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
       
       .section-title h3 {
@@ -953,7 +904,7 @@
       }
       
       .series-card {
-        width: 200px;
+        width: 220px;
       }
       
       .premium-card h2 {
@@ -965,11 +916,11 @@
       }
       
       .footer-bottom {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
       }
     }
     
-    /* Mobile devices (<768px) - keep original untouched compact android style */
+    /* Mobile devices (<768px) - original untouched compact style */
     @media (max-width: 767px) {
       .container {
         max-width: 100%;
@@ -981,13 +932,12 @@
 <body>
 <div class="anime-bg" id="animeBg"></div>
 
-<!-- Back to Portal Button -->
 <div id="backBtn" class="back-btn hidden-view" onclick="showHomeScreen()">
   <i class="fas fa-arrow-left"></i> ← Portal
 </div>
 
 <div class="main-content">
-  <!-- ==================== HOME SCREEN: NICHE SELECTION PORTAL ==================== -->
+  <!-- HOME SCREEN -->
   <div id="homeScreen" class="container pt-fix">
     <div class="hero">
       <h1>ToonHub Premium</h1>
@@ -999,7 +949,6 @@
     </div>
 
     <div class="niche-grid">
-      <!-- Webtoon Card -->
       <div class="niche-card" data-niche="webtoon">
         <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
         <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
@@ -1007,7 +956,6 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <!-- Manhwa Card -->
       <div class="niche-card" data-niche="manhwa">
         <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
         <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
@@ -1015,7 +963,6 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <!-- Manga Card -->
       <div class="niche-card" data-niche="manga">
         <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
         <h3 style="color: #e63946;">MANGA PREMIUM</h3>
@@ -1029,7 +976,7 @@
     </div>
   </div>
 
-  <!-- ==================== WEBTOON LANDING PAGE ==================== -->
+  <!-- WEBTOON LANDING PAGE -->
   <div id="webtoonScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -1067,7 +1014,7 @@
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANHWA LANDING PAGE ==================== -->
+  <!-- MANHWA LANDING PAGE -->
   <div id="manhwaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
@@ -1101,7 +1048,7 @@
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANGA LANDING PAGE ==================== -->
+  <!-- MANGA LANDING PAGE -->
   <div id="mangaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
