@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access</title>
+  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access — Ultra HD Desktop</title>
   <!-- Google Fonts + Font Awesome 6 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -71,7 +71,7 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Main content wrapper */
+    /* Main content wrapper for footer push */
     .main-content {
       flex: 1;
       position: relative;
@@ -79,7 +79,7 @@
       width: 100%;
     }
 
-    /* ========== MOBILE/ANDROID MODE (Original - Compact, Untouched) ========== */
+    /* ========== BASE MOBILE STYLES (Compact, original Android look, untouched) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -88,6 +88,7 @@
       z-index: 3;
     }
 
+    /* Hero Section - Mobile Default */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -207,6 +208,7 @@
       background: linear-gradient(105deg, #00f36e, #00b855);
     }
 
+    /* Premium Originals */
     .premium-originals {
       margin: 2.5rem 0 2rem;
     }
@@ -281,6 +283,7 @@
       margin-top: 0.3rem;
     }
 
+    /* Premium Activation Section */
     .premium-activation {
       margin: 2.5rem 0;
     }
@@ -346,6 +349,8 @@
 
     @media (max-width: 550px) {
       .features-grid { grid-template-columns: 1fr; gap: 0.6rem; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero-logo { width: 40px; height: 40px; }
     }
 
     .feature-item {
@@ -390,6 +395,7 @@
       color: #9aaec9;
     }
 
+    /* Trending Categories */
     .trending-categories {
       margin: 2.5rem 0;
     }
@@ -466,6 +472,7 @@
       font-weight: 700;
     }
 
+    /* Footer Styling */
     .footer-bottom {
       margin-top: 2.5rem;
       text-align: center;
@@ -474,6 +481,13 @@
       font-size: 0.7rem;
     }
 
+    /* Niche Portal - vertical stacking base (mobile) */
+    .niche-portal {
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
     .niche-card {
       background: rgba(10, 20, 35, 0.75);
       backdrop-filter: blur(16px);
@@ -492,6 +506,11 @@
       transform: translateY(-6px);
       border-color: #00D564;
       box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
+    }
+    
+    .niche-icon {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
     }
     
     .niche-card h3 {
@@ -544,170 +563,193 @@
       color: black;
     }
 
+    html, body {
+      height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    
     .hidden-view { display: none; }
+    
     .pt-fix { padding-top: 0; }
     #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
       padding-top: 0.3rem;
     }
+    
+    /* Additional mobile fine-tuning */
+    .series-card div {
+      font-size: 0.85rem;
+    }
+    
+    .btn-premium i, .activate-btn i {
+      font-size: 0.9rem;
+    }
 
-    /* ========== DESKTOP MODE (1024px+) - ZOOMED OUT, BIGGER, SPACIOUS ========== */
-    @media (min-width: 1024px) {
-      /* Wider container for zoomed-out feel */
+    /* ========== DESKTOP SUPER ZOOMED-OUT + MASSIVE READABILITY MODE ========== */
+    /* Everything is scaled LARGE and ZOOMED OUT for crystal clear visibility on big screens */
+    @media (min-width: 1025px) {
+      /* Main container - ultra wide layout */
       .container {
-        max-width: 1400px;
-        padding: 2rem 3rem 4rem;
+        max-width: 1600px;
+        padding: 2rem 3rem 5rem;
+        margin: 0 auto;
       }
-      
-      /* Hero section - much larger and spacious */
+
+      /* Hero section — generous spacing, massive text */
       .hero {
-        padding: 4rem 5rem;
-        margin-bottom: 4rem;
+        padding: 5rem 4rem;
+        margin-bottom: 5rem;
         border-radius: 100px;
       }
       
       .hero h1 {
         font-size: 5rem;
-        gap: 30px;
+        gap: 2rem;
         margin-bottom: 1.5rem;
       }
       
       .hero-logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 30px;
+        width: 110px;
+        height: 110px;
+        border-radius: 32px;
       }
       
       .hero-badge {
-        font-size: 1.6rem;
-        padding: 1rem 3rem;
-        margin: 1.5rem 0;
+        font-size: 1.8rem;
+        padding: 1rem 2.5rem;
+        margin: 1rem 0;
         border-radius: 100px;
       }
       
       .hero h2 {
-        font-size: 3.2rem;
-        margin: 1.5rem 0;
+        font-size: 3.5rem;
+        margin: 1.2rem 0;
+        line-height: 1.3;
       }
       
       .hero-description {
-        font-size: 1.5rem;
-        max-width: 900px;
-        margin: 2rem auto;
+        font-size: 1.7rem;
+        max-width: 1000px;
+        margin: 1.8rem auto;
         line-height: 1.5;
       }
       
       .btn-premium {
-        padding: 1.5rem 4rem;
-        font-size: 1.8rem;
-        gap: 18px;
-        margin-top: 1.8rem;
+        padding: 1.8rem 4rem;
+        font-size: 2rem;
+        gap: 1.5rem;
+        margin-top: 2rem;
         border-radius: 120px;
       }
       
       .stats-row {
-        gap: 3rem;
-        margin-top: 2.5rem;
+        gap: 3.5rem;
+        margin-top: 2rem;
       }
       
       .stat-number {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
       
       .stat-label {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
       }
       
       .stat-item {
-        padding: 0.8rem 2rem;
+        padding: 1rem 2rem;
         border-radius: 80px;
       }
       
-      /* Niche Cards - much wider and taller */
+      /* Niche Cards — super sized and spacious */
       .niche-card {
-        max-width: 800px;
+        max-width: 850px;
         padding: 3.5rem 3rem;
-        border-radius: 90px;
+        border-radius: 80px;
+        margin: 0 auto;
       }
       
       .niche-card-image {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 1.8rem;
-        border-radius: 35px;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 2rem;
+        border-radius: 40px;
       }
       
       .niche-card h3 {
-        font-size: 2.8rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
       }
       
       .niche-card p {
-        font-size: 1.4rem;
-        margin-bottom: 1.5rem;
-        max-width: 90%;
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+        line-height: 1.5;
+        max-width: 85%;
         margin-left: auto;
         margin-right: auto;
       }
       
       .niche-grid {
-        gap: 3rem;
+        gap: 3.5rem;
         margin-top: 3rem;
       }
       
       /* Section Titles */
       .section-title {
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
       }
       
       .section-title h3 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         padding: 1rem 3rem;
-        gap: 20px;
+        gap: 1.5rem;
         border-radius: 100px;
       }
       
       .section-title p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-top: 1rem;
       }
       
-      /* Series Cards - bigger and wider */
+      /* Series Cards — massive, readable ranking blocks */
       .series-card {
         width: 320px;
-        padding: 2rem 1.5rem;
-        border-radius: 50px;
+        padding: 2rem 1rem;
+        border-radius: 60px;
       }
       
       .series-card h4 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         margin: 0.8rem 0;
       }
       
       .rank {
-        font-size: 2.2rem;
-        width: 70px;
-        margin-bottom: 0.8rem;
+        font-size: 2.8rem;
+        width: 80px;
+        margin-bottom: 1rem;
         border-radius: 70px;
       }
       
       .premium-badge {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 6px 18px;
+        margin-top: 0.8rem;
         border-radius: 60px;
       }
       
       .series-grid {
-        gap: 2rem;
+        gap: 2.5rem;
       }
       
       .series-card div {
         font-size: 1.2rem;
       }
       
-      /* Trending Categories - much larger */
+      /* Trending Categories — enlarged panels */
       .trending-grid {
-        grid-template-columns: repeat(2, minmax(450px, 550px));
-        gap: 2.5rem;
+        grid-template-columns: repeat(2, minmax(450px, 580px));
+        gap: 2.8rem;
       }
       
       .category-img {
@@ -715,39 +757,39 @@
       }
       
       .category-overlay {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding: 1.2rem 0;
       }
       
       .category-info {
-        padding: 1.2rem;
+        padding: 1.5rem;
       }
       
       .category-info p {
-        font-size: 1.2rem;
-        gap: 12px;
+        font-size: 1.3rem;
+        gap: 1.2rem;
       }
       
       .trending-badge {
-        font-size: 0.85rem;
-        padding: 5px 16px;
+        font-size: 0.9rem;
+        padding: 6px 16px;
         border-radius: 50px;
       }
       
-      /* Premium Card - bigger and more spacious */
+      /* Premium Activation Card — massive pricing and features */
       .premium-card {
         padding: 3.5rem 3rem;
-        border-radius: 90px;
+        border-radius: 100px;
       }
       
       .premium-card h2 {
         font-size: 3rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
       }
       
       .free-badge {
         font-size: 1.2rem;
-        padding: 0.7rem 2.2rem;
+        padding: 0.7rem 2rem;
         margin-bottom: 1.2rem;
         border-radius: 100px;
       }
@@ -772,18 +814,18 @@
       
       .feature-item {
         font-size: 1.3rem;
-        gap: 15px;
+        gap: 1rem;
       }
       
       .feature-item i {
-        font-size: 1.4rem;
-        width: 30px;
+        font-size: 1.6rem;
+        width: 32px;
       }
       
       .activate-btn {
-        padding: 1.4rem 3.8rem;
-        font-size: 1.6rem;
-        gap: 16px;
+        padding: 1.6rem 3.5rem;
+        font-size: 1.8rem;
+        gap: 1.2rem;
         margin: 1.5rem 0 0.8rem;
         border-radius: 100px;
       }
@@ -792,59 +834,95 @@
         font-size: 1rem;
       }
       
-      /* Spacing between sections */
+      /* Spacing between major sections */
       .premium-originals, .trending-categories, .premium-activation {
         margin: 5rem 0;
       }
       
-      /* Footer - larger */
+      /* Footer — big and legible */
       .footer-bottom {
-        margin-top: 4rem;
-        padding: 2rem;
-        font-size: 1.1rem;
-        border-radius: 50px;
-      }
-      
-      /* Back button */
-      .back-btn {
-        top: 25px;
-        left: 25px;
-        padding: 12px 28px;
+        margin-top: 5rem;
+        padding: 2.5rem;
         font-size: 1.2rem;
-        border-radius: 70px;
+        border-radius: 60px;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(12px);
       }
       
-      /* Icons larger */
-      .hero-badge i, .btn-premium i, .activate-btn i {
+      /* Back button — super noticeable */
+      .back-btn {
+        top: 30px;
+        left: 30px;
+        padding: 16px 32px;
+        font-size: 1.3rem;
+        border-radius: 80px;
+      }
+      
+      /* All icon sizes increased for readability */
+      .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
         font-size: 1.6rem;
       }
       
-      /* Niche card button */
       .niche-card .btn-premium {
-        font-size: 1.5rem;
-        padding: 1.2rem 3rem;
+        margin-top: 0.5rem;
       }
       
-      /* Better hover effects */
+      .btn-premium i, .activate-btn i {
+        font-size: 1.7rem;
+      }
+      
+      /* Hover effects remain smooth */
       .btn-premium:hover, .activate-btn:hover {
         transform: scale(1.03);
       }
+      
+      .niche-card:hover {
+        transform: translateY(-8px);
+      }
+      
+      .series-card:hover {
+        transform: translateY(-8px);
+      }
+      
+      .category-card:hover {
+        transform: translateY(-8px);
+      }
+      
+      /* Ensure all text has comfortable line height and readability */
+      p, .hero-description, .feature-item, .category-info p, .small-note {
+        line-height: 1.5;
+      }
+      
+      /* Make stats numbers pop */
+      .stat-number {
+        font-size: 3.2rem;
+      }
+      
+      /* Adjust series-card inner content spacing */
+      .series-card .rank {
+        line-height: 1.2;
+      }
+      
+      /* Hero description style */
+      .hero-description {
+        font-weight: 500;
+      }
     }
     
-    /* Medium devices (tablets) */
-    @media (min-width: 768px) and (max-width: 1023px) {
+    /* Medium tablets/laptops (768px - 1024px) — moderate scaling for smooth transition */
+    @media (min-width: 768px) and (max-width: 1024px) {
       .container {
-        max-width: 720px;
-        padding: 1.5rem 2rem;
+        max-width: 900px;
+        padding: 1.8rem 2rem;
       }
       
       .hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
       }
       
       .hero-logo {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
       }
       
       .hero h2 {
@@ -856,13 +934,13 @@
       }
       
       .btn-premium {
-        padding: 1rem 3rem;
+        padding: 1rem 2.8rem;
         font-size: 1.3rem;
       }
       
       .niche-card {
-        max-width: 540px;
-        padding: 2rem;
+        max-width: 550px;
+        padding: 2rem 1.8rem;
       }
       
       .niche-card h3 {
@@ -870,7 +948,7 @@
       }
       
       .niche-card p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       
       .section-title h3 {
@@ -878,7 +956,7 @@
       }
       
       .series-card {
-        width: 240px;
+        width: 230px;
       }
       
       .premium-card h2 {
@@ -888,9 +966,13 @@
       .feature-item {
         font-size: 1rem;
       }
+      
+      .footer-bottom {
+        font-size: 0.85rem;
+      }
     }
     
-    /* Mobile - keep original */
+    /* Mobile devices (<768px) — keep original untouched compact android style */
     @media (max-width: 767px) {
       .container {
         max-width: 100%;
@@ -902,12 +984,13 @@
 <body>
 <div class="anime-bg" id="animeBg"></div>
 
+<!-- Back to Portal Button -->
 <div id="backBtn" class="back-btn hidden-view" onclick="showHomeScreen()">
   <i class="fas fa-arrow-left"></i> ← Portal
 </div>
 
 <div class="main-content">
-  <!-- HOME SCREEN -->
+  <!-- ==================== HOME SCREEN: NICHE SELECTION PORTAL ==================== -->
   <div id="homeScreen" class="container pt-fix">
     <div class="hero">
       <h1>ToonHub Premium</h1>
@@ -919,6 +1002,7 @@
     </div>
 
     <div class="niche-grid">
+      <!-- Webtoon Card -->
       <div class="niche-card" data-niche="webtoon">
         <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
         <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
@@ -926,6 +1010,7 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
+      <!-- Manhwa Card -->
       <div class="niche-card" data-niche="manhwa">
         <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
         <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
@@ -933,6 +1018,7 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
+      <!-- Manga Card -->
       <div class="niche-card" data-niche="manga">
         <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
         <h3 style="color: #e63946;">MANGA PREMIUM</h3>
@@ -946,7 +1032,7 @@
     </div>
   </div>
 
-  <!-- WEBTOON LANDING PAGE -->
+  <!-- ==================== WEBTOON LANDING PAGE ==================== -->
   <div id="webtoonScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -984,7 +1070,7 @@
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- MANHWA LANDING PAGE -->
+  <!-- ==================== MANHWA LANDING PAGE ==================== -->
   <div id="manhwaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
@@ -1018,7 +1104,7 @@
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- MANGA LANDING PAGE -->
+  <!-- ==================== MANGA LANDING PAGE ==================== -->
   <div id="mangaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
