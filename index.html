@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access — Desktop Ultra Mega Scale</title>
-  <!-- Google Fonts + Font Awesome 6 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -25,7 +24,6 @@
       flex-direction: column;
     }
 
-    /* Full Page Anime Background */
     .anime-bg {
       position: fixed;
       top: 0;
@@ -37,7 +35,6 @@
       background-position: center center;
       background-repeat: no-repeat;
       z-index: 0;
-      transition: background-image 0.4s ease;
     }
     
     .anime-bg::after {
@@ -51,7 +48,6 @@
       z-index: 1;
     }
 
-    /* Floating Particles */
     .particle {
       position: absolute;
       background: rgba(0, 213, 100, 0.5);
@@ -71,7 +67,6 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Main content wrapper */
     .main-content {
       flex: 1;
       position: relative;
@@ -79,7 +74,7 @@
       width: 100%;
     }
 
-    /* ========== BASE MOBILE STYLES (Compact, original Android look - UNTOUCHED) ========== */
+    /* ========== BASE MOBILE STYLES (Compact, original - UNTOUCHED) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -96,7 +91,6 @@
       backdrop-filter: blur(16px);
       border-radius: 60px;
       border: 1px solid rgba(0, 213, 100, 0.35);
-      box-shadow: 0 30px 45px -20px rgba(0,0,0,0.6);
     }
 
     .hero h1 {
@@ -106,7 +100,6 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      letter-spacing: -0.02em;
       margin-bottom: 0.5rem;
       display: inline-flex;
       align-items: center;
@@ -120,9 +113,6 @@
       height: 40px;
       border-radius: 16px;
       object-fit: cover;
-      box-shadow: 0 0 20px rgba(0,213,100,0.4);
-      background: #1a1a2e;
-      padding: 2px;
     }
 
     .hero-badge {
@@ -133,7 +123,6 @@
       font-size: 0.8rem;
       font-weight: 600;
       margin: 0.8rem 0;
-      backdrop-filter: blur(4px);
     }
 
     .hero h2 {
@@ -153,7 +142,6 @@
       max-width: 650px;
       margin: 1rem auto;
       font-size: 0.9rem;
-      line-height: 1.4;
       color: #cddcf2;
     }
 
@@ -169,7 +157,6 @@
       background: rgba(0,0,0,0.4);
       padding: 0.4rem 1.2rem;
       border-radius: 48px;
-      backdrop-filter: blur(4px);
     }
 
     .stat-number {
@@ -181,7 +168,6 @@
     .stat-label {
       font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
     .btn-premium {
@@ -197,14 +183,7 @@
       align-items: center;
       gap: 10px;
       transition: 0.25s ease;
-      box-shadow: 0 20px 35px -10px rgba(0,213,100,0.5);
-      margin-top: 0.8rem;
       font-family: inherit;
-    }
-
-    .btn-premium:hover {
-      transform: scale(1.02);
-      background: linear-gradient(105deg, #00f36e, #00b855);
     }
 
     .premium-originals {
@@ -251,11 +230,6 @@
       transition: 0.3s;
     }
 
-    .series-card:hover {
-      transform: translateY(-5px);
-      border-color: #00D564;
-    }
-
     .rank {
       font-size: 1.6rem;
       font-weight: 800;
@@ -292,13 +266,6 @@
       border: 1px solid rgba(0, 213, 100, 0.5);
       padding: 1.8rem;
       text-align: center;
-      box-shadow: 0 30px 50px -20px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
-
-    .premium-card:hover {
-      transform: translateY(-4px);
-      border-color: #00D564;
     }
 
     .free-badge {
@@ -332,7 +299,6 @@
       font-size: 2.2rem;
       font-weight: 900;
       color: #00D564;
-      text-shadow: 0 0 15px rgba(0,213,100,0.5);
     }
 
     .features-grid {
@@ -342,12 +308,6 @@
       max-width: 550px;
       margin: 1.2rem auto;
       text-align: left;
-    }
-
-    @media (max-width: 550px) {
-      .features-grid { grid-template-columns: 1fr; gap: 0.6rem; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero-logo { width: 40px; height: 40px; }
     }
 
     .feature-item {
@@ -360,7 +320,6 @@
 
     .feature-item i {
       color: #00D564;
-      font-size: 0.9rem;
       width: 20px;
     }
 
@@ -376,15 +335,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      transition: 0.25s ease;
-      box-shadow: 0 15px 30px -8px rgba(0,213,100,0.4);
-      margin: 0.8rem 0 0.4rem;
       font-family: inherit;
-    }
-
-    .activate-btn:hover {
-      transform: scale(1.02);
-      background: linear-gradient(105deg, #00f36e, #00b855);
     }
 
     .small-note {
@@ -401,13 +352,6 @@
       grid-template-columns: repeat(2, minmax(250px, 340px));
       gap: 1.2rem;
       justify-content: center;
-      align-items: stretch;
-    }
-
-    @media (max-width: 700px) {
-      .trending-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
-      .category-overlay { font-size: 1.1rem; padding: 0.5rem 0; }
-      .category-img { height: 120px; }
     }
 
     .category-card {
@@ -415,12 +359,6 @@
       border-radius: 22px;
       overflow: hidden;
       border: 1px solid rgba(0,213,100,0.45);
-      transition: all 0.3s ease;
-    }
-
-    .category-card:hover {
-      transform: translateY(-5px);
-      border-color: #00D564;
     }
 
     .category-img {
@@ -440,7 +378,6 @@
       padding: 0.6rem 0;
       font-weight: 800;
       font-size: 1.2rem;
-      letter-spacing: 1px;
       text-transform: uppercase;
       color: white;
     }
@@ -490,12 +427,6 @@
       margin: 0 auto;
     }
     
-    .niche-card:hover {
-      transform: translateY(-6px);
-      border-color: #00D564;
-      box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
-    }
-    
     .niche-card-image {
       width: 55px;
       height: 55px;
@@ -527,413 +458,295 @@
       font-weight: 600;
       font-size: 0.85rem;
       border: 1px solid #00D564;
-      transition: 0.2s;
-    }
-    .back-btn:hover {
-      background: #00D564;
-      color: black;
     }
 
-    html, body {
-      height: auto;
-      min-height: 100vh;
-      overflow-y: auto;
-    }
-    
     .hidden-view { display: none; }
     
-    .pt-fix { padding-top: 0; }
-    #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-      padding-top: 0.3rem;
-    }
-
     /* ============================================================ */
-    /* DESKTOP ULTRA MEGA SCALE - VERTICAL SIZE DOUBLED x FILLS ENTIRE PAGE */
-    /* Each card vertically DOUBLED / TRIPLED — forces scrolling on ALL pages */
+    /* DESKTOP MODE - EACH CARD VERTICALLY DOUBLED (LIKE TWO MERGED) */
+    /* Cards have min-height: 65vh → forces scrolling, fills page */
     /* ============================================================ */
     @media (min-width: 1024px) {
       .container {
         max-width: 1600px;
-        padding: 6rem 3rem 10rem;
+        padding: 4rem 3rem 6rem;
         margin: 0 auto;
       }
 
-      /* Hero section - massively increased vertical padding */
+      /* Hero section - taller */
       .hero {
-        padding: 7rem 4rem;
-        margin-bottom: 8rem;
-        border-radius: 110px;
+        padding: 4rem 3rem;
+        margin-bottom: 5rem;
+        border-radius: 90px;
+        min-height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       
       .hero h1 {
-        font-size: 6rem !important;
-        gap: 3rem;
-        margin-bottom: 3rem;
+        font-size: 4.5rem !important;
+        gap: 1.5rem;
       }
       
       .hero-logo {
-        width: 140px !important;
-        height: 140px !important;
-        border-radius: 44px;
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 28px;
       }
       
       .hero-badge {
-        font-size: 2.2rem !important;
-        padding: 1.8rem 4rem;
-        margin: 2.5rem 0;
-        border-radius: 150px;
+        font-size: 1.4rem !important;
+        padding: 1rem 2.5rem;
       }
       
       .hero h2 {
-        font-size: 4rem !important;
-        margin: 2.5rem 0;
+        font-size: 2.8rem !important;
       }
       
       .hero-description {
-        font-size: 2.2rem !important;
-        max-width: 1300px;
-        margin: 3.5rem auto;
-        line-height: 1.8;
+        font-size: 1.4rem !important;
+        max-width: 900px;
       }
       
       .btn-premium {
-        padding: 2.8rem 6rem !important;
-        font-size: 2.4rem !important;
-        gap: 28px;
-        margin-top: 3rem;
-        border-radius: 160px;
-      }
-      
-      .stats-row {
-        gap: 6rem;
-        margin-top: 4rem;
+        padding: 1.5rem 3.5rem !important;
+        font-size: 1.6rem !important;
+        gap: 15px;
       }
       
       .stat-number {
-        font-size: 4.2rem !important;
+        font-size: 2.5rem !important;
       }
       
       .stat-label {
-        font-size: 1.8rem !important;
-        letter-spacing: 3px;
+        font-size: 1rem !important;
       }
-      
-      .stat-item {
-        padding: 1.8rem 3.5rem;
-        border-radius: 120px;
-      }
-      
-      /* NICHE CARDS - VERTICALLY DOUBLED (FILL HOME PAGE) */
-      /* Each card now takes ~70vh height collectively making scrolling mandatory */
+
+      /* ===== NICHE CARDS - VERTICALLY DOUBLED (65vh each - like 2 cards merged) ===== */
       .niche-card {
-        max-width: 1200px;
-        padding: 7rem 3rem !important;     /* 1.5rem -> 7rem = ~4.6x taller */
-        border-radius: 120px;
-        margin-bottom: 2rem;
+        max-width: 1000px;
+        min-height: 65vh !important;  /* Each card takes 65% of viewport height - physically doubled */
+        padding: 3rem 2.5rem !important;
+        border-radius: 80px;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        margin: 0 auto;
       }
       
       .niche-card-image {
-        width: 220px;
-        height: 220px;
-        margin-bottom: 3.5rem;
-        border-radius: 70px;
+        width: 130px !important;
+        height: 130px !important;
+        margin-bottom: 2rem;
+        border-radius: 40px;
       }
       
       .niche-card h3 {
-        font-size: 4.2rem !important;
-        margin-bottom: 2.5rem;
+        font-size: 2.8rem !important;
+        margin-bottom: 1.5rem;
       }
       
       .niche-card p {
-        font-size: 2.3rem !important;
-        margin-bottom: 3.2rem;
-        max-width: 85%;
-        line-height: 1.8;
-      }
-      
-      .niche-grid {
-        gap: 7rem;               /* huge gap between cards */
-        margin-top: 6rem;
-      }
-      
-      /* Section Titles */
-      .section-title {
-        margin-bottom: 6rem;
-      }
-      
-      .section-title h3 {
-        font-size: 4rem !important;
-        padding: 2rem 5rem;
-        gap: 2rem;
-        border-radius: 150px;
-      }
-      
-      .section-title p {
-        font-size: 2rem !important;
-        margin-top: 1.8rem;
-      }
-      
-      /* SERIES CARDS - vertical length doubled */
-      .series-card {
-        width: 400px !important;
-        padding: 4.5rem 1.5rem !important;
-        border-radius: 80px;
-      }
-      
-      .series-card h4 {
-        font-size: 2.5rem !important;
-        margin: 1.6rem 0;
-      }
-      
-      .rank {
-        font-size: 4rem !important;
-        width: 130px;
-        margin-bottom: 1.8rem;
-        border-radius: 90px;
-        line-height: 1.3;
-      }
-      
-      .premium-badge {
         font-size: 1.5rem !important;
-        padding: 14px 32px;
-        margin-top: 1.6rem;
-        border-radius: 80px;
-      }
-      
-      .series-grid {
-        gap: 4rem;
-      }
-      
-      .series-card div {
-        font-size: 1.8rem;
-        margin: 1rem 0;
-      }
-      
-      /* TRENDING CATEGORY CARDS - vertically doubled (taller images + padding) */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(700px, 850px));
-        gap: 5rem;
-      }
-      
-      .category-img {
-        height: 480px;    /* 150px -> 480px = 3.2x taller */
-      }
-      
-      .category-overlay {
-        font-size: 3.2rem !important;
-        padding: 2.8rem 0;
-      }
-      
-      .category-info {
-        padding: 2.8rem;
-      }
-      
-      .category-info p {
-        font-size: 2rem !important;
-        gap: 1.8rem;
-      }
-      
-      .trending-badge {
-        font-size: 1.4rem !important;
-        padding: 12px 28px;
-        border-radius: 80px;
-      }
-      
-      /* PREMIUM ACTIVATION CARD - vertical length massively increased */
-      .premium-card {
-        padding: 7rem 4rem !important;
-        border-radius: 140px;
-      }
-      
-      .premium-card h2 {
-        font-size: 4.2rem !important;
-        margin-bottom: 2.5rem;
-      }
-      
-      .free-badge {
-        font-size: 2rem !important;
-        padding: 1.5rem 3.5rem;
-        margin-bottom: 2.5rem;
-        border-radius: 130px;
-      }
-      
-      .old-price {
-        font-size: 3.4rem !important;
-      }
-      
-      .new-price {
-        font-size: 5.8rem !important;
-      }
-      
-      .price-tag {
-        margin: 3rem 0;
-      }
-      
-      .features-grid {
-        max-width: 1400px;
-        gap: 2.8rem;
-        margin: 4rem auto;
-      }
-      
-      .feature-item {
-        font-size: 2rem !important;
-        gap: 1.8rem;
-      }
-      
-      .feature-item i {
-        font-size: 2.5rem !important;
-        width: 55px;
-      }
-      
-      .activate-btn {
-        padding: 2.4rem 6rem !important;
-        font-size: 2.2rem !important;
-        gap: 28px;
-        margin: 3rem 0 1.5rem;
-        border-radius: 160px;
-      }
-      
-      .small-note {
-        font-size: 1.6rem !important;
-      }
-      
-      /* Massive spacing between sections - forces continuous scrolling */
-      .premium-originals, .trending-categories, .premium-activation {
-        margin: 10rem 0;
-      }
-      
-      /* FOOTER - extra tall and visible at bottom after scroll */
-      .footer-bottom {
-        margin-top: 10rem;
-        padding: 5rem 3rem;
-        font-size: 1.8rem !important;
-        border-radius: 100px;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(12px);
-        border-top: 3px solid rgba(0,213,100,0.6);
-      }
-      
-      .back-btn {
-        top: 50px;
-        left: 50px;
-        padding: 22px 50px;
-        font-size: 2rem !important;
-        border-radius: 100px;
-      }
-      
-      /* All icons gigantic */
-      .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
-        font-size: 2.8rem;
-      }
-      
-      .btn-premium:hover, .activate-btn:hover {
-        transform: scale(1.03);
-      }
-      
-      .niche-card:hover {
-        transform: translateY(-15px);
-      }
-      
-      p, .hero-description, .feature-item, .category-info p, .small-note {
-        line-height: 1.9;
-        font-weight: 600;
-      }
-      
-      .series-card div {
-        font-size: 1.7rem;
-        font-weight: 600;
+        margin-bottom: 2rem;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
       }
       
       .niche-card .btn-premium {
-        padding: 2.2rem 4rem !important;
+        padding: 1.3rem 3rem !important;
+        font-size: 1.4rem !important;
+        align-self: center;
+      }
+      
+      .niche-grid {
+        gap: 4rem;
+        margin-top: 3rem;
+      }
+
+      /* Section Titles - larger */
+      .section-title {
+        margin-bottom: 3.5rem;
+      }
+      
+      .section-title h3 {
+        font-size: 2.5rem !important;
+        padding: 1rem 3rem;
+      }
+      
+      .section-title p {
+        font-size: 1.3rem !important;
+      }
+
+      /* Series Cards - vertically doubled (taller) */
+      .series-card {
+        width: 280px !important;
+        padding: 2.5rem 1rem !important;
+        border-radius: 50px;
+        min-height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .series-card h4 {
+        font-size: 1.5rem !important;
+        margin: 1rem 0;
+      }
+      
+      .rank {
+        font-size: 2.5rem !important;
+        width: 70px;
+        padding: 8px 0;
+      }
+      
+      .premium-badge {
+        font-size: 0.9rem !important;
+        padding: 6px 18px;
+      }
+      
+      .series-grid {
+        gap: 2.5rem;
+      }
+
+      /* Category Cards - vertically doubled (taller images + padding) */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(450px, 550px));
+        gap: 2.5rem;
+      }
+      
+      .category-img {
+        height: 280px !important;  /* Almost doubled from 150px */
+      }
+      
+      .category-overlay {
+        font-size: 2rem !important;
+        padding: 1.2rem 0;
+      }
+      
+      .category-info {
+        padding: 1.5rem;
+      }
+      
+      .category-info p {
+        font-size: 1.2rem !important;
+        gap: 1rem;
+      }
+      
+      .trending-badge {
+        font-size: 0.85rem !important;
+        padding: 5px 15px;
+      }
+
+      /* Premium Card - vertically doubled */
+      .premium-card {
+        padding: 3.5rem 2.5rem !important;
+        border-radius: 80px;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .premium-card h2 {
+        font-size: 2.8rem !important;
+        margin-bottom: 1.2rem;
+      }
+      
+      .free-badge {
+        font-size: 1.2rem !important;
+        padding: 0.7rem 2rem;
+      }
+      
+      .old-price {
         font-size: 2.2rem !important;
       }
       
-      .category-card {
-        border-radius: 50px;
+      .new-price {
+        font-size: 3.5rem !important;
+      }
+      
+      .features-grid {
+        max-width: 900px;
+        gap: 1.5rem;
+        margin: 2rem auto;
       }
       
       .feature-item {
-        padding: 0.5rem 0;
+        font-size: 1.3rem !important;
+        gap: 1rem;
       }
       
-      /* Ensure homepage cards fill viewport forcing scroll */
-      #homeScreen .niche-card {
-        min-height: 65vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      .feature-item i {
+        font-size: 1.5rem !important;
+        width: 35px;
       }
       
-      /* Additional vertical padding to ensure no single-screen fit */
-      .hero {
-        min-height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      .activate-btn {
+        padding: 1.5rem 4rem !important;
+        font-size: 1.5rem !important;
+        gap: 15px;
       }
       
-      .premium-card {
-        min-height: 50vh;
+      .small-note {
+        font-size: 1rem !important;
+      }
+
+      /* Spacing between sections - large but natural */
+      .premium-originals, .trending-categories, .premium-activation {
+        margin: 5rem 0;
       }
       
-      .trending-categories .category-card {
-        min-height: 600px;
+      .footer-bottom {
+        margin-top: 5rem;
+        padding: 2rem;
+        font-size: 1.1rem !important;
+      }
+      
+      .back-btn {
+        top: 25px;
+        left: 25px;
+        padding: 12px 28px;
+        font-size: 1.2rem !important;
+      }
+      
+      /* Make icons larger */
+      .hero-badge i, .btn-premium i, .activate-btn i, .section-title h3 i {
+        font-size: 1.6rem;
       }
     }
     
-    /* Tablet generous scaling (768px - 1023px) - moderate but comfortable, no doubling */
+    /* Tablet (768px - 1023px) - moderate */
     @media (min-width: 768px) and (max-width: 1023px) {
-      .container {
-        max-width: 950px;
-        padding: 2rem 2rem 3.5rem;
-      }
-      
-      .hero h1 { font-size: 2.4rem; }
+      .container { max-width: 950px; padding: 2rem; }
+      .hero h1 { font-size: 2.2rem; }
       .hero-logo { width: 55px; height: 55px; }
-      .hero h2 { font-size: 2rem; }
-      .hero-description { font-size: 1.15rem; }
-      .btn-premium { padding: 1rem 2.8rem; font-size: 1.3rem; }
-      .niche-card { max-width: 600px; padding: 2.5rem 1.8rem; }
-      .niche-card h3 { font-size: 1.9rem; }
-      .niche-card p { font-size: 1.1rem; }
-      .section-title h3 { font-size: 1.9rem; }
-      .series-card { width: 250px; }
-      .premium-card h2 { font-size: 2.2rem; }
-      .feature-item { font-size: 1rem; }
-      .footer-bottom { font-size: 0.9rem; }
-      .stat-number { font-size: 2rem; }
-      .category-img { height: 190px; }
-      .footer-bottom { margin-top: 4rem; }
+      .btn-premium { padding: 1rem 2.5rem; font-size: 1.2rem; }
+      .niche-card { max-width: 600px; padding: 2rem; }
+      .niche-card h3 { font-size: 1.8rem; }
+      .section-title h3 { font-size: 1.8rem; }
+      .category-img { height: 180px; }
     }
     
-    /* Mobile devices (<768px) — keep original untouched compact android style */
+    /* Mobile (<768px) - completely untouched, original compact size */
     @media (max-width: 767px) {
-      .container {
-        max-width: 100%;
-        padding: 1rem 1rem 2rem;
-      }
-      .hero h1 { font-size: 1.8rem; }
-      .hero-logo { width: 40px; height: 40px; }
-      .btn-premium { font-size: 1.1rem; padding: 0.8rem 2.2rem; }
-      .niche-card h3 { font-size: 1.5rem; }
-      .section-title h3 { font-size: 1.5rem; }
-      .footer-bottom { margin-top: 2rem; }
-      .niche-card { padding: 1.5rem; }
+      .niche-card { min-height: auto; }
     }
   </style>
 </head>
 <body>
 <div class="anime-bg" id="animeBg"></div>
 
-<!-- Back to Portal Button -->
 <div id="backBtn" class="back-btn hidden-view" onclick="showHomeScreen()">
   <i class="fas fa-arrow-left"></i> ← Portal
 </div>
 
 <div class="main-content">
-  <!-- HOME SCREEN: NICHE SELECTION PORTAL (MASSIVE DESKTOP VERSION - EACH CARD FILLS PAGE, SCROLL REQUIRED) -->
-  <div id="homeScreen" class="container pt-fix">
+  <!-- HOME SCREEN -->
+  <div id="homeScreen" class="container">
     <div class="hero">
       <h1>ToonHub Premium</h1>
       <div class="hero-badge"><i class="fas fa-infinity"></i> 100% FREE ACCESS</div>
@@ -969,8 +782,8 @@
     </div>
   </div>
 
-  <!-- WEBTOON LANDING PAGE (same vertical doubling applied) -->
-  <div id="webtoonScreen" class="container pt-fix hidden-view">
+  <!-- WEBTOON LANDING PAGE -->
+  <div id="webtoonScreen" class="container hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
       <div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div>
@@ -986,7 +799,7 @@
   </div>
 
   <!-- MANHWA LANDING PAGE -->
-  <div id="manhwaScreen" class="container pt-fix hidden-view">
+  <div id="manhwaScreen" class="container hidden-view">
     <div class="hero"><h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1><div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div><h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$11.99</span> <span class="gradient-prem">$0</span></h2><div class="hero-description">Join 85 million readers. Unlock trending manhwa like Solo Leveling: Ragnarok, ORV, and Eleceed — no ads, no limits.</div><button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button><div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div></div>
     <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manhwa</h3><p>Most read this week — exclusive to Manhwa Premium+</p></div><div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>Solo Leveling: Ragnarok</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>Omniscient Reader's Viewpoint</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>The Greatest Estate Developer</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>Eleceed</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
     <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div><div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Action · <span class="trending-badge">+189k readers</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #2 Fantasy · <span class="trending-badge">+156k fans</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 DRAMA</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #3 Drama · <span class="trending-badge">+112k emotions</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">💘 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+89k hearts</span></p></div></div></div></div>
@@ -995,7 +808,7 @@
   </div>
 
   <!-- MANGA LANDING PAGE -->
-  <div id="mangaScreen" class="container pt-fix hidden-view">
+  <div id="mangaScreen" class="container hidden-view">
     <div class="hero"><h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1><div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div><h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$11.99</span> <span class="gradient-prem">$0</span></h2><div class="hero-description">Join 85 million manga fans. Read One Piece, Boruto, Sakamoto Days — ad-free, unlimited chapters.</div><button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button><div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div></div>
     <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manga</h3><p>Most read this week — exclusive to Manga Premium+</p></div><div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>One Piece</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>Boruto: Two Blue Vortex</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>Sakamoto Days</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>Kagurabachi</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
     <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div><div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ SHONEN</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Shonen · <span class="trending-badge">+310k readers</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 SEINEN</div></div><div class="category-info"><p><i class="fas fa-brain"></i> #2 Seinen · <span class="trending-badge">+187k fans</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ ISEKAI</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Isekai · <span class="trending-badge">+233k binges</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+158k hearts</span></p></div></div></div></div>
