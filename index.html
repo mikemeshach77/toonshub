@@ -559,296 +559,296 @@
       padding-top: 0.3rem;
     }
 
-    /* ========== DESKTOP MODE ONLY - ENLARGED BY 50% & NARROWER HORIZONTALLY ========== */
+    /* ========== DESKTOP MODE ONLY - 150% VERTICAL ENLARGEMENT, NO WIDTH INCREASE ========== */
     /* These changes ONLY apply on desktop screens (min-width: 1024px) */
-    /* Horizontal width reduced by making container narrower, vertical elements enlarged */
+    /* Width remains narrow like mobile, only vertical dimensions are scaled by 150% */
     @media (min-width: 1024px) {
-      /* Reduce horizontal wideness - narrower container like phone width on desktop */
+      /* Keep width narrow - same max-width as mobile feel */
       .container {
-        max-width: 760px;
-        padding: 1rem 2rem 2rem;
+        max-width: 520px;
+        padding: 1rem 1.5rem 2rem;
       }
       
-      /* Enlarge hero section vertically by 50% */
+      /* Enlarge hero section vertically by 150% */
       .hero {
-        padding: 2.7rem 2rem;
+        padding: 2.7rem 1.5rem;
         margin-bottom: 2.5rem;
         border-radius: 70px;
       }
       
-      /* Enlarge fonts by ~50% */
+      /* Enlarge fonts and spacing vertically */
       .hero h1 {
-        font-size: 4.2rem;
-        gap: 20px;
+        font-size: 3rem;
+        gap: 12px;
+        margin-bottom: 0.8rem;
       }
       
       .hero-logo {
-        width: 75px;
-        height: 75px;
-        border-radius: 20px;
+        width: 55px;
+        height: 55px;
       }
       
       .hero-badge {
-        font-size: 1.2rem;
-        padding: 0.6rem 2rem;
+        font-size: 1rem;
+        padding: 0.5rem 1.6rem;
         margin: 1rem 0;
       }
       
       .hero h2 {
-        font-size: 2.8rem;
-        margin: 0.8rem 0;
+        font-size: 2.2rem;
+        margin: 1rem 0;
+        line-height: 1.3;
       }
       
       .hero-description {
-        font-size: 1.3rem;
-        max-width: 550px;
+        font-size: 1rem;
+        max-width: 450px;
         margin: 1.2rem auto;
         line-height: 1.5;
       }
       
-      /* Enlarge buttons */
+      /* Enlarge buttons vertically */
       .btn-premium {
-        padding: 1.2rem 3rem;
-        font-size: 1.4rem;
-        gap: 14px;
-        margin-top: 1.2rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        gap: 10px;
+        margin-top: 1rem;
       }
       
-      /* Enlarge stats */
+      /* Enlarge stats vertically */
       .stats-row {
-        gap: 2.5rem;
+        gap: 2rem;
         margin-top: 1.5rem;
       }
       
       .stat-number {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
       
       .stat-label {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
       }
       
       .stat-item {
-        padding: 0.6rem 1.5rem;
+        padding: 0.5rem 1.2rem;
       }
       
-      /* Enlarge niche cards - vertical stacking preserved, larger vertical size */
+      /* Enlarge niche cards vertically - keep width same */
       .niche-card {
-        max-width: 520px;
-        padding: 2.2rem;
-        border-radius: 52px;
+        max-width: 380px;
+        padding: 2rem 1.8rem;
+        border-radius: 42px;
       }
       
       .niche-card-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 24px;
-        margin-bottom: 1.2rem;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
       }
       
       .niche-card h3 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         margin-bottom: 0.6rem;
       }
       
       .niche-card p {
-        font-size: 1.15rem;
+        font-size: 0.95rem;
         margin-bottom: 1.2rem;
+        line-height: 1.4;
       }
       
       .niche-grid {
-        gap: 2.2rem;
+        gap: 2rem;
         margin-top: 2rem;
       }
       
-      /* Enlarge section titles */
+      /* Enlarge section titles vertically */
+      .section-title {
+        margin-bottom: 2rem;
+      }
+      
       .section-title h3 {
-        font-size: 2.4rem;
-        padding: 0.6rem 2.2rem;
-        gap: 14px;
+        font-size: 1.8rem;
+        padding: 0.6rem 1.8rem;
+        gap: 10px;
       }
       
       .section-title p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         margin-top: 0.5rem;
       }
       
-      /* Enlarge series cards */
+      /* Enlarge series cards vertically */
       .series-card {
-        width: 280px;
-        padding: 1.8rem 1rem;
-        border-radius: 36px;
+        width: 200px;
+        padding: 1.5rem 0.8rem;
+        border-radius: 32px;
       }
       
       .series-card h4 {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
       }
       
       .rank {
-        font-size: 2.2rem;
-        width: 58px;
+        font-size: 1.6rem;
+        width: 44px;
+        margin-bottom: 0.6rem;
       }
       
       .premium-badge {
-        font-size: 0.8rem;
-        padding: 5px 14px;
+        font-size: 0.7rem;
+        padding: 4px 12px;
+        margin-top: 0.5rem;
       }
       
-      /* Enlarge trending categories */
+      .series-grid {
+        gap: 1.5rem;
+      }
+      
+      /* Enlarge trending categories vertically */
       .trending-grid {
-        grid-template-columns: repeat(2, minmax(300px, 380px));
-        gap: 2rem;
+        grid-template-columns: repeat(2, minmax(240px, 280px));
+        gap: 1.2rem;
       }
       
       .category-img {
-        height: 200px;
+        height: 160px;
       }
       
       .category-overlay {
-        font-size: 1.5rem;
-        padding: 1rem 0;
+        font-size: 1.2rem;
+        padding: 0.8rem 0;
+      }
+      
+      .category-info {
+        padding: 0.8rem;
       }
       
       .category-info p {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
       }
       
       .trending-badge {
-        font-size: 0.7rem;
-        padding: 4px 12px;
+        font-size: 0.6rem;
+        padding: 3px 10px;
       }
       
-      /* Enlarge premium activation card */
+      /* Enlarge premium activation card vertically */
       .premium-card {
-        padding: 2.5rem;
-        border-radius: 56px;
+        padding: 2rem 1.8rem;
+        border-radius: 48px;
       }
       
       .premium-card h2 {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
       }
       
       .free-badge {
-        font-size: 1rem;
-        padding: 0.4rem 1.4rem;
+        font-size: 0.8rem;
+        padding: 0.3rem 1.2rem;
+        margin-bottom: 1rem;
       }
       
       .old-price {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
       
       .new-price {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
+      }
+      
+      .price-tag {
+        margin: 1rem 0;
       }
       
       .features-grid {
-        max-width: 500px;
-        gap: 1.2rem;
+        max-width: 450px;
+        gap: 1rem;
         margin: 1.5rem auto;
       }
       
       .feature-item {
-        font-size: 1rem;
-        gap: 12px;
+        font-size: 0.85rem;
+        gap: 10px;
       }
       
       .feature-item i {
-        font-size: 1.1rem;
-        width: 24px;
+        font-size: 0.9rem;
+        width: 22px;
       }
       
       .activate-btn {
-        padding: 1.1rem 2.5rem;
-        font-size: 1.25rem;
-        gap: 12px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        gap: 10px;
+        margin: 1rem 0 0.5rem;
       }
       
       .small-note {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
       }
       
-      /* Enlarge spacing between sections vertically */
+      /* Enlarge vertical spacing between sections */
       .premium-originals, .trending-categories, .premium-activation {
-        margin: 3.5rem 0;
+        margin: 3rem 0;
       }
       
-      /* Enlarge footer */
+      /* Enlarge footer vertically */
       .footer-bottom {
         margin-top: 3rem;
         padding: 1.5rem;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
       }
       
       /* Enlarge back button */
       .back-btn {
-        top: 25px;
-        left: 25px;
-        padding: 12px 24px;
-        font-size: 1.1rem;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
       }
       
       /* Adjust main screens vertical spacing */
       #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-        padding-top: 0.8cm;
+        padding-top: 0.8rem;
       }
       
-      /* Series grid gap larger */
-      .series-grid {
-        gap: 1.8rem;
-      }
-      
-      /* Ensure all text scales properly */
-      .hero .stats-row .stat-number {
-        font-size: 2rem;
-      }
-      
-      /* Make hero badge icon bigger */
+      /* Enlarge hero badge icon */
       .hero-badge i {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
       
-      /* Ensure buttons have proper hover scale */
+      /* Ensure buttons have proper hover */
       .btn-premium:hover, .activate-btn:hover {
-        transform: scale(1.03);
+        transform: scale(1.02);
+      }
+      
+      /* Make niche cards have more vertical breathing room */
+      .niche-card .btn-premium {
+        margin-top: 0.5rem;
       }
     }
     
-    /* For medium desktop screens (768px-1023px) - moderate scaling, still narrower */
+    /* For medium tablets/laptops (768px-1023px) - moderate vertical scaling */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
-        max-width: 700px;
-        padding: 1rem 1.8rem 2rem;
-      }
-      
-      .hero h1 {
-        font-size: 3.5rem;
-      }
-      
-      .hero-logo {
-        width: 60px;
-        height: 60px;
+        max-width: 500px;
+        padding: 1rem 1.5rem 2rem;
       }
       
       .niche-card {
-        max-width: 480px;
+        max-width: 380px;
         padding: 1.8rem;
       }
       
-      .niche-card h3 {
-        font-size: 1.9rem;
+      .hero {
+        padding: 2rem 1.5rem;
       }
       
-      .btn-premium {
-        padding: 1rem 2.5rem;
-        font-size: 1.25rem;
-      }
-      
-      .series-card {
-        width: 250px;
-      }
-      
-      .premium-card {
-        padding: 2rem;
+      .hero h1 {
+        font-size: 2.8rem;
       }
     }
     
