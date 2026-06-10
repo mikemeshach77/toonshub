@@ -585,314 +585,315 @@
       font-size: 0.9rem;
     }
 
-    /* ========== DESKTOP MODE ONLY (1024px+) - MASSIVELY ENLARGED (10X SCALE) ========== */
+    /* ========== DESKTOP MODE ONLY (1024px+) - EXTREME ENLARGEMENT (BIGGER THAN MOBILE BY FAR) ========== */
     @media (min-width: 1024px) {
-      /* Base container - huge width and padding for massive scrolling experience */
+      /* Base container - maximum width with massive padding for long scrolling */
       .container {
-        max-width: 1600px;
-        width: 92%;
+        max-width: 1800px;
+        width: 90%;
         margin: 0 auto;
-        padding: 4rem 4rem 12rem;
+        padding: 5rem 5rem 15rem;
       }
 
-      /* Hero section - gigantic scale */
+      /* Hero section - gigantic with huge internal padding */
       .hero {
-        padding: 6rem 6rem;
-        margin-bottom: 8rem;
-        border-radius: 140px;
-        box-shadow: 0 50px 80px -30px rgba(0,0,0,0.7);
+        padding: 8rem 8rem;
+        margin-bottom: 10rem;
+        border-radius: 180px;
+        box-shadow: 0 60px 100px -30px rgba(0,0,0,0.8);
       }
 
       .hero h1 {
-        font-size: 7rem;
-        gap: 40px;
-        margin-bottom: 1.5rem;
+        font-size: 8rem;
+        gap: 50px;
+        margin-bottom: 2rem;
       }
 
       .hero-logo {
-        width: 140px;
-        height: 140px;
-        border-radius: 50px;
+        width: 180px;
+        height: 180px;
+        border-radius: 60px;
       }
 
       .hero-badge {
-        font-size: 2.2rem;
-        padding: 1rem 3rem;
-        margin: 1.8rem 0;
-        border-radius: 120px;
+        font-size: 2.8rem;
+        padding: 1.5rem 4rem;
+        margin: 2rem 0;
+        border-radius: 150px;
       }
 
       .hero h2 {
-        font-size: 4rem;
-        margin: 2rem 0;
-        line-height: 1.3;
+        font-size: 5rem;
+        margin: 2.5rem 0;
+        line-height: 1.4;
       }
 
       .hero-description {
-        font-size: 2rem;
-        max-width: 1100px;
-        margin: 2.5rem auto;
-        line-height: 1.5;
+        font-size: 2.5rem;
+        max-width: 1300px;
+        margin: 3rem auto;
+        line-height: 1.6;
       }
 
-      /* Buttons - enormous */
+      /* Buttons - enormous and prominent */
       .btn-premium,
       .activate-btn {
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
-        gap: 30px;
-        border-radius: 160px;
-        margin-top: 1.5rem;
+        padding: 2.5rem 6rem;
+        font-size: 3rem;
+        gap: 35px;
+        border-radius: 200px;
+        margin-top: 2rem;
       }
 
       .btn-premium i,
       .activate-btn i {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
 
-      /* Stats row - spread wide */
+      /* Stats row - spread wide with huge numbers */
       .stats-row {
-        gap: 6rem;
-        margin-top: 3rem;
+        gap: 8rem;
+        margin-top: 4rem;
       }
 
       .stat-item {
-        padding: 1.2rem 3rem;
-        border-radius: 100px;
+        padding: 1.5rem 4rem;
+        border-radius: 120px;
       }
 
       .stat-number {
-        font-size: 3.8rem;
+        font-size: 5rem;
       }
 
       .stat-label {
-        font-size: 1.6rem;
-        letter-spacing: 3px;
+        font-size: 2rem;
+        letter-spacing: 4px;
       }
 
-      /* Niche grid - horizontal row of massive cards */
+      /* Niche grid - horizontal row of MASSIVE cards */
       .niche-grid {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5rem;
-        margin-top: 5rem;
+        gap: 6rem;
+        margin-top: 6rem;
       }
 
       .niche-card {
-        max-width: 700px;
+        max-width: 850px;
         width: 100%;
-        padding: 4rem 3rem;
-        border-radius: 80px;
+        padding: 5rem 4rem;
+        border-radius: 100px;
       }
 
       .niche-card-image {
-        width: 160px;
-        height: 160px;
-        border-radius: 40px;
-        margin-bottom: 2rem;
+        width: 200px;
+        height: 200px;
+        border-radius: 50px;
+        margin-bottom: 2.5rem;
       }
 
       .niche-card h3 {
-        font-size: 3.2rem;
-        margin-bottom: 1rem;
-      }
-
-      .niche-card p {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* Series grid - massive cards */
-      .series-grid {
-        gap: 4rem;
-        margin: 3rem 0;
-      }
-
-      .series-card {
-        width: 420px;
-        padding: 2.8rem 1.8rem;
-        border-radius: 70px;
-      }
-
-      .series-card h4 {
-        font-size: 2.2rem;
-        margin: 1rem 0;
-      }
-
-      .rank {
-        font-size: 3.5rem;
-        width: 100px;
-        margin-bottom: 1rem;
-      }
-
-      .premium-badge {
-        font-size: 1.3rem;
-        padding: 8px 20px;
-        margin-top: 1rem;
-        border-radius: 80px;
-      }
-
-      .series-card div {
-        font-size: 1.8rem;
-      }
-
-      /* Trending categories - huge grid */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(550px, 700px));
-        gap: 4rem;
-        margin: 3rem auto;
-      }
-
-      .category-img {
-        height: 320px;
-      }
-
-      .category-overlay {
-        font-size: 2.8rem;
-        padding: 1.5rem 0;
-      }
-
-      .category-info {
-        padding: 1.5rem;
-      }
-
-      .category-info p {
-        font-size: 1.8rem;
-        gap: 20px;
-      }
-
-      .trending-badge {
-        font-size: 1.2rem;
-        padding: 6px 18px;
-        border-radius: 60px;
-      }
-
-      /* Premium activation card - giant */
-      .premium-card {
-        padding: 5rem 4rem;
-        border-radius: 120px;
-        max-width: 1300px;
-        margin: 0 auto;
-      }
-
-      .premium-card h2 {
         font-size: 4rem;
         margin-bottom: 1.5rem;
       }
 
-      .free-badge {
-        font-size: 1.8rem;
-        padding: 0.8rem 2.5rem;
+      .niche-card p {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+      }
+
+      /* Series grid - huge cards with big typography */
+      .series-grid {
+        gap: 5rem;
+        margin: 4rem 0;
+      }
+
+      .series-card {
+        width: 520px;
+        padding: 3.5rem 2rem;
+        border-radius: 80px;
+      }
+
+      .series-card h4 {
+        font-size: 2.8rem;
+        margin: 1.5rem 0;
+      }
+
+      .rank {
+        font-size: 4.5rem;
+        width: 130px;
         margin-bottom: 1.5rem;
-        border-radius: 120px;
+      }
+
+      .premium-badge {
+        font-size: 1.6rem;
+        padding: 10px 28px;
+        margin-top: 1.2rem;
+        border-radius: 100px;
+      }
+
+      .series-card div {
+        font-size: 2rem;
+      }
+
+      /* Trending categories - massive grid with tall images */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(650px, 850px));
+        gap: 5rem;
+        margin: 4rem auto;
+      }
+
+      .category-img {
+        height: 400px;
+      }
+
+      .category-overlay {
+        font-size: 3.5rem;
+        padding: 2rem 0;
+      }
+
+      .category-info {
+        padding: 2rem;
+      }
+
+      .category-info p {
+        font-size: 2rem;
+        gap: 25px;
+      }
+
+      .trending-badge {
+        font-size: 1.5rem;
+        padding: 8px 24px;
+        border-radius: 80px;
+      }
+
+      /* Premium activation card - absolutely gigantic */
+      .premium-card {
+        padding: 6rem 5rem;
+        border-radius: 150px;
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+
+      .premium-card h2 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      .free-badge {
+        font-size: 2.2rem;
+        padding: 1rem 3rem;
+        margin-bottom: 2rem;
+        border-radius: 150px;
       }
 
       .old-price {
-        font-size: 3rem;
+        font-size: 4rem;
       }
 
       .new-price {
-        font-size: 5rem;
+        font-size: 6rem;
       }
 
       .price-tag {
-        margin: 2rem 0;
+        margin: 2.5rem 0;
       }
 
       .features-grid {
-        max-width: 1100px;
-        gap: 2rem;
-        margin: 3rem auto;
+        max-width: 1300px;
+        gap: 2.5rem;
+        margin: 4rem auto;
       }
 
       .feature-item {
-        font-size: 1.8rem;
-        gap: 20px;
+        font-size: 2.2rem;
+        gap: 25px;
       }
 
       .feature-item i {
-        font-size: 2rem;
-        width: 50px;
+        font-size: 2.5rem;
+        width: 60px;
       }
 
       .small-note {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
       }
 
       /* Section titles - enormous */
       .section-title {
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
       }
 
       .section-title h3 {
-        font-size: 3.5rem;
-        padding: 1.2rem 3rem;
-        gap: 25px;
-        border-radius: 120px;
+        font-size: 4.5rem;
+        padding: 1.5rem 4rem;
+        gap: 30px;
+        border-radius: 150px;
       }
 
       .section-title p {
-        font-size: 1.8rem;
-        margin-top: 1rem;
+        font-size: 2.2rem;
+        margin-top: 1.5rem;
       }
 
       /* Spacing between major sections - ensures massive scrolling */
       .premium-originals,
       .trending-categories,
       .premium-activation {
-        margin: 8rem 0;
+        margin: 10rem 0;
       }
 
-      /* Footer - enlarged */
+      /* Footer - huge and prominent */
       .footer-bottom {
-        margin-top: 8rem;
-        padding: 3rem 2rem;
-        font-size: 1.5rem;
-        border-radius: 100px;
-        background: rgba(0,0,0,0.4);
-        backdrop-filter: blur(12px);
+        margin-top: 10rem;
+        padding: 4rem 3rem;
+        font-size: 2rem;
+        border-radius: 120px;
+        background: rgba(0,0,0,0.5);
+        backdrop-filter: blur(16px);
       }
 
-      /* Back button - huge and accessible */
+      /* Back button - large and accessible */
       .back-btn {
-        top: 40px;
-        left: 40px;
-        padding: 18px 40px;
-        font-size: 1.8rem;
-        border-radius: 100px;
+        top: 50px;
+        left: 50px;
+        padding: 22px 50px;
+        font-size: 2.2rem;
+        border-radius: 120px;
       }
 
-      /* Hover effects for desktop */
+      /* Strong hover effects for desktop */
       .btn-premium:hover,
       .activate-btn:hover {
-        transform: scale(1.03);
+        transform: scale(1.05);
       }
 
       .niche-card:hover {
-        transform: translateY(-15px);
+        transform: translateY(-20px);
       }
 
       .series-card:hover {
-        transform: translateY(-15px);
+        transform: translateY(-20px);
       }
 
       .category-card:hover {
-        transform: translateY(-15px);
+        transform: translateY(-20px);
       }
 
-      /* Ensure proper spacing for long scrolling */
-      body {
-        scroll-behavior: smooth;
+      /* Additional height to sections for more scrolling */
+      .hero, .premium-originals, .trending-categories, .premium-activation {
+        scroll-margin-top: 3rem;
       }
       
-      /* Extra breathing room for all sections */
-      .hero, .premium-originals, .trending-categories, .premium-activation {
-        scroll-margin-top: 2rem;
+      /* Ensure categories have enough height */
+      .category-card {
+        min-height: auto;
       }
     }
     
