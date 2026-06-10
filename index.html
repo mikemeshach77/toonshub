@@ -79,7 +79,8 @@
       width: 100%;
     }
 
-    /* ========== UNIFIED MOBILE/ANDROID STYLES (Same for all screen sizes) ========== */
+    /* ========== NORMAL MODE — UNIFIED, COMPACT, READABLE ON ALL DEVICES ========== */
+    /* No desktop-specific overrides — everything scales naturally with viewport */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -482,12 +483,6 @@
     }
 
     /* Niche Portal */
-    .niche-portal {
-      min-height: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    
     .niche-card {
       background: rgba(10, 20, 35, 0.75);
       backdrop-filter: blur(16px);
@@ -506,11 +501,6 @@
       transform: translateY(-6px);
       border-color: #00D564;
       box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
-    }
-    
-    .niche-icon {
-      font-size: 2.8rem;
-      margin-bottom: 0.6rem;
     }
     
     .niche-card h3 {
@@ -584,9 +574,6 @@
     .btn-premium i, .activate-btn i {
       font-size: 0.9rem;
     }
-
-    /* No separate desktop mode — everything stays exactly as the Android/mobile design */
-    /* All screen sizes (desktop, tablet, mobile) will show the same compact Android style */
   </style>
 </head>
 <body>
