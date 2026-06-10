@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access — Desktop Ultra Zoom</title>
+  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access — Desktop Ultra Zoom x2 Vertical</title>
   <!-- Google Fonts + Font Awesome 6 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -554,239 +554,311 @@
     }
 
     /* ============================================================ */
-    /* DESKTOP MODE: VERTICAL DOUBLING OF NICHE CARDS (height x2, width unchanged) */
+    /* DESKTOP ULTRA ZOOM MODE - VERTICAL DOUBLING + FONT/SPACING x2 */
+    /* Every section height / padding / margin doubled vertically  */
+    /* Width unchanged — only vertical scaling + typography + buttons */
     /* ============================================================ */
     @media (min-width: 1024px) {
-      /* Main container — comfortable width */
+      /* Main container — keep width comfortable but not stretched more */
       .container {
-        max-width: 1400px;
-        padding: 2rem 2.5rem 4rem;
+        max-width: 1600px;
+        padding: 3rem 3rem 5rem;  /* increased vertical padding */
         margin: 0 auto;
       }
 
-      /* Hero section - nicely scaled */
+      /* Hero section - vertical doubled (padding top/bottom, margin, etc) */
       .hero {
-        padding: 2.5rem 2.5rem;
-        margin-bottom: 3rem;
-        border-radius: 70px;
+        padding: 3.5rem 3rem;    /* was 1.8rem, now ~double vertical */
+        margin-bottom: 4rem;     /* originally 2rem -> double 4rem */
+        border-radius: 80px;
       }
       
       .hero h1 {
-        font-size: 3rem;
-        gap: 1.2rem;
+        font-size: 3.8rem !important;  /* scaled text big */
+        gap: 1.5rem;
+        margin-bottom: 1.4rem;
       }
       
       .hero-logo {
-        width: 70px;
-        height: 70px;
-        border-radius: 24px;
+        width: 85px !important;
+        height: 85px !important;
+        border-radius: 28px;
       }
       
       .hero-badge {
-        font-size: 1.1rem;
-        padding: 0.6rem 2rem;
+        font-size: 1.4rem !important;    /* enlarged */
+        padding: 0.9rem 2.5rem;
+        margin: 1.5rem 0;
+        border-radius: 100px;
       }
       
       .hero h2 {
-        font-size: 2rem;
+        font-size: 2.8rem !important;
+        margin: 1.4rem 0;
       }
       
       .hero-description {
-        font-size: 1.1rem;
-        max-width: 800px;
+        font-size: 1.5rem !important;
+        max-width: 1000px;
+        margin: 2rem auto;
+        line-height: 1.6;
       }
       
       .btn-premium {
-        padding: 1rem 2.8rem;
-        font-size: 1.3rem;
+        padding: 1.5rem 3.5rem !important;
+        font-size: 1.8rem !important;
+        gap: 16px;
+        margin-top: 1.8rem;
+        border-radius: 100px;
       }
       
       .stats-row {
-        gap: 2rem;
+        gap: 3rem;
+        margin-top: 2.2rem;
       }
       
       .stat-number {
-        font-size: 2rem;
+        font-size: 2.8rem !important;
       }
       
       .stat-label {
-        font-size: 0.9rem;
-      }
-
-      /* ===== CRITICAL FIX: NICHE CARDS - VERTICAL SIZE DOUBLED (height x2, width unchanged) ===== */
-      .niche-card {
-        max-width: 420px;  /* Same width as mobile's max-width (was 380px, now 420px for comfort) */
-        padding: 3rem 1.8rem;  /* Vertical padding DOUBLED (was 1.5rem -> 3rem) */
-        border-radius: 48px;
+        font-size: 1.2rem !important;
+        letter-spacing: 1.5px;
       }
       
-      .niche-card-image {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1.5rem;
-        border-radius: 20px;
-      }
-      
-      .niche-card h3 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
-      
-      .niche-card p {
-        font-size: 1rem;
-        margin-bottom: 1.8rem;
-        line-height: 1.5;
-        padding: 0 0.5rem;
-      }
-      
-      .niche-card .btn-premium {
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
-      }
-      
-      /* Keep grid layout same width but cards now have more vertical space */
-      .niche-grid {
-        gap: 2.5rem;
-        margin-top: 2rem;
-      }
-      
-      /* Section Titles */
-      .section-title {
-        margin-bottom: 2.2rem;
-      }
-      
-      .section-title h3 {
-        font-size: 1.9rem;
-        padding: 0.7rem 2.2rem;
-      }
-      
-      .section-title p {
-        font-size: 1rem;
-      }
-      
-      /* Series Cards */
-      .series-card {
-        width: 240px;
-        padding: 1.5rem 1rem;
-        border-radius: 40px;
-      }
-      
-      .series-card h4 {
-        font-size: 1.2rem;
-      }
-      
-      .rank {
-        font-size: 2rem;
-        width: 58px;
-      }
-      
-      .premium-badge {
-        font-size: 0.75rem;
-        padding: 4px 14px;
-      }
-      
-      .series-grid {
-        gap: 1.8rem;
-      }
-      
-      /* Trending Categories */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(360px, 460px));
-        gap: 1.8rem;
-      }
-      
-      .category-img {
-        height: 190px;
-      }
-      
-      .category-overlay {
-        font-size: 1.5rem;
-        padding: 0.8rem 0;
-      }
-      
-      .category-info p {
-        font-size: 0.9rem;
-      }
-      
-      /* Premium Card */
-      .premium-card {
-        padding: 2.5rem 2rem;
+      .stat-item {
+        padding: 0.9rem 2rem;
         border-radius: 70px;
       }
       
+      /* Niche Cards — vertically doubled (padding top/bottom increased) */
+      .niche-card {
+        max-width: 750px;
+        padding: 3rem 2rem;      /* originally 1.5rem -> double vertical (3rem) */
+        border-radius: 70px;
+        margin-bottom: 0.5rem;
+      }
+      
+      .niche-card-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1.8rem;
+        border-radius: 35px;
+      }
+      
+      .niche-card h3 {
+        font-size: 2.4rem !important;
+        margin-bottom: 1.2rem;
+      }
+      
+      .niche-card p {
+        font-size: 1.4rem !important;
+        margin-bottom: 1.8rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+      }
+      
+      .niche-grid {
+        gap: 3.5rem;            /* double original gap (1.5rem->3.5rem) */
+        margin-top: 3rem;
+      }
+      
+      /* Section Titles — vertical expansion */
+      .section-title {
+        margin-bottom: 3.5rem;
+      }
+      
+      .section-title h3 {
+        font-size: 2.5rem !important;
+        padding: 1.2rem 3rem;
+        gap: 1.2rem;
+        border-radius: 90px;
+      }
+      
+      .section-title p {
+        font-size: 1.3rem !important;
+        margin-top: 1rem;
+      }
+      
+      /* Series Cards — bigger and vertical padding x2 */
+      .series-card {
+        width: 280px !important;
+        padding: 2rem 1rem;        /* vertical padding doubled from 1.2rem to 2rem */
+        border-radius: 45px;
+      }
+      
+      .series-card h4 {
+        font-size: 1.5rem !important;
+        margin: 0.8rem 0;
+      }
+      
+      .rank {
+        font-size: 2.5rem !important;
+        width: 75px;
+        margin-bottom: 1rem;
+        border-radius: 60px;
+      }
+      
+      .premium-badge {
+        font-size: 0.95rem !important;
+        padding: 6px 18px;
+        margin-top: 0.9rem;
+        border-radius: 50px;
+      }
+      
+      .series-grid {
+        gap: 2.5rem;
+      }
+      
+      /* Trending Categories — vertical doubling */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(450px, 550px));
+        gap: 2.8rem;
+      }
+      
+      .category-img {
+        height: 260px;    /* increased height for bigger vertical footprint (was 150px) */
+      }
+      
+      .category-overlay {
+        font-size: 2rem !important;
+        padding: 1.4rem 0;
+      }
+      
+      .category-info {
+        padding: 1.4rem;
+      }
+      
+      .category-info p {
+        font-size: 1.2rem !important;
+        gap: 1rem;
+      }
+      
+      .trending-badge {
+        font-size: 0.9rem !important;
+        padding: 6px 18px;
+        border-radius: 50px;
+      }
+      
+      /* Premium Activation Card — vertically doubled */
+      .premium-card {
+        padding: 3.5rem 2.5rem;    /* originally 1.8rem -> ~double vertical */
+        border-radius: 80px;
+      }
+      
       .premium-card h2 {
-        font-size: 2.2rem;
+        font-size: 2.8rem !important;
+        margin-bottom: 1.2rem;
       }
       
       .free-badge {
-        font-size: 0.9rem;
-        padding: 0.45rem 1.6rem;
+        font-size: 1.2rem !important;
+        padding: 0.7rem 2rem;
+        margin-bottom: 1.5rem;
+        border-radius: 90px;
       }
       
       .old-price {
-        font-size: 1.8rem;
+        font-size: 2.2rem !important;
       }
       
       .new-price {
-        font-size: 2.6rem;
+        font-size: 3.5rem !important;
+      }
+      
+      .price-tag {
+        margin: 1.6rem 0;
       }
       
       .features-grid {
-        max-width: 700px;
-        gap: 0.9rem;
+        max-width: 850px;
+        gap: 1.4rem;
+        margin: 2.2rem auto;
       }
       
       .feature-item {
-        font-size: 1rem;
-        gap: 0.8rem;
+        font-size: 1.3rem !important;
+        gap: 1rem;
       }
       
       .feature-item i {
-        font-size: 1.1rem;
+        font-size: 1.5rem !important;
+        width: 32px;
       }
       
       .activate-btn {
-        padding: 1rem 2.6rem;
-        font-size: 1.3rem;
+        padding: 1.5rem 3.5rem !important;
+        font-size: 1.6rem !important;
+        gap: 16px;
+        margin: 1.8rem 0 0.8rem;
+        border-radius: 100px;
       }
       
       .small-note {
-        font-size: 0.8rem;
+        font-size: 1rem !important;
       }
       
+      /* Spacing between sections — double vertical margins */
       .premium-originals, .trending-categories, .premium-activation {
-        margin: 3rem 0;
+        margin: 5rem 0;   /* originally 2.5rem -> 5rem vertical */
       }
       
+      /* Footer */
       .footer-bottom {
-        margin-top: 3.5rem;
-        padding: 1.8rem;
-        font-size: 0.9rem;
+        margin-top: 5rem;
+        padding: 2.5rem;
+        font-size: 1.1rem !important;
+        border-radius: 60px;
       }
       
+      /* Back button */
       .back-btn {
-        top: 25px;
-        left: 25px;
-        padding: 10px 24px;
-        font-size: 1rem;
+        top: 30px;
+        left: 30px;
+        padding: 14px 32px;
+        font-size: 1.3rem !important;
+        border-radius: 70px;
       }
       
-      /* Hover effects */
+      /* All icons within sections scaled */
+      .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
+        font-size: 1.6rem;
+      }
+      
+      /* button hover enhancements */
+      .btn-premium:hover, .activate-btn:hover {
+        transform: scale(1.03);
+      }
+      
       .niche-card:hover {
         transform: translateY(-8px);
       }
       
-      .btn-premium:hover, .activate-btn:hover {
-        transform: scale(1.02);
+      /* all text more spacious */
+      p, .hero-description, .feature-item, .category-info p, .small-note {
+        line-height: 1.6;
+        font-weight: 500;
+      }
+      
+      /* extra stats readability */
+      .stat-number {
+        font-size: 2.8rem !important;
+      }
+      
+      /* series card inner div text */
+      .series-card div {
+        font-size: 1.1rem;
+        margin: 0.4rem 0;
       }
     }
     
-    /* Tablet view - nice scaling between mobile and desktop */
+    /* Tablet generous scaling (768px - 1023px) - moderate but not double vertical to avoid breaking */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
-        max-width: 900px;
-        padding: 1.5rem 2rem 3rem;
+        max-width: 950px;
+        padding: 2rem 2rem 3rem;
       }
       
       .hero h1 {
@@ -794,51 +866,62 @@
       }
       
       .hero-logo {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
       }
       
       .hero h2 {
-        font-size: 1.8rem;
-      }
-      
-      .hero-description {
-        font-size: 1rem;
-      }
-      
-      .btn-premium {
-        padding: 0.9rem 2.5rem;
-        font-size: 1.2rem;
-      }
-      
-      /* Niches slightly enlarged vertically on tablet too */
-      .niche-card {
-        max-width: 400px;
-        padding: 2.2rem 1.5rem;
-      }
-      
-      .niche-card h3 {
-        font-size: 1.6rem;
-      }
-      
-      .niche-card p {
-        font-size: 0.95rem;
-      }
-      
-      .section-title h3 {
-        font-size: 1.7rem;
-      }
-      
-      .series-card {
-        width: 220px;
-      }
-      
-      .premium-card h2 {
         font-size: 2rem;
       }
       
+      .hero-description {
+        font-size: 1.15rem;
+      }
+      
+      .btn-premium {
+        padding: 1rem 2.8rem;
+        font-size: 1.3rem;
+      }
+      
+      .niche-card {
+        max-width: 580px;
+        padding: 2.2rem 1.8rem;
+      }
+      
+      .niche-card h3 {
+        font-size: 1.9rem;
+      }
+      
+      .niche-card p {
+        font-size: 1.05rem;
+      }
+      
+      .section-title h3 {
+        font-size: 1.9rem;
+      }
+      
+      .series-card {
+        width: 240px;
+      }
+      
+      .premium-card h2 {
+        font-size: 2.2rem;
+      }
+      
       .feature-item {
+        font-size: 1rem;
+      }
+      
+      .footer-bottom {
         font-size: 0.9rem;
+      }
+      
+      .stat-number {
+        font-size: 2.2rem;
+      }
+      
+      .category-img {
+        height: 180px;
       }
     }
     
@@ -848,10 +931,11 @@
         max-width: 100%;
         padding: 1rem 1rem 2rem;
       }
-      /* All original mobile sizes remain exactly as they were */
-      .niche-card {
-        padding: 1.5rem;
-      }
+      .hero h1 { font-size: 1.8rem; }
+      .hero-logo { width: 40px; height: 40px; }
+      .btn-premium { font-size: 1.1rem; padding: 0.8rem 2.2rem; }
+      .niche-card h3 { font-size: 1.5rem; }
+      .section-title h3 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -864,7 +948,7 @@
 </div>
 
 <div class="main-content">
-  <!-- ==================== HOME SCREEN: NICHE SELECTION PORTAL ==================== -->
+  <!-- HOME SCREEN: NICHE SELECTION PORTAL -->
   <div id="homeScreen" class="container pt-fix">
     <div class="hero">
       <h1>ToonHub Premium</h1>
@@ -876,23 +960,18 @@
     </div>
 
     <div class="niche-grid">
-      <!-- Webtoon Card -->
       <div class="niche-card" data-niche="webtoon">
         <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
         <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
         <p>Lore Olympus, unOrdinary, The Remarried Empress — daily passes unlocked.</p>
         <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
       </div>
-
-      <!-- Manhwa Card -->
       <div class="niche-card" data-niche="manhwa">
         <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
         <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
         <p>Solo Leveling: Ragnarok, ORV, Eleceed — all fast passes unlocked.</p>
         <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
       </div>
-
-      <!-- Manga Card -->
       <div class="niche-card" data-niche="manga">
         <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
         <h3 style="color: #e63946;">MANGA PREMIUM</h3>
@@ -906,7 +985,7 @@
     </div>
   </div>
 
-  <!-- ==================== WEBTOON LANDING PAGE ==================== -->
+  <!-- WEBTOON LANDING PAGE -->
   <div id="webtoonScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -914,100 +993,28 @@
       <h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$9.99</span> <span class="gradient-prem">$0</span></h2>
       <div class="hero-description">Join 85 million readers worldwide. Unlock daily passes, fast passes, and binge trending webtoons — no credit card required.</div>
       <button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button>
-      <div class="stats-row">
-        <div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div>
-        <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div>
-        <div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div>
-      </div>
+      <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
     </div>
-    
-    <div class="premium-originals">
-      <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Webtoons</h3><p>Most read this week — exclusive to Webtoon Premium+</p></div>
-      <div class="series-grid">
-        <div class="series-card"><div class="rank">#1</div><h4>Lore Olympus</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div>
-        <div class="series-card"><div class="rank">#2</div><h4>unOrdinary</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div>
-        <div class="series-card"><div class="rank">#3</div><h4>The Remarried Empress</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div>
-        <div class="series-card"><div class="rank">#4</div><h4>The Mafia Nanny</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div>
-      </div>
-    </div>
-
-    <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div>
-      <div class="trending-grid">
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #1 Romance · <span class="trending-badge">+340k readers</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #2 Action · <span class="trending-badge">+257k binges</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Fantasy · <span class="trending-badge">+199k fans</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">😱 THRILLER</div></div><div class="category-info"><p><i class="fas fa-eye"></i> #4 Thriller · <span class="trending-badge">+88k readers</span></p></div></div>
-      </div>
-    </div>
-
+    <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Webtoons</h3><p>Most read this week — exclusive to Webtoon Premium+</p></div><div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>Lore Olympus</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>unOrdinary</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>The Remarried Empress</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>The Mafia Nanny</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
+    <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div><div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #1 Romance · <span class="trending-badge">+340k readers</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #2 Action · <span class="trending-badge">+257k binges</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Fantasy · <span class="trending-badge">+199k fans</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">😱 THRILLER</div></div><div class="category-info"><p><i class="fas fa-eye"></i> #4 Thriller · <span class="trending-badge">+88k readers</span></p></div></div></div></div>
     <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Webtoon Premium+ Access</h2><div class="price-tag"><span class="old-price">$9.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium webtoons</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read episodes weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & daily pass unlocked</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANHWA LANDING PAGE ==================== -->
+  <!-- MANHWA LANDING PAGE -->
   <div id="manhwaScreen" class="container pt-fix hidden-view">
-    <div class="hero">
-      <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
-      <div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div>
-      <h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$11.99</span> <span class="gradient-prem">$0</span></h2>
-      <div class="hero-description">Join 85 million readers. Unlock trending manhwa like Solo Leveling: Ragnarok, ORV, and Eleceed — no ads, no limits.</div>
-      <button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button>
-      <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
-    </div>
-    
-    <div class="premium-originals">
-      <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manhwa</h3><p>Most read this week — exclusive to Manhwa Premium+</p></div>
-      <div class="series-grid">
-        <div class="series-card"><div class="rank">#1</div><h4>Solo Leveling: Ragnarok</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div>
-        <div class="series-card"><div class="rank">#2</div><h4>Omniscient Reader's Viewpoint</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div>
-        <div class="series-card"><div class="rank">#3</div><h4>The Greatest Estate Developer</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div>
-        <div class="series-card"><div class="rank">#4</div><h4>Eleceed</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div>
-      </div>
-    </div>
-
-    <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div>
-      <div class="trending-grid">
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Action · <span class="trending-badge">+189k readers</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #2 Fantasy · <span class="trending-badge">+156k fans</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 DRAMA</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #3 Drama · <span class="trending-badge">+112k emotions</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">💘 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+89k hearts</span></p></div></div>
-      </div>
-    </div>
-
+    <div class="hero"><h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1><div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div><h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$11.99</span> <span class="gradient-prem">$0</span></h2><div class="hero-description">Join 85 million readers. Unlock trending manhwa like Solo Leveling: Ragnarok, ORV, and Eleceed — no ads, no limits.</div><button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button><div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div></div>
+    <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manhwa</h3><p>Most read this week — exclusive to Manhwa Premium+</p></div><div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>Solo Leveling: Ragnarok</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>Omniscient Reader's Viewpoint</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>The Greatest Estate Developer</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>Eleceed</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
+    <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div><div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ ACTION</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Action · <span class="trending-badge">+189k readers</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ FANTASY</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #2 Fantasy · <span class="trending-badge">+156k fans</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 DRAMA</div></div><div class="category-info"><p><i class="fas fa-heart"></i> #3 Drama · <span class="trending-badge">+112k emotions</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">💘 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+89k hearts</span></p></div></div></div></div>
     <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manhwa Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manhwa</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- ==================== MANGA LANDING PAGE ==================== -->
+  <!-- MANGA LANDING PAGE -->
   <div id="mangaScreen" class="container pt-fix hidden-view">
-    <div class="hero">
-      <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
-      <div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div>
-      <h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$11.99</span> <span class="gradient-prem">$0</span></h2>
-      <div class="hero-description">Join 85 million manga fans. Read One Piece, Boruto, Sakamoto Days — ad-free, unlimited chapters.</div>
-      <button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button>
-      <div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div>
-    </div>
-    
-    <div class="premium-originals">
-      <div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manga</h3><p>Most read this week — exclusive to Manga Premium+</p></div>
-      <div class="series-grid">
-        <div class="series-card"><div class="rank">#1</div><h4>One Piece</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div>
-        <div class="series-card"><div class="rank">#2</div><h4>Boruto: Two Blue Vortex</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div>
-        <div class="series-card"><div class="rank">#3</div><h4>Sakamoto Days</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div>
-        <div class="series-card"><div class="rank">#4</div><h4>Kagurabachi</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div>
-      </div>
-    </div>
-
-    <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div>
-      <div class="trending-grid">
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ SHONEN</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Shonen · <span class="trending-badge">+310k readers</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 SEINEN</div></div><div class="category-info"><p><i class="fas fa-brain"></i> #2 Seinen · <span class="trending-badge">+187k fans</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ ISEKAI</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Isekai · <span class="trending-badge">+233k binges</span></p></div></div>
-        <div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+158k hearts</span></p></div></div>
-      </div>
-    </div>
-
+    <div class="hero"><h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1><div class="hero-badge"><i class="far fa-clock"></i> FREE FOREVER</div><h2>Get Premium for <span style="text-decoration:line-through; color:#ff8888;">$11.99</span> <span class="gradient-prem">$0</span></h2><div class="hero-description">Join 85 million manga fans. Read One Piece, Boruto, Sakamoto Days — ad-free, unlimited chapters.</div><button class="btn-premium cta-btn"><i class="fas fa-gem"></i> Claim Free Premium Now <i class="fas fa-arrow-right"></i></button><div class="stats-row"><div class="stat-item"><div class="stat-number">85M+</div><div class="stat-label">READERS</div></div><div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">SERIES</div></div><div class="stat-item"><div class="stat-number">4.9★</div><div class="stat-label">RATED</div></div></div></div>
+    <div class="premium-originals"><div class="section-title"><h3><i class="fas fa-fire"></i> 🔥 Trending Manga</h3><p>Most read this week — exclusive to Manga Premium+</p></div><div class="series-grid"><div class="series-card"><div class="rank">#1</div><h4>One Piece</h4><div>⭐ 9.9</div><span class="premium-badge">TRENDING</span></div><div class="series-card"><div class="rank">#2</div><h4>Boruto: Two Blue Vortex</h4><div>⭐ 9.8</div><span class="premium-badge">HOT</span></div><div class="series-card"><div class="rank">#3</div><h4>Sakamoto Days</h4><div>⭐ 9.7</div><span class="premium-badge">VIP</span></div><div class="series-card"><div class="rank">#4</div><h4>Kagurabachi</h4><div>⭐ 9.6</div><span class="premium-badge">NEW</span></div></div></div>
+    <div class="trending-categories"><div class="section-title"><h3><i class="fas fa-chart-line"></i> Popular Genres</h3></div><div class="trending-grid"><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/WvvyRCfJ/4-Thumb-Poster-2154.jpg');"><div class="category-overlay">⚡ SHONEN</div></div><div class="category-info"><p><i class="fas fa-chart-line"></i> #1 Shonen · <span class="trending-badge">+310k readers</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/mC4Lr8ZF/1049.jpg');"><div class="category-overlay">🎭 SEINEN</div></div><div class="category-info"><p><i class="fas fa-brain"></i> #2 Seinen · <span class="trending-badge">+187k fans</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/yL4VTWn/0-Thumb-Poster-6202.jpg');"><div class="category-overlay">✨ ISEKAI</div></div><div class="category-info"><p><i class="fas fa-dragon"></i> #3 Isekai · <span class="trending-badge">+233k binges</span></p></div></div><div class="category-card"><div class="category-img" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://i.ibb.co/SDrmMQVg/Thumb-Poster-7590-1.jpg');"><div class="category-overlay">🌸 ROMANCE</div></div><div class="category-info"><p><i class="fas fa-heartbeat"></i> #4 Romance · <span class="trending-badge">+158k hearts</span></p></div></div></div></div>
     <div class="premium-activation"><div class="premium-card"><div class="free-badge"><i class="fas fa-crown"></i> FREE FOREVER</div><h2>Manga Premium+ Access</h2><div class="price-tag"><span class="old-price">$11.99</span><span class="new-price">$0</span></div><div class="features-grid"><div class="feature-item"><i class="fas fa-check-circle"></i> Unlimited access to 10,000+ premium manga</div><div class="feature-item"><i class="fas fa-check-circle"></i> Read chapters weeks before free users</div><div class="feature-item"><i class="fas fa-check-circle"></i> Zero ads — pure binge-reading bliss</div><div class="feature-item"><i class="fas fa-check-circle"></i> Offline downloads for travel</div><div class="feature-item"><i class="fas fa-check-circle"></i> Exclusive originals & early releases</div><div class="feature-item"><i class="fas fa-check-circle"></i> Cancel anytime — it's free forever</div></div><button class="activate-btn cta-btn"><i class="fas fa-bolt"></i> Claim Free Premium Now</button><p class="small-note"><i class="fas fa-shield-alt"></i> No card. No spam.</p></div></div>
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manga Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
