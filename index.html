@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access — Ultra HD Desktop</title>
-  <!-- Google Fonts + Font Awesome 6 -->
+  <title>ToonHub Premium | Webtoon · Manhwa · Manga — MASSIVE Desktop Experience</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -21,11 +20,9 @@
       scroll-behavior: smooth;
       overflow-x: hidden;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
-    /* Full Page Anime Background */
+    /* Background */
     .anime-bg {
       position: fixed;
       top: 0;
@@ -34,11 +31,9 @@
       height: 100%;
       background-image: url('https://i.ibb.co/KpLqLmrB/fsc-LSX.jpg');
       background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
+      background-position: center;
       z-index: 0;
     }
-    
     .anime-bg::after {
       content: "";
       position: absolute;
@@ -46,508 +41,389 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.78);
       z-index: 1;
     }
 
-    /* Floating Particles */
     .particle {
       position: absolute;
       background: rgba(0, 213, 100, 0.4);
-      width: 4px;
-      height: 4px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
-      filter: blur(1px);
-      animation: floatParticle 18s infinite linear;
+      animation: floatParticle 20s infinite linear;
       z-index: 2;
       pointer-events: none;
     }
-
     @keyframes floatParticle {
       0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-      10% { opacity: 0.8; }
-      90% { opacity: 0.4; }
+      10% { opacity: 0.7; }
+      90% { opacity: 0.3; }
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Main content wrapper */
     .main-content {
-      flex: 1;
       position: relative;
       z-index: 3;
       width: 100%;
     }
 
-    /* ========== BASE MOBILE STYLES (Original compact Android mode - UNTOUCHED) ========== */
+    /* ========== MOBILE MODE (Compact, untouched, original) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
       padding: 1rem 1rem 2rem;
-      position: relative;
-      z-index: 3;
     }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 2rem;
-      padding: 1.8rem 1.5rem;
-      background: rgba(10, 20, 35, 0.55);
-      backdrop-filter: blur(16px);
-      border-radius: 60px;
-      border: 1px solid rgba(0, 213, 100, 0.35);
-    }
-
-    .hero h1 {
-      font-size: 1.8rem;
-      font-weight: 900;
-      background: linear-gradient(135deg, #FFFFFF, #00D564, #a0ffc0);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-bottom: 0.5rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .hero-logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 16px;
-      object-fit: cover;
-    }
-
-    .hero-badge {
-      background: rgba(0,213,100,0.2);
-      display: inline-block;
-      padding: 0.35rem 1.4rem;
-      border-radius: 60px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin: 0.8rem 0;
-    }
-
-    .hero h2 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin: 0.6rem 0;
-    }
-
-    .gradient-prem {
-      background: linear-gradient(120deg, #00ff88, #b3ffdd);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-
-    .hero-description {
-      max-width: 650px;
-      margin: 1rem auto;
-      font-size: 0.9rem;
-      color: #cddcf2;
-    }
-
-    .stats-row {
-      display: flex;
-      justify-content: center;
-      gap: 1.8rem;
-      flex-wrap: wrap;
-      margin-top: 1.2rem;
-    }
-
-    .stat-item {
-      background: rgba(0,0,0,0.4);
-      padding: 0.4rem 1.2rem;
-      border-radius: 48px;
-    }
-
-    .stat-number {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #00D564;
-    }
-
-    .stat-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-    }
-
-    .btn-premium {
-      background: linear-gradient(105deg, #00D564, #00a14a);
-      border: none;
-      padding: 0.8rem 2.2rem;
-      font-size: 1.1rem;
-      font-weight: 800;
-      border-radius: 80px;
-      color: white;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: 0.25s ease;
-      margin-top: 0.8rem;
-      font-family: inherit;
-    }
-
-    .premium-originals { margin: 2.5rem 0 2rem; }
+    .hero { text-align: center; margin-bottom: 2rem; padding: 1.8rem 1.5rem; background: rgba(10,20,35,0.55); backdrop-filter: blur(16px); border-radius: 60px; border: 1px solid rgba(0,213,100,0.35); }
+    .hero h1 { font-size: 1.8rem; font-weight: 900; background: linear-gradient(135deg,#FFF,#00D564,#a0ffc0); background-clip: text; -webkit-background-clip: text; color: transparent; display: inline-flex; align-items: center; gap: 12px; }
+    .hero-logo { width: 40px; height: 40px; border-radius: 16px; }
+    .hero-badge { background: rgba(0,213,100,0.2); display: inline-block; padding: 0.35rem 1.4rem; border-radius: 60px; font-size: 0.8rem; margin: 0.8rem 0; }
+    .hero h2 { font-size: 1.5rem; font-weight: 800; }
+    .gradient-prem { background: linear-gradient(120deg,#00ff88,#b3ffdd); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .hero-description { font-size: 0.9rem; color: #cddcf2; max-width: 650px; margin: 1rem auto; }
+    .btn-premium { background: linear-gradient(105deg,#00D564,#00a14a); border: none; padding: 0.8rem 2.2rem; font-size: 1.1rem; font-weight: 800; border-radius: 80px; color: white; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; margin-top: 0.8rem; font-family: inherit; }
+    .stats-row { display: flex; justify-content: center; gap: 1.8rem; margin-top: 1.2rem; flex-wrap: wrap; }
+    .stat-item { background: rgba(0,0,0,0.4); padding: 0.4rem 1.2rem; border-radius: 48px; }
+    .stat-number { font-size: 1.6rem; font-weight: 800; color: #00D564; }
+    .stat-label { font-size: 0.7rem; text-transform: uppercase; }
+    .premium-originals { margin: 2.5rem 0; }
     .section-title { text-align: center; margin-bottom: 1.8rem; }
     .section-title h3 { font-size: 1.5rem; font-weight: 800; display: inline-flex; align-items: center; gap: 10px; background: rgba(0,213,100,0.1); padding: 0.4rem 1.8rem; border-radius: 60px; }
-    .section-title p { font-size: 0.85rem; color: #cddcf2; margin-top: 0.3rem; }
     .series-grid { display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; }
     .series-card { background: rgba(15,25,40,0.7); backdrop-filter: blur(12px); border-radius: 28px; padding: 1.2rem 0.8rem; width: 200px; text-align: center; border: 1px solid rgba(0,213,100,0.3); }
-    .rank { font-size: 1.6rem; font-weight: 800; background: #00D56420; display: inline-block; width: 44px; border-radius: 50px; margin-bottom: 0.4rem; }
-    .series-card h4 { font-size: 1rem; margin: 0.3rem 0; }
+    .rank { font-size: 1.6rem; font-weight: 800; background: #00D56420; display: inline-block; width: 44px; border-radius: 50px; }
     .premium-badge { background: #00D564; padding: 3px 10px; border-radius: 40px; font-size: 0.65rem; font-weight: 700; display: inline-block; margin-top: 0.3rem; }
-    .premium-activation { margin: 2.5rem 0; }
-    .premium-card { background: linear-gradient(135deg, rgba(0,213,100,0.15), rgba(0,100,50,0.2)); backdrop-filter: blur(12px); border-radius: 44px; border: 1px solid rgba(0,213,100,0.5); padding: 1.8rem; text-align: center; }
-    .free-badge { display: inline-block; background: #00D564; padding: 0.25rem 1rem; border-radius: 60px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.8rem; }
-    .premium-card h2 { font-size: 1.8rem; font-weight: 800; }
-    .price-tag { margin: 0.8rem 0; }
-    .old-price { font-size: 1.6rem; text-decoration: line-through; color: #ff8888; margin-right: 0.8rem; }
-    .new-price { font-size: 2.2rem; font-weight: 900; color: #00D564; }
+    .premium-card { background: linear-gradient(135deg, rgba(0,213,100,0.15), rgba(0,100,50,0.2)); backdrop-filter: blur(12px); border-radius: 44px; padding: 1.8rem; text-align: center; }
     .features-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.8rem; max-width: 550px; margin: 1.2rem auto; text-align: left; }
     @media (max-width:550px){ .features-grid { grid-template-columns:1fr; } }
-    .feature-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #e2e8f0; }
+    .feature-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
     .feature-item i { color: #00D564; width: 20px; }
-    .activate-btn { background: linear-gradient(105deg,#00D564,#00a14a); border: none; padding: 0.8rem 2rem; font-size: 1rem; font-weight: 800; border-radius: 60px; color: white; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; margin: 0.8rem 0 0.4rem; font-family: inherit; }
-    .small-note { font-size: 0.65rem; color: #9aaec9; }
-    .trending-categories { margin: 2.5rem 0; }
+    .activate-btn { background: linear-gradient(105deg,#00D564,#00a14a); border: none; padding: 0.8rem 2rem; font-size: 1rem; font-weight: 800; border-radius: 60px; color: white; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; margin: 0.8rem 0; }
     .trending-grid { display: grid; grid-template-columns: repeat(2, minmax(250px,340px)); gap: 1.2rem; justify-content: center; }
-    @media (max-width:700px){ .trending-grid { grid-template-columns: repeat(2,1fr); } .category-img { height: 120px; } }
-    .category-card { background: rgba(0,0,0,0.55); border-radius: 22px; overflow: hidden; border: 1px solid rgba(0,213,100,0.45); }
-    .category-img { height: 150px; background-size: cover; background-position: center; position: relative; display: flex; align-items: flex-end; justify-content: center; }
-    .category-overlay { background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4) 60%, transparent); width: 100%; text-align: center; padding: 0.6rem 0; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; color: white; }
-    .category-info { padding: 0.6rem; text-align: center; background: rgba(0,0,0,0.5); }
-    .category-info p { font-size: 0.75rem; display: flex; align-items: center; justify-content: center; gap: 5px; flex-wrap: wrap; }
-    .trending-badge { background: #00D564; border-radius: 30px; padding: 2px 8px; font-size: 0.55rem; font-weight: 700; }
+    .category-card { background: rgba(0,0,0,0.55); border-radius: 22px; overflow: hidden; }
+    .category-img { height: 150px; background-size: cover; background-position: center; display: flex; align-items: flex-end; justify-content: center; }
+    .category-overlay { background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4) 60%, transparent); width: 100%; text-align: center; padding: 0.6rem 0; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; }
     .footer-bottom { margin-top: 2.5rem; text-align: center; padding: 1.2rem; border-top: 1px solid rgba(0,213,100,0.2); font-size: 0.7rem; }
-    .niche-card { background: rgba(10,20,35,0.75); backdrop-filter: blur(16px); border-radius: 36px; padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease; border: 1px solid rgba(0,213,100,0.3); width: 100%; max-width: 380px; margin: 0 auto; }
-    .niche-card h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .niche-card { background: rgba(10,20,35,0.75); backdrop-filter: blur(16px); border-radius: 36px; padding: 1.5rem; text-align: center; cursor: pointer; border: 1px solid rgba(0,213,100,0.3); max-width: 380px; margin: 0 auto; }
+    .niche-card h3 { font-size: 1.5rem; font-weight: 800; }
     .niche-card p { font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.8rem; }
-    .niche-grid { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin-top: 1.8rem; width: 100%; }
-    .niche-card-image { width: 55px; height: 55px; border-radius: 14px; margin: 0 auto 0.8rem; display: block; object-fit: cover; }
+    .niche-grid { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin-top: 1.8rem; }
+    .niche-card-image { width: 55px; height: 55px; border-radius: 14px; margin: 0 auto 0.8rem; display: block; }
     .back-btn { position: fixed; top: 15px; left: 15px; z-index: 100; background: rgba(0,0,0,0.75); backdrop-filter: blur(10px); padding: 8px 18px; border-radius: 50px; cursor: pointer; font-weight: 600; font-size: 0.85rem; border: 1px solid #00D564; }
     .hidden-view { display: none; }
-    .pt-fix { padding-top: 0; }
 
-    /* ========== DESKTOP MODE - MASSIVE ZOOMED OUT, 5X BIGGER, READABLE ========== */
-    /* Everything enlarged: fonts, blocks, buttons, spacing. Blocks overflow beyond viewport height (scroll required) */
+    /* ========== DESKTOP MODE — ABSOLUTELY MASSIVE, FULL PAGE COVERAGE, FORCES SCROLL ========== */
+    /* Every element is EXTREMELY LARGE. Niche cards take ~100vh each, forcing scroll to see Manga */
     @media (min-width: 1024px) {
-      /* Base container — extra wide, increased padding */
       .container {
-        max-width: 1600px;
-        padding: 3rem 5rem 8rem;
+        max-width: 1800px;
+        padding: 2rem 6rem 6rem;
         margin: 0 auto;
       }
 
-      /* Hero section — MASSIVE */
+      /* Hero — huge, but not full screen */
       .hero {
-        padding: 7rem 6rem;
-        margin-bottom: 8rem;
-        border-radius: 160px;
-        background: rgba(10, 20, 35, 0.7);
+        padding: 8rem 7rem;
+        margin-bottom: 10rem;
+        border-radius: 180px;
+        background: rgba(10, 20, 35, 0.75);
       }
       
       .hero h1 {
-        font-size: 8rem;
-        gap: 3rem;
+        font-size: 9rem;
+        gap: 3.5rem;
         margin-bottom: 2.5rem;
       }
       
       .hero-logo {
-        width: 200px;
-        height: 200px;
-        border-radius: 60px;
+        width: 240px;
+        height: 240px;
+        border-radius: 70px;
       }
       
       .hero-badge {
-        font-size: 2.8rem;
-        padding: 1.5rem 4rem;
-        margin: 2rem 0;
-        border-radius: 160px;
+        font-size: 3.2rem;
+        padding: 1.8rem 5rem;
+        margin: 2.5rem 0;
+        border-radius: 180px;
       }
       
       .hero h2 {
-        font-size: 5rem;
-        margin: 2rem 0;
+        font-size: 5.8rem;
+        margin: 2.5rem 0;
         line-height: 1.3;
       }
       
       .hero-description {
-        font-size: 2.4rem;
-        max-width: 1300px;
-        margin: 3rem auto;
+        font-size: 2.8rem;
+        max-width: 1400px;
+        margin: 3.5rem auto;
         line-height: 1.6;
       }
       
       .btn-premium {
-        padding: 2.5rem 7rem;
-        font-size: 2.8rem;
-        gap: 2rem;
-        margin-top: 3rem;
-        border-radius: 180px;
+        padding: 3rem 8rem;
+        font-size: 3.2rem;
+        gap: 2.2rem;
+        margin-top: 3.5rem;
+        border-radius: 200px;
       }
       
       .stats-row {
-        gap: 6rem;
-        margin-top: 3.5rem;
+        gap: 7rem;
+        margin-top: 4rem;
       }
       
       .stat-number {
-        font-size: 5rem;
+        font-size: 6rem;
       }
       
       .stat-label {
-        font-size: 1.8rem;
+        font-size: 2rem;
         letter-spacing: 3px;
       }
       
       .stat-item {
-        padding: 1.5rem 3.5rem;
-        border-radius: 120px;
+        padding: 1.8rem 4rem;
+        border-radius: 140px;
       }
       
-      /* Niche Cards — EXTREMELY MASSIVE (each block takes half screen height, forces scroll) */
+      /* Niche Grid — EACH CARD TAKES ALMOST FULL SCREEN HEIGHT. Forces scroll down to see all three */
+      .niche-grid {
+        gap: 8rem;
+        margin-top: 6rem;
+      }
+      
       .niche-card {
-        max-width: 1300px;
-        padding: 6rem 5rem;
-        border-radius: 140px;
+        max-width: 1600px;
+        padding: 12rem 6rem;
+        border-radius: 180px;
         margin: 0 auto;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       
       .niche-card-image {
-        width: 260px;
-        height: 260px;
-        margin-bottom: 3rem;
-        border-radius: 80px;
-      }
-      
-      .niche-card h3 {
-        font-size: 5rem;
-        margin-bottom: 2rem;
-      }
-      
-      .niche-card p {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-        line-height: 1.6;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      .niche-grid {
-        gap: 7rem;
-        margin-top: 5rem;
-      }
-      
-      /* Section Titles — huge */
-      .section-title {
-        margin-bottom: 6rem;
-      }
-      
-      .section-title h3 {
-        font-size: 4rem;
-        padding: 1.8rem 5rem;
-        gap: 2rem;
-        border-radius: 160px;
-      }
-      
-      .section-title p {
-        font-size: 2rem;
-        margin-top: 1.8rem;
-      }
-      
-      /* Series Cards — giant */
-      .series-card {
-        width: 520px;
-        padding: 3.5rem 2rem;
+        width: 360px;
+        height: 360px;
+        margin-bottom: 4rem;
         border-radius: 100px;
       }
       
+      .niche-card h3 {
+        font-size: 7rem;
+        margin-bottom: 2.5rem;
+      }
+      
+      .niche-card p {
+        font-size: 3.2rem;
+        margin-bottom: 4rem;
+        line-height: 1.6;
+        max-width: 85%;
+      }
+      
+      .niche-card .btn-premium {
+        padding: 2.8rem 7rem;
+        font-size: 3rem;
+        margin-top: 1rem;
+      }
+      
+      /* Section titles for inner pages — huge */
+      .section-title {
+        margin-bottom: 7rem;
+      }
+      
+      .section-title h3 {
+        font-size: 4.8rem;
+        padding: 2rem 6rem;
+        gap: 2.5rem;
+        border-radius: 180px;
+      }
+      
+      .section-title p {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+      }
+      
+      /* Series Cards — massive */
+      .series-card {
+        width: 650px;
+        padding: 4rem 2rem;
+        border-radius: 120px;
+      }
+      
       .series-card h4 {
-        font-size: 2.8rem;
-        margin: 1.5rem 0;
+        font-size: 3.2rem;
+        margin: 1.8rem 0;
       }
       
       .rank {
-        font-size: 4.5rem;
-        width: 140px;
-        margin-bottom: 1.8rem;
-        border-radius: 110px;
+        font-size: 5.5rem;
+        width: 170px;
+        margin-bottom: 2rem;
+        border-radius: 130px;
       }
       
       .premium-badge {
-        font-size: 1.6rem;
-        padding: 12px 32px;
-        margin-top: 1.5rem;
-        border-radius: 90px;
+        font-size: 1.8rem;
+        padding: 14px 36px;
+        margin-top: 1.8rem;
+        border-radius: 100px;
       }
       
       .series-grid {
-        gap: 4.5rem;
+        gap: 5rem;
       }
       
       .series-card div {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
       
       /* Trending Categories — massive panels */
       .trending-grid {
-        grid-template-columns: repeat(2, minmax(750px, 900px));
-        gap: 5rem;
+        grid-template-columns: repeat(2, minmax(850px, 1050px));
+        gap: 6rem;
       }
       
       .category-img {
-        height: 480px;
+        height: 580px;
       }
       
       .category-overlay {
-        font-size: 3.5rem;
-        padding: 2.2rem 0;
+        font-size: 4rem;
+        padding: 2.5rem 0;
       }
       
       .category-info {
-        padding: 2.5rem;
+        padding: 3rem;
       }
       
       .category-info p {
-        font-size: 2rem;
-        gap: 1.8rem;
+        font-size: 2.4rem;
+        gap: 2rem;
       }
       
       .trending-badge {
-        font-size: 1.4rem;
-        padding: 10px 26px;
-        border-radius: 80px;
+        font-size: 1.6rem;
+        padding: 12px 30px;
+        border-radius: 90px;
       }
       
-      /* Premium Activation Card — gigantic */
+      /* Premium Activation — gigantic */
       .premium-card {
-        padding: 6rem 5rem;
-        border-radius: 160px;
+        padding: 8rem 6rem;
+        border-radius: 180px;
       }
       
       .premium-card h2 {
-        font-size: 4.8rem;
-        margin-bottom: 1.8rem;
+        font-size: 5.5rem;
+        margin-bottom: 2rem;
       }
       
       .free-badge {
-        font-size: 2rem;
-        padding: 1.2rem 3.5rem;
-        margin-bottom: 2rem;
-        border-radius: 150px;
-      }
-      
-      .old-price {
-        font-size: 4rem;
-      }
-      
-      .new-price {
-        font-size: 6rem;
-      }
-      
-      .price-tag {
-        margin: 2.5rem 0;
-      }
-      
-      .features-grid {
-        max-width: 1200px;
-        gap: 2.5rem;
-        margin: 3.5rem auto;
-      }
-      
-      .feature-item {
-        font-size: 2.2rem;
-        gap: 1.5rem;
-      }
-      
-      .feature-item i {
-        font-size: 2.6rem;
-        width: 50px;
-      }
-      
-      .activate-btn {
-        padding: 2.5rem 6rem;
-        font-size: 2.6rem;
-        gap: 1.8rem;
-        margin: 2.5rem 0 1.2rem;
+        font-size: 2.4rem;
+        padding: 1.5rem 4rem;
+        margin-bottom: 2.5rem;
         border-radius: 160px;
       }
       
+      .old-price {
+        font-size: 4.8rem;
+      }
+      
+      .new-price {
+        font-size: 7rem;
+      }
+      
+      .price-tag {
+        margin: 3rem 0;
+      }
+      
+      .features-grid {
+        max-width: 1400px;
+        gap: 3rem;
+        margin: 4rem auto;
+      }
+      
+      .feature-item {
+        font-size: 2.5rem;
+        gap: 1.8rem;
+      }
+      
+      .feature-item i {
+        font-size: 3rem;
+        width: 60px;
+      }
+      
+      .activate-btn {
+        padding: 3rem 7rem;
+        font-size: 3rem;
+        gap: 2rem;
+        margin: 3rem 0 1.5rem;
+        border-radius: 180px;
+      }
+      
       .small-note {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       
-      /* Spacing between major sections */
+      /* Spacing between sections on inner pages */
       .premium-originals, .trending-categories, .premium-activation {
-        margin: 9rem 0;
+        margin: 10rem 0;
       }
       
-      /* Footer — huge */
+      /* Footer — massive */
       .footer-bottom {
-        margin-top: 8rem;
-        padding: 4rem;
-        font-size: 2rem;
-        border-radius: 110px;
-        background: rgba(0,0,0,0.5);
+        margin-top: 10rem;
+        padding: 5rem;
+        font-size: 2.2rem;
+        border-radius: 130px;
+        background: rgba(0,0,0,0.55);
       }
       
       /* Back button — enormous */
       .back-btn {
-        top: 50px;
-        left: 50px;
-        padding: 24px 55px;
-        font-size: 2.2rem;
-        border-radius: 120px;
+        top: 60px;
+        left: 60px;
+        padding: 28px 65px;
+        font-size: 2.5rem;
+        border-radius: 140px;
       }
       
-      /* All icons scaled up */
+      /* Icons scale */
       .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
-        font-size: 2.8rem;
+        font-size: 3rem;
       }
       
       .btn-premium i, .activate-btn i {
-        font-size: 2.8rem;
+        font-size: 3rem;
       }
       
       /* Hover effects */
-      .btn-premium:hover, .activate-btn:hover {
-        transform: scale(1.05);
-      }
+      .btn-premium:hover, .activate-btn:hover { transform: scale(1.05); }
+      .niche-card:hover { transform: translateY(-20px); }
+      .series-card:hover, .category-card:hover { transform: translateY(-18px); }
       
-      .niche-card:hover {
-        transform: translateY(-18px);
-      }
-      
-      .series-card:hover, .category-card:hover {
-        transform: translateY(-15px);
-      }
-      
-      /* Ensure all text is extremely legible */
+      /* All text extremely bold and legible */
       p, .hero-description, .feature-item, .category-info p, .small-note {
         line-height: 1.5;
         font-weight: 500;
       }
       
-      .stat-number {
-        font-size: 5.2rem;
-      }
-      
-      /* Extra polish for readability */
       .hero-description {
         font-weight: 500;
-        letter-spacing: -0.3px;
       }
       
-      .niche-card .btn-premium {
-        margin-top: 1.2rem;
+      /* Ensure that on desktop, the cards are so big that manga niche is off-screen until scroll */
+      .niche-card:last-child {
+        margin-bottom: 2rem;
       }
     }
     
-    /* Medium tablets/laptops (768px - 1023px) — comfortable scaling */
+    /* Medium tablets (768px - 1023px) — large but not excessive */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container { max-width: 950px; padding: 2rem 2rem 3rem; }
       .hero h1 { font-size: 3rem; }
@@ -555,17 +431,16 @@
       .hero h2 { font-size: 2.2rem; }
       .hero-description { font-size: 1.2rem; }
       .btn-premium { padding: 1.2rem 3rem; font-size: 1.5rem; }
-      .niche-card { max-width: 680px; padding: 2.5rem 2rem; }
-      .niche-card h3 { font-size: 2.3rem; }
-      .niche-card p { font-size: 1.2rem; }
+      .niche-card { max-width: 750px; padding: 2.5rem 2rem; min-height: auto; }
+      .niche-card h3 { font-size: 2.5rem; }
+      .niche-card p { font-size: 1.3rem; }
       .section-title h3 { font-size: 2.2rem; }
-      .series-card { width: 280px; }
+      .series-card { width: 300px; }
       .premium-card h2 { font-size: 2.5rem; }
       .feature-item { font-size: 1.1rem; }
       .footer-bottom { font-size: 1rem; }
     }
     
-    /* Mobile devices (<768px) — original untouched compact android style */
     @media (max-width: 767px) {
       .container { max-width: 100%; padding: 1rem 1rem 2rem; }
     }
@@ -573,26 +448,20 @@
 </head>
 <body>
 <div class="anime-bg" id="animeBg"></div>
-
-<!-- Back to Portal Button -->
-<div id="backBtn" class="back-btn hidden-view" onclick="showHomeScreen()">
-  <i class="fas fa-arrow-left"></i> ← Portal
-</div>
+<div id="backBtn" class="back-btn hidden-view" onclick="showHomeScreen()"><i class="fas fa-arrow-left"></i> ← Portal</div>
 
 <div class="main-content">
-  <!-- HOME SCREEN: NICHE SELECTION PORTAL -->
+  <!-- HOME SCREEN: MASSIVE NICHE PORTAL (Desktop forces scroll to see all 3) -->
   <div id="homeScreen" class="container pt-fix">
     <div class="hero">
       <h1>ToonHub Premium</h1>
       <div class="hero-badge"><i class="fas fa-infinity"></i> 100% FREE ACCESS</div>
       <h2>Unlock Premium Access to <span class="gradient-prem">Your Favorite Comics</span> — $0</h2>
-      <div class="hero-description">
-        Get unlimited fast passes, zero ads for Webtoon, Manhwa, and Manga. Select your universe below.
-      </div>
+      <div class="hero-description">Get unlimited fast passes, zero ads for Webtoon, Manhwa, and Manga. Select your universe below.</div>
     </div>
 
     <div class="niche-grid">
-      <!-- Webtoon Card -->
+      <!-- Webtoon Card — MASSIVE -->
       <div class="niche-card" data-niche="webtoon">
         <img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon" class="niche-card-image">
         <h3 style="color: #39FF14;">WEBTOON PREMIUM</h3>
@@ -600,7 +469,7 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #39FF14, #2aa010);">Unlock Webtoon Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <!-- Manhwa Card -->
+      <!-- Manhwa Card — MASSIVE -->
       <div class="niche-card" data-niche="manhwa">
         <img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa" class="niche-card-image">
         <h3 style="color: #00f0ff;">MANHWA PREMIUM</h3>
@@ -608,7 +477,7 @@
         <button class="btn-premium" style="background: linear-gradient(105deg, #00f0ff, #00a0cc);">Unlock Manhwa Premium <i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <!-- Manga Card -->
+      <!-- Manga Card — MASSIVE, only visible after scrolling down on desktop -->
       <div class="niche-card" data-niche="manga">
         <img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga" class="niche-card-image">
         <h3 style="color: #e63946;">MANGA PREMIUM</h3>
@@ -622,7 +491,7 @@
     </div>
   </div>
 
-  <!-- WEBTOON LANDING PAGE -->
+  <!-- WEBTOON INNER PAGE -->
   <div id="webtoonScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/vxJ8d3KN/unnamed-1.jpg" alt="Webtoon Logo" class="hero-logo"> Webtoon Premium+</h1>
@@ -643,7 +512,7 @@
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Webtoon Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- MANHWA LANDING PAGE -->
+  <!-- MANHWA INNER PAGE -->
   <div id="manhwaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/BVWB7sdt/manhwanow-logo.jpg" alt="Manhwa Logo" class="hero-logo"> Manhwa Premium+</h1>
@@ -664,7 +533,7 @@
     <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Manhwa Premium+ — Unlimited reading, zero cost.</p></div>
   </div>
 
-  <!-- MANGA LANDING PAGE -->
+  <!-- MANGA INNER PAGE -->
   <div id="mangaScreen" class="container pt-fix hidden-view">
     <div class="hero">
       <h1><img src="https://i.ibb.co/0yNTvN4r/mangazone-icon.jpg" alt="Manga Logo" class="hero-logo"> Manga Premium+</h1>
@@ -688,7 +557,6 @@
 
 <script>
   const CPA_URL = "https://appsave.store/cl/i/ex21vx";
-  
   function showScreen(screenId) {
     document.getElementById('homeScreen').classList.add('hidden-view');
     document.getElementById('webtoonScreen').classList.add('hidden-view');
@@ -698,7 +566,6 @@
     document.getElementById('backBtn').classList.remove('hidden-view');
     window.scrollTo(0, 0);
   }
-  
   function showHomeScreen() {
     document.getElementById('homeScreen').classList.remove('hidden-view');
     document.getElementById('webtoonScreen').classList.add('hidden-view');
@@ -707,7 +574,6 @@
     document.getElementById('backBtn').classList.add('hidden-view');
     window.scrollTo(0, 0);
   }
-  
   document.querySelectorAll('.niche-card').forEach(card => {
     card.addEventListener('click', (e) => {
       const niche = card.getAttribute('data-niche');
@@ -716,34 +582,20 @@
       else if (niche === 'manga') showScreen('mangaScreen');
     });
     const btn = card.querySelector('button');
-    if (btn) {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const niche = card.getAttribute('data-niche');
-        if (niche === 'webtoon') showScreen('webtoonScreen');
-        else if (niche === 'manhwa') showScreen('manhwaScreen');
-        else if (niche === 'manga') showScreen('mangaScreen');
-      });
-    }
+    if (btn) btn.addEventListener('click', (e) => { e.stopPropagation(); const niche = card.getAttribute('data-niche'); if (niche === 'webtoon') showScreen('webtoonScreen'); else if (niche === 'manhwa') showScreen('manhwaScreen'); else if (niche === 'manga') showScreen('mangaScreen'); });
   });
-  
-  document.querySelectorAll('.cta-btn').forEach(btn => {
-    btn.addEventListener('click', () => { window.location.href = CPA_URL; });
-  });
-  
+  document.querySelectorAll('.cta-btn').forEach(btn => btn.addEventListener('click', () => window.location.href = CPA_URL));
   function initParticles() {
     const bgDiv = document.querySelector('.anime-bg');
-    for(let i = 0; i < 60; i++) {
-      let particle = document.createElement('div');
-      particle.classList.add('particle');
-      let size = Math.random() * 6 + 2;
-      particle.style.width = size + 'px';
-      particle.style.height = size + 'px';
-      particle.style.left = Math.random() * 100 + '%';
-      particle.style.animationDelay = Math.random() * 20 + 's';
-      particle.style.animationDuration = 10 + Math.random() * 18 + 's';
-      particle.style.opacity = Math.random() * 0.5;
-      bgDiv.appendChild(particle);
+    for(let i = 0; i < 80; i++) {
+      let p = document.createElement('div');
+      p.classList.add('particle');
+      let s = Math.random() * 7 + 2;
+      p.style.width = s + 'px'; p.style.height = s + 'px';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDelay = Math.random() * 20 + 's';
+      p.style.animationDuration = 12 + Math.random() * 20 + 's';
+      bgDiv.appendChild(p);
     }
   }
   initParticles();
