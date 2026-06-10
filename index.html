@@ -68,6 +68,7 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
+    /* ========== BASE STYLES (Mobile/Android Default - UNTOUCHED) ========== */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -76,9 +77,7 @@
       z-index: 3;
     }
 
-    /* ========== ANDROID/MOBILE DEFAULT (unaltered, kept as original) ========== */
-    /* These styles apply to all devices, preserving original mobile look */
-
+    /* Hero Section - Mobile Default */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -456,32 +455,6 @@
       font-weight: 700;
     }
 
-    /* Testimonials */
-    .testimonials-section {
-      margin: 2.5rem 0;
-    }
-    .testimonial-flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      justify-content: center;
-    }
-    .testimonial {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(8px);
-      border-radius: 24px;
-      padding: 1.2rem;
-      width: 240px;
-      border-bottom: 3px solid #00D564;
-    }
-    .testimonial i {
-      color: #00D564;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .testimonial p {
-      font-size: 0.8rem;
-    }
     .footer-bottom {
       margin-top: 2.5rem;
       text-align: center;
@@ -490,7 +463,7 @@
       font-size: 0.7rem;
     }
 
-    /* Niche Portal - vertical stacking base for all devices */
+    /* Niche Portal - vertical stacking base */
     .niche-portal {
       min-height: auto;
       display: flex;
@@ -534,7 +507,7 @@
       margin-bottom: 0.8rem;
     }
     
-    /* Vertical stacking by default for all devices (mobile + tablet base) */
+    /* Vertical stacking - default for all devices */
     .niche-grid {
       display: flex;
       flex-direction: column;
@@ -585,122 +558,155 @@
     #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
       padding-top: 0.3rem;
     }
-    
-    /* ========== DESKTOP MODE SPECIFIC OVERRIDES ========== */
-    /* These ONLY apply on desktop screens (min-width: 1024px) to mirror Android look & feel */
+
+    /* ========== DESKTOP MODE ONLY - ENLARGED BY 50% & NARROWER HORIZONTALLY ========== */
+    /* These changes ONLY apply on desktop screens (min-width: 1024px) */
+    /* Horizontal width reduced by making container narrower, vertical elements enlarged */
     @media (min-width: 1024px) {
-      /* Main container max-width enlarged but still comfortable (like phone screen scaled up) */
+      /* Reduce horizontal wideness - narrower container like phone width on desktop */
       .container {
-        max-width: 1100px;
+        max-width: 760px;
         padding: 1rem 2rem 2rem;
       }
       
-      /* Hero section: larger but same proportions */
+      /* Enlarge hero section vertically by 50% */
       .hero {
-        padding: 2.2rem 2.5rem;
+        padding: 2.7rem 2rem;
         margin-bottom: 2.5rem;
         border-radius: 70px;
       }
       
+      /* Enlarge fonts by ~50% */
       .hero h1 {
-        font-size: 3.6rem;
-        gap: 18px;
+        font-size: 4.2rem;
+        gap: 20px;
       }
       
       .hero-logo {
-        width: 65px;
-        height: 65px;
+        width: 75px;
+        height: 75px;
+        border-radius: 20px;
       }
       
       .hero-badge {
-        font-size: 1rem;
-        padding: 0.5rem 1.8rem;
+        font-size: 1.2rem;
+        padding: 0.6rem 2rem;
+        margin: 1rem 0;
       }
       
       .hero h2 {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
+        margin: 0.8rem 0;
       }
       
       .hero-description {
-        font-size: 1.2rem;
-        max-width: 750px;
+        font-size: 1.3rem;
+        max-width: 550px;
+        margin: 1.2rem auto;
+        line-height: 1.5;
       }
       
+      /* Enlarge buttons */
       .btn-premium {
-        padding: 1rem 2.6rem;
-        font-size: 1.25rem;
+        padding: 1.2rem 3rem;
+        font-size: 1.4rem;
+        gap: 14px;
+        margin-top: 1.2rem;
       }
       
-      /* Niche cards: keep vertical stacking, but enlarge card sizes to match phone proportions (like Android) */
-      .niche-card {
-        max-width: 500px;
-        padding: 2rem;
-        border-radius: 48px;
+      /* Enlarge stats */
+      .stats-row {
+        gap: 2.5rem;
+        margin-top: 1.5rem;
       }
       
-      .niche-card-image {
-        width: 80px;
-        height: 80px;
-        border-radius: 20px;
-        margin-bottom: 1rem;
-      }
-      
-      .niche-card h3 {
+      .stat-number {
         font-size: 2rem;
       }
       
+      .stat-label {
+        font-size: 0.85rem;
+      }
+      
+      .stat-item {
+        padding: 0.6rem 1.5rem;
+      }
+      
+      /* Enlarge niche cards - vertical stacking preserved, larger vertical size */
+      .niche-card {
+        max-width: 520px;
+        padding: 2.2rem;
+        border-radius: 52px;
+      }
+      
+      .niche-card-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 24px;
+        margin-bottom: 1.2rem;
+      }
+      
+      .niche-card h3 {
+        font-size: 2.2rem;
+        margin-bottom: 0.6rem;
+      }
+      
       .niche-card p {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
         margin-bottom: 1.2rem;
       }
       
       .niche-grid {
-        gap: 2rem;
+        gap: 2.2rem;
+        margin-top: 2rem;
       }
       
-      /* Series cards: enlarge for desktop to match Android scaling */
-      .series-card {
-        width: 250px;
-        padding: 1.5rem 1rem;
-        border-radius: 32px;
-      }
-      
-      .series-card h4 {
-        font-size: 1.2rem;
-      }
-      
-      .rank {
-        font-size: 1.9rem;
-        width: 52px;
-      }
-      
-      .premium-badge {
-        font-size: 0.75rem;
-        padding: 4px 12px;
-      }
-      
+      /* Enlarge section titles */
       .section-title h3 {
-        font-size: 2rem;
-        padding: 0.5rem 2rem;
+        font-size: 2.4rem;
+        padding: 0.6rem 2.2rem;
+        gap: 14px;
       }
       
       .section-title p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
       }
       
-      /* Trending categories grid: scale up category cards */
+      /* Enlarge series cards */
+      .series-card {
+        width: 280px;
+        padding: 1.8rem 1rem;
+        border-radius: 36px;
+      }
+      
+      .series-card h4 {
+        font-size: 1.3rem;
+      }
+      
+      .rank {
+        font-size: 2.2rem;
+        width: 58px;
+      }
+      
+      .premium-badge {
+        font-size: 0.8rem;
+        padding: 5px 14px;
+      }
+      
+      /* Enlarge trending categories */
       .trending-grid {
-        grid-template-columns: repeat(2, minmax(280px, 380px));
-        gap: 1.8rem;
+        grid-template-columns: repeat(2, minmax(300px, 380px));
+        gap: 2rem;
       }
       
       .category-img {
-        height: 180px;
+        height: 200px;
       }
       
       .category-overlay {
-        font-size: 1.4rem;
-        padding: 0.8rem 0;
+        font-size: 1.5rem;
+        padding: 1rem 0;
       }
       
       .category-info p {
@@ -708,118 +714,152 @@
       }
       
       .trending-badge {
-        font-size: 0.65rem;
-        padding: 3px 10px;
+        font-size: 0.7rem;
+        padding: 4px 12px;
       }
       
-      /* Premium card: desktop mirror */
+      /* Enlarge premium activation card */
       .premium-card {
-        padding: 2.2rem;
-        border-radius: 52px;
+        padding: 2.5rem;
+        border-radius: 56px;
       }
       
       .premium-card h2 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
       }
       
       .free-badge {
-        font-size: 0.9rem;
-        padding: 0.35rem 1.2rem;
+        font-size: 1rem;
+        padding: 0.4rem 1.4rem;
       }
       
       .old-price {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
       
       .new-price {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
       }
       
       .features-grid {
-        max-width: 650px;
-        gap: 1rem;
+        max-width: 500px;
+        gap: 1.2rem;
+        margin: 1.5rem auto;
       }
       
       .feature-item {
         font-size: 1rem;
+        gap: 12px;
+      }
+      
+      .feature-item i {
+        font-size: 1.1rem;
+        width: 24px;
       }
       
       .activate-btn {
-        padding: 1rem 2.2rem;
-        font-size: 1.15rem;
+        padding: 1.1rem 2.5rem;
+        font-size: 1.25rem;
+        gap: 12px;
       }
       
-      .stats-row {
-        gap: 2.2rem;
+      .small-note {
+        font-size: 0.75rem;
       }
       
-      .stat-number {
-        font-size: 1.9rem;
-      }
-      
-      .stat-label {
-        font-size: 0.8rem;
-      }
-      
-      .footer-bottom {
-        font-size: 0.8rem;
-        padding: 1.5rem;
-      }
-      
-      /* Additional spacing to avoid compressed feeling */
+      /* Enlarge spacing between sections vertically */
       .premium-originals, .trending-categories, .premium-activation {
-        margin: 3rem 0;
+        margin: 3.5rem 0;
       }
       
-      /* Back button desktop scaling */
+      /* Enlarge footer */
+      .footer-bottom {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+      }
+      
+      /* Enlarge back button */
       .back-btn {
-        top: 20px;
-        left: 20px;
-        padding: 10px 22px;
+        top: 25px;
+        left: 25px;
+        padding: 12px 24px;
+        font-size: 1.1rem;
+      }
+      
+      /* Adjust main screens vertical spacing */
+      #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
+        padding-top: 0.8cm;
+      }
+      
+      /* Series grid gap larger */
+      .series-grid {
+        gap: 1.8rem;
+      }
+      
+      /* Ensure all text scales properly */
+      .hero .stats-row .stat-number {
+        font-size: 2rem;
+      }
+      
+      /* Make hero badge icon bigger */
+      .hero-badge i {
         font-size: 1rem;
       }
       
-      /* Main screens vertical spacing same as mobile */
-      #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-        padding-top: 0.5cm;
+      /* Ensure buttons have proper hover scale */
+      .btn-premium:hover, .activate-btn:hover {
+        transform: scale(1.03);
       }
     }
     
-    /* For medium-large tablets/laptops (768px to 1023px) we also enlarge slightly but preserve vertical stacking */
+    /* For medium desktop screens (768px-1023px) - moderate scaling, still narrower */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
-        max-width: 90%;
+        max-width: 700px;
         padding: 1rem 1.8rem 2rem;
       }
       
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+      
+      .hero-logo {
+        width: 60px;
+        height: 60px;
+      }
+      
       .niche-card {
-        max-width: 450px;
+        max-width: 480px;
         padding: 1.8rem;
       }
       
-      .niche-card-image {
-        width: 70px;
-        height: 70px;
+      .niche-card h3 {
+        font-size: 1.9rem;
       }
       
-      .niche-card h3 {
-        font-size: 1.8rem;
+      .btn-premium {
+        padding: 1rem 2.5rem;
+        font-size: 1.25rem;
       }
       
       .series-card {
-        width: 230px;
+        width: 250px;
       }
       
       .premium-card {
         padding: 2rem;
       }
-      
-      .hero h1 {
-        font-size: 3rem;
-      }
     }
     
-    /* Keep native mobile sizes untouched for small devices (below 768px) — no changes */
+    /* Mobile devices (below 768px) - NO CHANGES, original Android mode preserved */
+    @media (max-width: 767px) {
+      /* Keep all original mobile styles - nothing altered here */
+      .container {
+        max-width: 100%;
+        padding: 1rem 1rem 2rem;
+      }
+    }
   </style>
 </head>
 <body>
