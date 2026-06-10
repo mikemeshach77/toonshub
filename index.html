@@ -68,16 +68,16 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* ========== BASE STYLES (Mobile/Android Default - UNTOUCHED) ========== */
+    /* ========== BASE STYLES (Same for ALL devices - Android & Desktop) ========== */
     .container {
-      max-width: 1200px;
+      max-width: 100%;
       margin: 0 auto;
-      padding: 1rem 1.5rem 2rem;
+      padding: 1rem 1rem 2rem;
       position: relative;
       z-index: 3;
     }
 
-    /* Hero Section - Mobile Default */
+    /* Hero Section */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -565,360 +565,27 @@
       padding-top: 0.3rem;
     }
 
-    /* ================================================================ */
-    /* DESKTOP MODE: EXACT MIMIC OF ANDROID MODULE BUT PROPORTIONALLY BIGGER */
-    /* No android styles touched — only scaling desktop to look like a giant Android mode */
-    /* ================================================================ */
-    
-    /* For screens 1280px and above: we scale everything uniformly while preserving Android layout ratios */
-    @media (min-width: 1280px) {
-      /* Container width becomes narrower (similar to phone-like central column) but larger scale */
+    /* ========== DESKTOP CENTERING - SAME SIZE AS ANDROID, NO SCALING ========== */
+    /* For screens wider than 768px, we simply center the content with a max-width container */
+    /* No font-size, padding, margin, or dimension scaling occurs — everything stays at Android size */
+    @media (min-width: 768px) {
       .container {
-        max-width: 980px;
-        width: 80%;
-        padding: 2rem 1.5rem 3rem;
-      }
-      
-      /* Hero section: preserve same rounded style, bigger like mobile but blown up */
-      .hero {
-        padding: 3rem 2rem;
-        border-radius: 80px;
-        margin-bottom: 3rem;
-      }
-      
-      .hero h1 {
-        font-size: 4rem;
-        gap: 20px;
-      }
-      
-      .hero-logo {
-        width: 80px;
-        height: 80px;
-        border-radius: 24px;
-      }
-      
-      .hero-badge {
-        font-size: 1.2rem;
-        padding: 0.6rem 2rem;
-        margin: 1rem 0;
-      }
-      
-      .hero h2 {
-        font-size: 2.6rem;
-      }
-      
-      .hero-description {
-        font-size: 1.3rem;
-        max-width: 750px;
-      }
-      
-      .btn-premium {
-        padding: 1.2rem 3rem;
-        font-size: 1.5rem;
-        gap: 15px;
-      }
-      
-      .stats-row {
-        gap: 2.5rem;
-      }
-      
-      .stat-number {
-        font-size: 2rem;
-      }
-      
-      .stat-label {
-        font-size: 0.9rem;
-      }
-      
-      /* Niche cards (three vertical stacks) exactly as Android style but scaled */
-      .niche-card {
         max-width: 560px;
-        padding: 2rem 1.8rem;
-        border-radius: 48px;
+        margin: 0 auto;
+        padding: 1rem 1rem 2rem;
       }
       
-      .niche-card-image {
-        width: 85px;
-        height: 85px;
-        margin-bottom: 1rem;
-        border-radius: 20px;
-      }
-      
-      .niche-card h3 {
-        font-size: 2rem;
-        margin-bottom: 0.6rem;
-      }
-      
-      .niche-card p {
-        font-size: 1.1rem;
-        margin-bottom: 1.2rem;
-      }
-      
-      .niche-grid {
-        gap: 2rem;
-      }
-      
-      /* Section titles */
-      .section-title h3 {
-        font-size: 2.2rem;
-        padding: 0.6rem 2rem;
-      }
-      
-      .section-title p {
-        font-size: 1rem;
-      }
-      
-      /* series cards (trending) */
-      .series-card {
-        width: 240px;
-        padding: 1.5rem 1rem;
-        border-radius: 36px;
-      }
-      
-      .series-card h4 {
-        font-size: 1.3rem;
-      }
-      
-      .rank {
-        font-size: 2rem;
-        width: 55px;
-      }
-      
-      .premium-badge {
-        font-size: 0.8rem;
-        padding: 5px 14px;
-      }
-      
-      .series-card div {
-        font-size: 1rem;
-      }
-      
-      .series-grid {
-        gap: 1.8rem;
-      }
-      
-      /* trending categories grid */
-      .trending-grid {
-        grid-template-columns: repeat(2, 320px);
-        gap: 1.8rem;
-      }
-      
-      .category-img {
-        height: 190px;
-      }
-      
-      .category-overlay {
-        font-size: 1.5rem;
-        padding: 0.9rem 0;
-      }
-      
-      .category-info p {
-        font-size: 1rem;
-      }
-      
-      .trending-badge {
-        font-size: 0.7rem;
-        padding: 4px 12px;
-      }
-      
-      /* premium activation card */
-      .premium-card {
-        padding: 2.5rem 2rem;
-        border-radius: 60px;
-      }
-      
-      .premium-card h2 {
-        font-size: 2.4rem;
-      }
-      
-      .free-badge {
-        font-size: 1rem;
-        padding: 0.4rem 1.4rem;
-      }
-      
-      .old-price {
-        font-size: 2rem;
-      }
-      
-      .new-price {
-        font-size: 3rem;
-      }
-      
-      .features-grid {
-        gap: 1rem;
-        max-width: 680px;
-      }
-      
-      .feature-item {
-        font-size: 1.05rem;
-        gap: 12px;
-      }
-      
-      .feature-item i {
-        font-size: 1.2rem;
-        width: 26px;
-      }
-      
-      .activate-btn {
-        padding: 1rem 2.5rem;
-        font-size: 1.3rem;
-      }
-      
-      .small-note {
-        font-size: 0.85rem;
-      }
-      
-      .footer-bottom {
-        font-size: 0.9rem;
-        margin-top: 3rem;
-      }
-      
+      /* Keep back button appropriately positioned but not scaled */
       .back-btn {
-        padding: 12px 24px;
-        font-size: 1.1rem;
-        border-radius: 60px;
         top: 20px;
         left: 20px;
       }
     }
     
-    /* For very large desktop screens (1600px+) we increase further but still keep proportions exactly like Android */
-    @media (min-width: 1600px) {
+    /* Very large screens get extra centering but NO SIZE INCREASE */
+    @media (min-width: 1200px) {
       .container {
-        max-width: 1100px;
-        width: 70%;
-        padding: 2.5rem 2rem 4rem;
-      }
-      
-      .hero {
-        padding: 4rem 3rem;
-        border-radius: 100px;
-      }
-      
-      .hero h1 {
-        font-size: 5rem;
-      }
-      
-      .hero-logo {
-        width: 110px;
-        height: 110px;
-      }
-      
-      .hero-badge {
-        font-size: 1.5rem;
-        padding: 0.8rem 2.5rem;
-      }
-      
-      .hero h2 {
-        font-size: 3.2rem;
-      }
-      
-      .hero-description {
-        font-size: 1.5rem;
-        max-width: 900px;
-      }
-      
-      .btn-premium {
-        padding: 1.5rem 3.8rem;
-        font-size: 1.8rem;
-      }
-      
-      .stat-number {
-        font-size: 2.4rem;
-      }
-      
-      .niche-card {
-        max-width: 700px;
-        padding: 2.5rem 2rem;
-      }
-      
-      .niche-card-image {
-        width: 110px;
-        height: 110px;
-      }
-      
-      .niche-card h3 {
-        font-size: 2.4rem;
-      }
-      
-      .niche-card p {
-        font-size: 1.3rem;
-      }
-      
-      .section-title h3 {
-        font-size: 2.6rem;
-      }
-      
-      .series-card {
-        width: 280px;
-        padding: 1.8rem 1.2rem;
-      }
-      
-      .series-card h4 {
-        font-size: 1.5rem;
-      }
-      
-      .rank {
-        font-size: 2.3rem;
-        width: 65px;
-      }
-      
-      .trending-grid {
-        grid-template-columns: repeat(2, 380px);
-        gap: 2rem;
-      }
-      
-      .category-img {
-        height: 220px;
-      }
-      
-      .category-overlay {
-        font-size: 1.8rem;
-      }
-      
-      .premium-card {
-        padding: 3rem 2.5rem;
-      }
-      
-      .premium-card h2 {
-        font-size: 2.8rem;
-      }
-      
-      .feature-item {
-        font-size: 1.2rem;
-      }
-      
-      .activate-btn {
-        padding: 1.2rem 3rem;
-        font-size: 1.5rem;
-      }
-    }
-    
-    /* Mobile devices (below 768px) - NO CHANGES, original Android mode preserved exactly */
-    @media (max-width: 767px) {
-      /* Keep all original mobile styles - untouched, exactly as provided */
-      .container {
-        max-width: 100%;
-        padding: 1rem 1rem 2rem;
-      }
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-      .hero-logo {
-        width: 40px;
-        height: 40px;
-      }
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-      .trending-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .category-img {
-        height: 120px;
-      }
-      .niche-card {
-        max-width: 100%;
+        max-width: 560px;
       }
     }
   </style>
