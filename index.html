@@ -554,271 +554,271 @@
     }
 
     /* ============================================================ */
-    /* DESKTOP ULTRA MEGA SCALE - EACH SECTION LOOKS LIKE 2 MERGED VERTICALLY */
-    /* Everything BIGGER, disclaimer FIXED at bottom (not floating middle) */
-    /* Width unchanged, only vertical scaling + fonts + spacing DOUBLED or TRIPLED */
+    /* DESKTOP ULTRA MEGA SCALE - VERTICAL SIZE DOUBLED (LENGTH x2) */
+    /* Every card, section, button, text appears extremely tall, like two cards merged vertically */
+    /* Width remains unchanged - only height / vertical padding / font sizes are massively increased */
     /* ============================================================ */
     @media (min-width: 1024px) {
-      /* Main container — wider but vertical padding massive */
+      /* Main container — more vertical breathing */
       .container {
         max-width: 1600px;
-        padding: 4rem 3rem 6rem;  /* heavy vertical breathing */
+        padding: 5rem 3rem 8rem;
         margin: 0 auto;
       }
 
-      /* Hero section - like two heroes stacked => doubled vertical dimensions */
+      /* Hero section - vertical padding & spacing doubled */
       .hero {
-        padding: 5rem 3rem;       /* was 1.8rem -> nearly triple vertical */
-        margin-bottom: 6rem;      /* extremely spacious */
+        padding: 6rem 3rem;       /* originally 1.8rem -> more than tripled for vertical stretch */
+        margin-bottom: 7rem;
         border-radius: 90px;
       }
       
       .hero h1 {
-        font-size: 4.8rem !important;  /* massive title */
-        gap: 2rem;
-        margin-bottom: 2rem;
+        font-size: 5.2rem !important;
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
       }
       
       .hero-logo {
-        width: 110px !important;
-        height: 110px !important;
-        border-radius: 32px;
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 36px;
       }
       
       .hero-badge {
-        font-size: 1.8rem !important;
-        padding: 1.2rem 3rem;
-        margin: 1.8rem 0;
-        border-radius: 120px;
+        font-size: 2rem !important;
+        padding: 1.5rem 3.5rem;
+        margin: 2rem 0;
+        border-radius: 130px;
       }
       
       .hero h2 {
-        font-size: 3.2rem !important;
-        margin: 1.8rem 0;
+        font-size: 3.6rem !important;
+        margin: 2.2rem 0;
       }
       
       .hero-description {
-        font-size: 1.8rem !important;
-        max-width: 1100px;
-        margin: 2.5rem auto;
+        font-size: 2rem !important;
+        max-width: 1200px;
+        margin: 3rem auto;
         line-height: 1.7;
       }
       
       .btn-premium {
-        padding: 2rem 4.5rem !important;
-        font-size: 2rem !important;
-        gap: 20px;
-        margin-top: 2.2rem;
-        border-radius: 120px;
+        padding: 2.4rem 5rem !important;
+        font-size: 2.2rem !important;
+        gap: 24px;
+        margin-top: 2.8rem;
+        border-radius: 140px;
       }
       
       .stats-row {
-        gap: 4rem;
-        margin-top: 2.8rem;
+        gap: 5rem;
+        margin-top: 3.5rem;
       }
       
       .stat-number {
-        font-size: 3.2rem !important;
+        font-size: 3.8rem !important;
       }
       
       .stat-label {
-        font-size: 1.4rem !important;
+        font-size: 1.6rem !important;
         letter-spacing: 2px;
       }
       
       .stat-item {
-        padding: 1.2rem 2.5rem;
-        border-radius: 90px;
+        padding: 1.5rem 3rem;
+        border-radius: 100px;
       }
       
-      /* Niche Cards — each card now appears as big as two merged vertically (massive padding) */
+      /* Niche Cards — vertical length DOUBLED! padding top/bottom massive -> looks like two cards merged */
       .niche-card {
-        max-width: 950px;
-        padding: 4.5rem 2.5rem;    /* enormous vertical padding → looks like 2 cards stacked */
-        border-radius: 90px;
-        margin-bottom: 1rem;
-      }
-      
-      .niche-card-image {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 2.2rem;
-        border-radius: 48px;
-      }
-      
-      .niche-card h3 {
-        font-size: 3rem !important;
+        max-width: 1100px;
+        padding: 5rem 2.5rem;    /* vertical padding increased from 1.5rem to 5rem -> more than 3x taller */
+        border-radius: 100px;
         margin-bottom: 1.5rem;
       }
       
+      .niche-card-image {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 2.8rem;
+        border-radius: 60px;
+      }
+      
+      .niche-card h3 {
+        font-size: 3.6rem !important;
+        margin-bottom: 2rem;
+      }
+      
       .niche-card p {
-        font-size: 1.7rem !important;
-        margin-bottom: 2.2rem;
+        font-size: 2rem !important;
+        margin-bottom: 2.8rem;
         max-width: 85%;
-        line-height: 1.6;
+        line-height: 1.7;
       }
       
       .niche-grid {
-        gap: 5rem;               /* huge gap between cards */
-        margin-top: 4rem;
+        gap: 6rem;               /* enormous gap between cards */
+        margin-top: 5rem;
       }
       
-      /* Section Titles — doubled */
+      /* Section Titles — doubled size */
       .section-title {
-        margin-bottom: 4.5rem;
+        margin-bottom: 5rem;
       }
       
       .section-title h3 {
-        font-size: 3rem !important;
-        padding: 1.5rem 3.5rem;
-        gap: 1.5rem;
-        border-radius: 110px;
+        font-size: 3.6rem !important;
+        padding: 1.8rem 4rem;
+        gap: 1.8rem;
+        border-radius: 130px;
       }
       
       .section-title p {
-        font-size: 1.5rem !important;
-        margin-top: 1.3rem;
-      }
-      
-      /* Series Cards — bigger, vertical padding massive */
-      .series-card {
-        width: 320px !important;
-        padding: 2.8rem 1.2rem;     /* tall like two cards merged */
-        border-radius: 60px;
-      }
-      
-      .series-card h4 {
         font-size: 1.8rem !important;
-        margin: 1rem 0;
+        margin-top: 1.5rem;
       }
       
-      .rank {
-        font-size: 3rem !important;
-        width: 90px;
-        margin-bottom: 1.2rem;
+      /* Series Cards — VERTICAL LENGTH DOUBLED: padding top/bottom massive */
+      .series-card {
+        width: 360px !important;
+        padding: 3.5rem 1.2rem !important;     /* was 1.2rem vertical, now 3.5rem -> ~3x taller */
         border-radius: 70px;
       }
       
+      .series-card h4 {
+        font-size: 2.2rem !important;
+        margin: 1.4rem 0;
+      }
+      
+      .rank {
+        font-size: 3.6rem !important;
+        width: 110px;
+        margin-bottom: 1.6rem;
+        border-radius: 80px;
+        line-height: 1.2;
+      }
+      
       .premium-badge {
-        font-size: 1.1rem !important;
-        padding: 8px 22px;
-        margin-top: 1rem;
-        border-radius: 60px;
+        font-size: 1.3rem !important;
+        padding: 12px 28px;
+        margin-top: 1.4rem;
+        border-radius: 70px;
       }
       
       .series-grid {
-        gap: 3rem;
-      }
-      
-      .series-card div {
-        font-size: 1.3rem;
-        margin: 0.5rem 0;
-      }
-      
-      /* Trending Categories — each category doubled in height */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(550px, 650px));
         gap: 3.5rem;
       }
       
+      .series-card div {
+        font-size: 1.6rem;
+        margin: 0.8rem 0;
+      }
+      
+      /* Trending Categories — each category card vertically doubled */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(650px, 750px));
+        gap: 4rem;
+      }
+      
       .category-img {
-        height: 320px;    /* drastically taller -> looks like 2 original heights merged */
+        height: 400px;    /* drastically taller -> 2x+ original height */
       }
       
       .category-overlay {
-        font-size: 2.4rem !important;
-        padding: 1.8rem 0;
+        font-size: 2.8rem !important;
+        padding: 2.2rem 0;
       }
       
       .category-info {
-        padding: 1.8rem;
+        padding: 2.2rem;
       }
       
       .category-info p {
-        font-size: 1.4rem !important;
-        gap: 1.2rem;
+        font-size: 1.7rem !important;
+        gap: 1.5rem;
       }
       
       .trending-badge {
-        font-size: 1rem !important;
-        padding: 8px 20px;
-        border-radius: 60px;
+        font-size: 1.2rem !important;
+        padding: 10px 24px;
+        border-radius: 70px;
       }
       
-      /* Premium Activation Card — doubled vertical size */
+      /* Premium Activation Card — vertical padding massively increased (length doubled) */
       .premium-card {
-        padding: 4.5rem 3rem;    /* massive padding top/bottom */
-        border-radius: 100px;
-      }
-      
-      .premium-card h2 {
-        font-size: 3.2rem !important;
-        margin-bottom: 1.6rem;
-      }
-      
-      .free-badge {
-        font-size: 1.4rem !important;
-        padding: 0.9rem 2.5rem;
-        margin-bottom: 1.8rem;
-        border-radius: 100px;
-      }
-      
-      .old-price {
-        font-size: 2.6rem !important;
-      }
-      
-      .new-price {
-        font-size: 4.2rem !important;
-      }
-      
-      .price-tag {
-        margin: 2rem 0;
-      }
-      
-      .features-grid {
-        max-width: 1000px;
-        gap: 1.8rem;
-        margin: 2.8rem auto;
-      }
-      
-      .feature-item {
-        font-size: 1.5rem !important;
-        gap: 1.2rem;
-      }
-      
-      .feature-item i {
-        font-size: 1.8rem !important;
-        width: 38px;
-      }
-      
-      .activate-btn {
-        padding: 1.8rem 4rem !important;
-        font-size: 1.8rem !important;
-        gap: 20px;
-        margin: 2rem 0 1rem;
+        padding: 5.5rem 3.5rem;    /* was 1.8rem vertical, now 5.5rem -> more than triple */
         border-radius: 120px;
       }
       
+      .premium-card h2 {
+        font-size: 3.8rem !important;
+        margin-bottom: 2rem;
+      }
+      
+      .free-badge {
+        font-size: 1.8rem !important;
+        padding: 1.2rem 3rem;
+        margin-bottom: 2.2rem;
+        border-radius: 110px;
+      }
+      
+      .old-price {
+        font-size: 3rem !important;
+      }
+      
+      .new-price {
+        font-size: 5rem !important;
+      }
+      
+      .price-tag {
+        margin: 2.5rem 0;
+      }
+      
+      .features-grid {
+        max-width: 1200px;
+        gap: 2.2rem;
+        margin: 3.5rem auto;
+      }
+      
+      .feature-item {
+        font-size: 1.8rem !important;
+        gap: 1.5rem;
+      }
+      
+      .feature-item i {
+        font-size: 2.2rem !important;
+        width: 48px;
+      }
+      
+      .activate-btn {
+        padding: 2rem 5rem !important;
+        font-size: 2rem !important;
+        gap: 24px;
+        margin: 2.5rem 0 1.2rem;
+        border-radius: 140px;
+      }
+      
       .small-note {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
       }
       
       /* Spacing between sections - extremely spacious */
       .premium-originals, .trending-categories, .premium-activation {
-        margin: 7rem 0;   /* massive vertical separation */
+        margin: 8rem 0;   /* massive vertical separation */
       }
       
-      /* FOOTER / DISCLAIMER - FIXED AT BOTTOM, NOT FLOATING MIDDLE */
-      /* Ensure footer stays at bottom, not pushed weirdly */
+      /* FOOTER / DISCLAIMER - fixed at bottom with extra vertical padding */
       .footer-bottom {
-        margin-top: 6rem;
-        padding: 3rem 2rem;
-        font-size: 1.3rem !important;
-        border-radius: 70px;
+        margin-top: 8rem;
+        padding: 4rem 2rem;
+        font-size: 1.6rem !important;
+        border-radius: 80px;
         text-align: center;
         background: rgba(0,0,0,0.4);
         backdrop-filter: blur(8px);
-        border-top: 2px solid rgba(0,213,100,0.4);
+        border-top: 3px solid rgba(0,213,100,0.5);
         width: 100%;
         position: relative;
         bottom: 0;
@@ -826,46 +826,56 @@
       
       /* Back button larger */
       .back-btn {
-        top: 35px;
-        left: 35px;
-        padding: 16px 36px;
-        font-size: 1.5rem !important;
-        border-radius: 80px;
+        top: 40px;
+        left: 40px;
+        padding: 18px 42px;
+        font-size: 1.8rem !important;
+        border-radius: 90px;
       }
       
       /* All icons gigantic */
       .hero-badge i, .btn-premium i, .activate-btn i, .feature-item i, .section-title h3 i {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
       
-      /* button hover effects */
       .btn-premium:hover, .activate-btn:hover {
         transform: scale(1.03);
       }
       
       .niche-card:hover {
-        transform: translateY(-10px);
+        transform: translateY(-12px);
       }
       
-      /* extra readability */
+      /* extra readability and boldness */
       p, .hero-description, .feature-item, .category-info p, .small-note {
-        line-height: 1.7;
-        font-weight: 500;
+        line-height: 1.8;
+        font-weight: 600;
       }
       
-      /* series card inner text */
+      /* series card inner text weight */
       .series-card div {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
       }
       
-      /* Make each niche-card button inside also bigger */
+      /* Make each niche-card button inside also bigger and taller */
       .niche-card .btn-premium {
-        padding: 1.5rem 3rem !important;
-        font-size: 1.6rem !important;
+        padding: 1.8rem 3.5rem !important;
+        font-size: 1.9rem !important;
+      }
+      
+      /* Ensure category cards have extra internal vertical spacing */
+      .category-card {
+        border-radius: 40px;
+      }
+      
+      /* Premium card list items more breathing */
+      .feature-item {
+        padding: 0.2rem 0;
       }
     }
     
-    /* Tablet generous scaling (768px - 1023px) - moderate but comfortable */
+    /* Tablet generous scaling (768px - 1023px) - moderate but comfortable, no doubling */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
         max-width: 950px;
