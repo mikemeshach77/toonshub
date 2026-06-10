@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access</title>
+  <title>ToonHub Premium | Webtoon · Manhwa · Manga Free Access — Ultra HD Desktop</title>
   <!-- Google Fonts + Font Awesome 6 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -79,8 +79,7 @@
       width: 100%;
     }
 
-    /* ========== NORMAL MODE — UNIFIED, COMPACT, READABLE ON ALL DEVICES ========== */
-    /* No desktop-specific overrides — everything scales naturally with viewport */
+    /* ========== BASE MOBILE STYLES (Compact, original Android look, untouched) ========== */
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -89,7 +88,7 @@
       z-index: 3;
     }
 
-    /* Hero Section */
+    /* Hero Section - Mobile Default */
     .hero {
       text-align: center;
       margin-bottom: 2rem;
@@ -482,7 +481,13 @@
       font-size: 0.7rem;
     }
 
-    /* Niche Portal */
+    /* Niche Portal - vertical stacking base (mobile) */
+    .niche-portal {
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
     .niche-card {
       background: rgba(10, 20, 35, 0.75);
       backdrop-filter: blur(16px);
@@ -501,6 +506,11 @@
       transform: translateY(-6px);
       border-color: #00D564;
       box-shadow: 0 25px 35px -18px rgba(0,213,100,0.4);
+    }
+    
+    .niche-icon {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
     }
     
     .niche-card h3 {
@@ -566,13 +576,372 @@
       padding-top: 0.3rem;
     }
     
-    /* Additional fine-tuning */
+    /* Additional mobile fine-tuning */
     .series-card div {
       font-size: 0.85rem;
     }
     
     .btn-premium i, .activate-btn i {
       font-size: 0.9rem;
+    }
+
+    /* ========== DESKTOP MODE — EXACTLY MATCHES ANDROID STYLE BUT BIGGER ========== */
+    /* At 1024px and above, every element scales proportionally while keeping exact same layout proportions as mobile */
+    @media (min-width: 1024px) {
+      /* Base container — wider padding, centered content */
+      .container {
+        max-width: 1400px;
+        padding: 2rem 2.5rem 4rem;
+        margin: 0 auto;
+      }
+
+      /* Hero — identical shape, just bigger */
+      .hero {
+        padding: 4rem 3rem;
+        margin-bottom: 4rem;
+        border-radius: 80px;
+      }
+      
+      .hero h1 {
+        font-size: 3.8rem;
+        gap: 1.8rem;
+        margin-bottom: 1rem;
+      }
+      
+      .hero-logo {
+        width: 85px;
+        height: 85px;
+        border-radius: 28px;
+      }
+      
+      .hero-badge {
+        font-size: 1.3rem;
+        padding: 0.7rem 2.2rem;
+        margin: 1rem 0;
+      }
+      
+      .hero h2 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+      }
+      
+      .hero-description {
+        font-size: 1.2rem;
+        max-width: 850px;
+        margin: 1.5rem auto;
+        line-height: 1.5;
+      }
+      
+      .btn-premium {
+        padding: 1.2rem 3rem;
+        font-size: 1.5rem;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      
+      .stats-row {
+        gap: 3rem;
+        margin-top: 2rem;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
+      }
+      
+      .stat-label {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+      }
+      
+      .stat-item {
+        padding: 0.6rem 1.8rem;
+        border-radius: 60px;
+      }
+      
+      /* Niche Cards — keep exact same block style as mobile but scaled proportionally */
+      .niche-card {
+        max-width: 700px;
+        padding: 2.5rem 2rem;
+        border-radius: 60px;
+      }
+      
+      .niche-card-image {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 1.2rem;
+        border-radius: 32px;
+      }
+      
+      .niche-card h3 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+      }
+      
+      .niche-card p {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .niche-grid {
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+      }
+      
+      /* Section Titles */
+      .section-title {
+        margin-bottom: 2.5rem;
+      }
+      
+      .section-title h3 {
+        font-size: 2.2rem;
+        padding: 0.8rem 2.5rem;
+        gap: 1.2rem;
+      }
+      
+      .section-title p {
+        font-size: 1rem;
+        margin-top: 0.8rem;
+      }
+      
+      /* Series Cards — bigger but same layout */
+      .series-card {
+        width: 280px;
+        padding: 2rem 1rem;
+        border-radius: 48px;
+      }
+      
+      .series-card h4 {
+        font-size: 1.4rem;
+        margin: 0.8rem 0;
+      }
+      
+      .rank {
+        font-size: 2.2rem;
+        width: 65px;
+        margin-bottom: 0.8rem;
+      }
+      
+      .premium-badge {
+        font-size: 0.8rem;
+        padding: 5px 16px;
+        margin-top: 0.6rem;
+      }
+      
+      .series-grid {
+        gap: 2rem;
+      }
+      
+      .series-card div {
+        font-size: 1rem;
+      }
+      
+      /* Trending Categories — matching mobile proportions, scaled */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(380px, 480px));
+        gap: 2rem;
+      }
+      
+      .category-img {
+        height: 220px;
+      }
+      
+      .category-overlay {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+      }
+      
+      .category-info {
+        padding: 1.2rem;
+      }
+      
+      .category-info p {
+        font-size: 1rem;
+        gap: 0.8rem;
+      }
+      
+      .trending-badge {
+        font-size: 0.75rem;
+        padding: 5px 14px;
+      }
+      
+      /* Premium Activation Card — scaled identically */
+      .premium-card {
+        padding: 2.5rem 2rem;
+        border-radius: 70px;
+      }
+      
+      .premium-card h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+      }
+      
+      .free-badge {
+        font-size: 1rem;
+        padding: 0.5rem 1.8rem;
+        margin-bottom: 1rem;
+      }
+      
+      .old-price {
+        font-size: 2rem;
+      }
+      
+      .new-price {
+        font-size: 3rem;
+      }
+      
+      .price-tag {
+        margin: 1.2rem 0;
+      }
+      
+      .features-grid {
+        max-width: 750px;
+        gap: 1rem;
+        margin: 2rem auto;
+      }
+      
+      .feature-item {
+        font-size: 1rem;
+        gap: 0.8rem;
+      }
+      
+      .feature-item i {
+        font-size: 1.2rem;
+        width: 28px;
+      }
+      
+      .activate-btn {
+        padding: 1rem 2.8rem;
+        font-size: 1.3rem;
+        gap: 0.8rem;
+        margin: 1.2rem 0 0.6rem;
+      }
+      
+      .small-note {
+        font-size: 0.85rem;
+      }
+      
+      /* Spacing */
+      .premium-originals, .trending-categories, .premium-activation {
+        margin: 4rem 0;
+      }
+      
+      /* Footer */
+      .footer-bottom {
+        margin-top: 4rem;
+        padding: 2rem;
+        font-size: 0.9rem;
+      }
+      
+      /* Back button */
+      .back-btn {
+        top: 25px;
+        left: 25px;
+        padding: 12px 28px;
+        font-size: 1.1rem;
+      }
+      
+      /* Icon sizes alignment */
+      .hero-badge i, .btn-premium i, .activate-btn i, .section-title h3 i {
+        font-size: 1.3rem;
+      }
+      
+      .btn-premium i, .activate-btn i {
+        font-size: 1.3rem;
+      }
+      
+      /* Hover effects consistent */
+      .btn-premium:hover, .activate-btn:hover {
+        transform: scale(1.03);
+      }
+      
+      /* Text legibility */
+      p, .hero-description, .feature-item, .category-info p, .small-note {
+        line-height: 1.5;
+      }
+      
+      /* Make stats clearer */
+      .stat-number {
+        font-size: 2.8rem;
+      }
+      
+      /* Series card inner rank spacing */
+      .series-card .rank {
+        line-height: 1.2;
+      }
+    }
+    
+    /* For tablets & medium screens (768px - 1023px): moderate scaling */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .container {
+        max-width: 900px;
+        padding: 1.5rem 2rem 3rem;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-logo {
+        width: 55px;
+        height: 55px;
+      }
+      
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      .hero-description {
+        font-size: 1rem;
+      }
+      
+      .btn-premium {
+        padding: 0.9rem 2.5rem;
+        font-size: 1.2rem;
+      }
+      
+      .niche-card {
+        max-width: 550px;
+        padding: 2rem 1.5rem;
+      }
+      
+      .niche-card h3 {
+        font-size: 1.8rem;
+      }
+      
+      .niche-card p {
+        font-size: 1rem;
+      }
+      
+      .section-title h3 {
+        font-size: 1.8rem;
+      }
+      
+      .series-card {
+        width: 230px;
+      }
+      
+      .premium-card h2 {
+        font-size: 1.9rem;
+      }
+      
+      .feature-item {
+        font-size: 0.9rem;
+      }
+      
+      .footer-bottom {
+        font-size: 0.8rem;
+      }
+    }
+    
+    /* Mobile devices (<768px) — keep original untouched compact android style */
+    @media (max-width: 767px) {
+      .container {
+        max-width: 100%;
+        padding: 1rem 1rem 2rem;
+      }
     }
   </style>
 </head>
