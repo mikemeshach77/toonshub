@@ -218,6 +218,12 @@
       border-radius: 60px;
     }
 
+    .section-title p {
+      font-size: 0.85rem;
+      color: #cddcf2;
+      margin-top: 0.3rem;
+    }
+
     .series-grid {
       display: flex;
       flex-wrap: wrap;
@@ -559,100 +565,105 @@
       padding-top: 0.3rem;
     }
 
-    /* ========== DESKTOP MODE ONLY - 150% VERTICAL ENLARGEMENT, NO WIDTH INCREASE ========== */
+    /* ========== DESKTOP MODE ONLY - ENLARGED TO MATCH ANDROID MODE EXACTLY ========== */
     /* These changes ONLY apply on desktop screens (min-width: 1024px) */
-    /* Width remains narrow like mobile, only vertical dimensions are scaled by 150% */
+    /* Width kept narrow like phone, all text and spacing enlarged */
     @media (min-width: 1024px) {
-      /* Keep width narrow - same max-width as mobile feel */
+      /* Keep container narrow like phone screen */
       .container {
         max-width: 520px;
         padding: 1rem 1.5rem 2rem;
       }
       
-      /* Enlarge hero section vertically by 150% */
+      /* Hero section - enlarged vertically */
       .hero {
-        padding: 2.7rem 1.5rem;
+        padding: 2.5rem 1.8rem;
         margin-bottom: 2.5rem;
         border-radius: 70px;
       }
       
-      /* Enlarge fonts and spacing vertically */
+      /* Hero title - enlarged to match Android prominence */
       .hero h1 {
-        font-size: 3rem;
-        gap: 12px;
+        font-size: 3.8rem;
+        gap: 15px;
         margin-bottom: 0.8rem;
+        letter-spacing: -0.01em;
       }
       
       .hero-logo {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
       }
       
+      /* Hero badge - enlarged */
       .hero-badge {
         font-size: 1rem;
-        padding: 0.5rem 1.6rem;
+        padding: 0.6rem 2rem;
         margin: 1rem 0;
       }
       
+      /* Hero subtitle - enlarged */
       .hero h2 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         margin: 1rem 0;
         line-height: 1.3;
       }
       
+      /* Hero description - larger and more readable */
       .hero-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
         max-width: 450px;
         margin: 1.2rem auto;
         line-height: 1.5;
       }
       
-      /* Enlarge buttons vertically */
+      /* Buttons - enlarged */
       .btn-premium {
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        gap: 10px;
-        margin-top: 1rem;
+        padding: 1.1rem 2.5rem;
+        font-size: 1.3rem;
+        gap: 12px;
+        margin-top: 1.2rem;
       }
       
-      /* Enlarge stats vertically */
+      /* Stats row - enlarged */
       .stats-row {
-        gap: 2rem;
+        gap: 2.2rem;
         margin-top: 1.5rem;
       }
       
       .stat-number {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
       
       .stat-label {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
       }
       
       .stat-item {
-        padding: 0.5rem 1.2rem;
+        padding: 0.5rem 1.4rem;
       }
       
-      /* Enlarge niche cards vertically - keep width same */
+      /* Niche cards - enlarged vertically, width same */
       .niche-card {
-        max-width: 380px;
-        padding: 2rem 1.8rem;
-        border-radius: 42px;
+        max-width: 400px;
+        padding: 2.2rem 1.8rem;
+        border-radius: 48px;
       }
       
       .niche-card-image {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 1rem;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1.2rem;
+        border-radius: 18px;
       }
       
       .niche-card h3 {
-        font-size: 1.6rem;
+        font-size: 2rem;
         margin-bottom: 0.6rem;
       }
       
       .niche-card p {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
         margin-bottom: 1.2rem;
         line-height: 1.4;
       }
@@ -662,62 +673,62 @@
         margin-top: 2rem;
       }
       
-      /* Enlarge section titles vertically */
+      /* Section titles - enlarged */
       .section-title {
         margin-bottom: 2rem;
       }
       
       .section-title h3 {
-        font-size: 1.8rem;
-        padding: 0.6rem 1.8rem;
-        gap: 10px;
+        font-size: 2.2rem;
+        padding: 0.6rem 2rem;
+        gap: 12px;
       }
       
       .section-title p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-top: 0.5rem;
       }
       
-      /* Enlarge series cards vertically */
+      /* Series cards - enlarged */
       .series-card {
-        width: 200px;
-        padding: 1.5rem 0.8rem;
-        border-radius: 32px;
+        width: 240px;
+        padding: 1.8rem 1rem;
+        border-radius: 36px;
       }
       
       .series-card h4 {
-        font-size: 1rem;
+        font-size: 1.15rem;
         margin: 0.5rem 0;
       }
       
       .rank {
-        font-size: 1.6rem;
-        width: 44px;
+        font-size: 2rem;
+        width: 52px;
         margin-bottom: 0.6rem;
       }
       
       .premium-badge {
-        font-size: 0.7rem;
-        padding: 4px 12px;
+        font-size: 0.75rem;
+        padding: 5px 14px;
         margin-top: 0.5rem;
       }
       
       .series-grid {
+        gap: 1.8rem;
+      }
+      
+      /* Trending categories - enlarged */
+      .trending-grid {
+        grid-template-columns: repeat(2, minmax(260px, 300px));
         gap: 1.5rem;
       }
       
-      /* Enlarge trending categories vertically */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(240px, 280px));
-        gap: 1.2rem;
-      }
-      
       .category-img {
-        height: 160px;
+        height: 170px;
       }
       
       .category-overlay {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 0.8rem 0;
       }
       
@@ -726,37 +737,37 @@
       }
       
       .category-info p {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
       }
       
       .trending-badge {
-        font-size: 0.6rem;
-        padding: 3px 10px;
+        font-size: 0.65rem;
+        padding: 4px 12px;
       }
       
-      /* Enlarge premium activation card vertically */
+      /* Premium activation card - enlarged */
       .premium-card {
-        padding: 2rem 1.8rem;
-        border-radius: 48px;
+        padding: 2.5rem 1.8rem;
+        border-radius: 52px;
       }
       
       .premium-card h2 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         margin-bottom: 0.6rem;
       }
       
       .free-badge {
-        font-size: 0.8rem;
-        padding: 0.3rem 1.2rem;
+        font-size: 0.9rem;
+        padding: 0.4rem 1.4rem;
         margin-bottom: 1rem;
       }
       
       .old-price {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
       
       .new-price {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
       }
       
       .price-tag {
@@ -764,74 +775,84 @@
       }
       
       .features-grid {
-        max-width: 450px;
+        max-width: 480px;
         gap: 1rem;
         margin: 1.5rem auto;
       }
       
       .feature-item {
-        font-size: 0.85rem;
-        gap: 10px;
+        font-size: 0.95rem;
+        gap: 12px;
       }
       
       .feature-item i {
-        font-size: 0.9rem;
-        width: 22px;
+        font-size: 1rem;
+        width: 24px;
       }
       
       .activate-btn {
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        gap: 10px;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.15rem;
+        gap: 12px;
         margin: 1rem 0 0.5rem;
       }
       
       .small-note {
-        font-size: 0.7rem;
-      }
-      
-      /* Enlarge vertical spacing between sections */
-      .premium-originals, .trending-categories, .premium-activation {
-        margin: 3rem 0;
-      }
-      
-      /* Enlarge footer vertically */
-      .footer-bottom {
-        margin-top: 3rem;
-        padding: 1.5rem;
         font-size: 0.75rem;
       }
       
-      /* Enlarge back button */
+      /* Section vertical spacing - increased */
+      .premium-originals, .trending-categories, .premium-activation {
+        margin: 3.5rem 0;
+      }
+      
+      /* Footer - enlarged */
+      .footer-bottom {
+        margin-top: 3.5rem;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+      }
+      
+      /* Back button - enlarged */
       .back-btn {
         top: 20px;
         left: 20px;
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 12px 24px;
+        font-size: 1rem;
       }
       
-      /* Adjust main screens vertical spacing */
+      /* Screen top spacing */
       #homeScreen, #webtoonScreen, #manhwaScreen, #mangaScreen {
-        padding-top: 0.8rem;
+        padding-top: 0.5rem;
       }
       
-      /* Enlarge hero badge icon */
+      /* Badge icon size */
       .hero-badge i {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
       }
       
-      /* Ensure buttons have proper hover */
-      .btn-premium:hover, .activate-btn:hover {
-        transform: scale(1.02);
-      }
-      
-      /* Make niche cards have more vertical breathing room */
+      /* Niche card buttons inside - ensure proper spacing */
       .niche-card .btn-premium {
         margin-top: 0.5rem;
       }
+      
+      /* Line height improvements for readability */
+      p, .hero-description, .feature-item, .category-info p {
+        line-height: 1.5;
+      }
+      
+      /* Card text improvements */
+      .series-card div {
+        margin: 0.2rem 0;
+      }
+      
+      /* Stats row text improvements */
+      .stat-label {
+        letter-spacing: 1.2px;
+      }
     }
     
-    /* For medium tablets/laptops (768px-1023px) - moderate vertical scaling */
+    /* For medium tablets/laptops (768px-1023px) - moderate scaling */
     @media (min-width: 768px) and (max-width: 1023px) {
       .container {
         max-width: 500px;
@@ -839,22 +860,35 @@
       }
       
       .niche-card {
-        max-width: 380px;
-        padding: 1.8rem;
+        max-width: 400px;
+        padding: 2rem 1.8rem;
       }
       
       .hero {
-        padding: 2rem 1.5rem;
+        padding: 2.2rem 1.8rem;
       }
       
       .hero h1 {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
+      }
+      
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      
+      .btn-premium {
+        padding: 1rem 2.3rem;
+        font-size: 1.2rem;
+      }
+      
+      .series-card {
+        width: 220px;
       }
     }
     
     /* Mobile devices (below 768px) - NO CHANGES, original Android mode preserved */
     @media (max-width: 767px) {
-      /* Keep all original mobile styles - nothing altered here */
+      /* Keep all original mobile styles - untouched */
       .container {
         max-width: 100%;
         padding: 1rem 1rem 2rem;
