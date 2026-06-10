@@ -585,307 +585,266 @@
       font-size: 0.9rem;
     }
 
-    /* ========== DESKTOP MODE ONLY (1024px+) - 50X LARGER WITH SCROLLING ========== */
-    /* Everything is massively enlarged - users MUST scroll to see all content */
+    /* ========== DESKTOP MODE ONLY (1024px+) - OPTIMIZED WIDE LAYOUT ========== */
     @media (min-width: 1024px) {
-      /* Container - wider to accommodate larger content */
+      /* ===== CONTAINER & MAIN LAYOUT - WIDER BREATHING ROOM ===== */
       .container {
         max-width: 1400px;
-        padding: 5rem 3rem 10rem;
-        margin-left: auto;
-        margin-right: auto;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 2rem 4rem;
       }
-      
-      /* Hero - massive padding for scrolling */
+
+      /* ===== HERO SECTION - EXPANDED ===== */
       .hero {
-        padding: 8rem 3rem;
-        margin-bottom: 12rem;
-        border-radius: 180px;
+        padding: 3rem 4rem;
+        margin-bottom: 4rem;
+        border-radius: 80px;
       }
-      
+
       .hero h1 {
-        font-size: 7rem;
-        gap: 60px;
-        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        gap: 20px;
       }
-      
+
       .hero-logo {
-        width: 180px;
-        height: 180px;
-        border-radius: 80px;
+        width: 70px;
+        height: 70px;
       }
-      
+
       .hero-badge {
-        font-size: 2.5rem;
-        padding: 1.2rem 4rem;
-        margin: 2rem 0;
-        border-radius: 200px;
+        font-size: 1.1rem;
+        padding: 0.5rem 2rem;
       }
-      
+
       .hero h2 {
-        font-size: 4.5rem;
-        margin: 1.8rem 0;
-        line-height: 1.4;
-      }
-      
-      .hero-description {
-        font-size: 2rem;
-        max-width: 900px;
-        margin: 3rem auto;
-        line-height: 1.5;
-      }
-      
-      .btn-premium {
-        padding: 2rem 4rem;
-        font-size: 3rem;
-        gap: 30px;
-        margin-top: 2rem;
-        border-radius: 200px;
-      }
-      
-      .btn-premium i {
-        font-size: 3rem;
-      }
-      
-      .stats-row {
-        gap: 6rem;
-        margin-top: 4rem;
-      }
-      
-      .stat-number {
-        font-size: 5rem;
-      }
-      
-      .stat-label {
-        font-size: 1.8rem;
-        letter-spacing: 4px;
-      }
-      
-      .stat-item {
-        padding: 1.2rem 3rem;
-        border-radius: 160px;
-      }
-      
-      /* Niche Cards - massive size */
-      .niche-card {
-        max-width: 900px;
-        padding: 5rem 3rem;
-        border-radius: 120px;
-      }
-      
-      .niche-card-image {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 2rem;
-        border-radius: 50px;
-      }
-      
-      .niche-card h3 {
-        font-size: 4.5rem;
-        margin-bottom: 1.2rem;
-      }
-      
-      .niche-card p {
-        font-size: 2.2rem;
-        margin-bottom: 2rem;
-        line-height: 1.5;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      .niche-grid {
-        gap: 6rem;
-        margin-top: 5rem;
-      }
-      
-      /* Section Titles */
-      .section-title {
-        margin-bottom: 5rem;
-      }
-      
-      .section-title h3 {
-        font-size: 4rem;
-        padding: 1.2rem 2.5rem;
-        gap: 30px;
-        border-radius: 200px;
-      }
-      
-      .section-title p {
-        font-size: 1.8rem;
-        margin-top: 1rem;
-      }
-      
-      /* Series Cards - wider */
-      .series-card {
-        width: 350px;
-        padding: 3rem 1.5rem;
-        border-radius: 80px;
-      }
-      
-      .series-card h4 {
         font-size: 2.2rem;
         margin: 1rem 0;
       }
-      
-      .rank {
-        font-size: 4rem;
-        width: 100px;
-        margin-bottom: 1rem;
-        border-radius: 150px;
+
+      .hero-description {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 1.5rem auto;
       }
-      
-      .premium-badge {
-        font-size: 1.5rem;
-        padding: 8px 20px;
-        margin-top: 1rem;
-        border-radius: 100px;
-      }
-      
-      .series-grid {
-        gap: 3rem;
-      }
-      
-      .series-card div {
-        font-size: 1.8rem;
-      }
-      
-      /* Trending Categories - larger grid */
-      .trending-grid {
-        grid-template-columns: repeat(2, minmax(400px, 600px));
-        gap: 3rem;
-      }
-      
-      .category-img {
-        height: 280px;
-      }
-      
-      .category-overlay {
-        font-size: 2.8rem;
-        padding: 1.5rem 0;
-      }
-      
-      .category-info {
-        padding: 1.5rem;
-      }
-      
-      .category-info p {
-        font-size: 1.8rem;
-        gap: 20px;
-      }
-      
-      .trending-badge {
-        font-size: 1.2rem;
-        padding: 6px 18px;
-        border-radius: 80px;
-      }
-      
-      /* Premium Activation Card */
-      .premium-card {
-        padding: 5rem 3rem;
-        border-radius: 140px;
-      }
-      
-      .premium-card h2 {
-        font-size: 4.5rem;
-        margin-bottom: 1.5rem;
-      }
-      
-      .free-badge {
-        font-size: 2rem;
-        padding: 0.8rem 2rem;
-        margin-bottom: 2rem;
-        border-radius: 200px;
-      }
-      
-      .old-price {
-        font-size: 3rem;
-      }
-      
-      .new-price {
-        font-size: 5rem;
-      }
-      
-      .price-tag {
-        margin: 2rem 0;
-      }
-      
-      .features-grid {
-        max-width: 900px;
-        gap: 1.5rem;
-        margin: 3rem auto;
-      }
-      
-      .feature-item {
-        font-size: 1.8rem;
-        gap: 20px;
-      }
-      
-      .feature-item i {
-        font-size: 2rem;
-        width: 50px;
-      }
-      
+
+      /* ===== BUTTONS - PROPORTIONALLY SCALED ===== */
+      .btn-premium,
       .activate-btn {
-        padding: 2rem 4rem;
-        font-size: 2.5rem;
-        gap: 25px;
-        margin: 2rem 0 1rem;
-        border-radius: 200px;
+        padding: 1rem 2.8rem;
+        font-size: 1.2rem;
+        gap: 12px;
       }
-      
+
+      .btn-premium i,
       .activate-btn i {
+        font-size: 1.1rem;
+      }
+
+      /* ===== STATS ROW - SPREAD OUT ===== */
+      .stats-row {
+        gap: 3rem;
+        margin-top: 2rem;
+      }
+
+      .stat-item {
+        padding: 0.6rem 1.8rem;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+      }
+
+      .stat-label {
+        font-size: 0.9rem;
+      }
+
+      /* ===== NICHE GRID - DESKTOP LAYOUT ===== */
+      .niche-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+      }
+
+      .niche-card {
+        max-width: 350px;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        margin: 0;
+      }
+
+      .niche-card-image {
+        width: 80px;
+        height: 80px;
+      }
+
+      .niche-card h3 {
+        font-size: 1.6rem;
+      }
+
+      .niche-card p {
+        font-size: 0.95rem;
+      }
+
+      /* ===== SERIES GRID - HORIZONTALLY SPREAD ===== */
+      .series-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .series-card {
+        width: 240px;
+        padding: 1.5rem 1rem;
+      }
+
+      .series-card h4 {
+        font-size: 1.2rem;
+      }
+
+      .rank {
+        font-size: 2rem;
+        width: 55px;
+      }
+
+      .premium-badge {
+        font-size: 0.7rem;
+        padding: 4px 12px;
+      }
+
+      /* ===== TRENDING CATEGORIES GRID - EXPANDED HORIZONTALLY ===== */
+      .trending-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .category-img {
+        height: 180px;
+      }
+
+      .category-overlay {
+        font-size: 1.3rem;
+        padding: 0.8rem 0;
+      }
+
+      .category-info p {
+        font-size: 0.9rem;
+        gap: 10px;
+      }
+
+      .trending-badge {
+        font-size: 0.65rem;
+        padding: 3px 10px;
+      }
+
+      /* ===== PREMIUM ACTIVATION CARD - WIDER ===== */
+      .premium-card {
+        padding: 2.5rem 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .premium-card h2 {
+        font-size: 2.2rem;
+      }
+
+      .free-badge {
+        font-size: 0.9rem;
+        padding: 0.4rem 1.2rem;
+      }
+
+      .old-price {
+        font-size: 1.8rem;
+      }
+
+      .new-price {
         font-size: 2.5rem;
       }
-      
+
+      /* ===== FEATURES GRID - TWO COLUMNS SIDE BY SIDE ===== */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 700px;
+        margin: 1.5rem auto;
+        text-align: left;
+      }
+
+      .feature-item {
+        font-size: 0.95rem;
+        gap: 10px;
+      }
+
+      .feature-item i {
+        font-size: 1rem;
+        width: 24px;
+      }
+
       .small-note {
-        font-size: 1.4rem;
+        font-size: 0.75rem;
       }
-      
-      /* Spacing between major sections - ensures scrolling */
-      .premium-originals, .trending-categories, .premium-activation {
-        margin: 8rem 0;
+
+      /* ===== SECTION TITLES - PROPORTIONAL ===== */
+      .section-title {
+        margin-bottom: 2.5rem;
       }
-      
-      /* Footer at bottom */
+
+      .section-title h3 {
+        font-size: 1.8rem;
+        padding: 0.6rem 2rem;
+        gap: 12px;
+      }
+
+      .section-title p {
+        font-size: 1rem;
+      }
+
+      /* ===== SPACING BETWEEN MAJOR SECTIONS ===== */
+      .premium-originals,
+      .trending-categories,
+      .premium-activation {
+        margin: 4rem 0;
+      }
+
+      /* ===== FOOTER - BETTER VISIBILITY ===== */
       .footer-bottom {
-        margin-top: 10rem;
-        padding: 3rem 2rem;
-        font-size: 1.5rem;
-        border-radius: 100px;
-        background: rgba(0,0,0,0.4);
-        backdrop-filter: blur(12px);
+        margin-top: 4rem;
+        padding: 1.5rem;
+        font-size: 0.8rem;
       }
-      
-      /* Back button - larger */
+
+      /* ===== BACK BUTTON - EASILY ACCESSIBLE ===== */
       .back-btn {
-        top: 40px;
-        left: 40px;
-        padding: 20px 40px;
-        font-size: 2rem;
-        border-radius: 120px;
+        top: 20px;
+        left: 20px;
+        padding: 8px 20px;
+        font-size: 0.9rem;
       }
-      
-      /* Hero badge icon */
-      .hero-badge i, .section-title h3 i {
-        font-size: 3rem;
+
+      /* ===== HOVER EFFECTS (DESKTOP ONLY) ===== */
+      .btn-premium:hover,
+      .activate-btn:hover {
+        transform: scale(1.02);
       }
-      
-      /* Hover effects */
-      .btn-premium:hover, .activate-btn:hover {
-        transform: scale(1.03);
-      }
-      
+
       .niche-card:hover {
-        transform: translateY(-15px);
+        transform: translateY(-6px);
       }
-      
+
       .series-card:hover {
-        transform: translateY(-12px);
+        transform: translateY(-8px);
       }
-      
+
       .category-card:hover {
-        transform: translateY(-15px);
+        transform: translateY(-8px);
       }
     }
     
