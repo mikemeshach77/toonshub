@@ -67,7 +67,7 @@
       100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
     }
 
-    /* ========== SINGLE STYLE FOR ALL DEVICES (Android = Desktop) ========== */
+    /* ========== NORMAL MODE (ANDROID/MOBILE) - DEFAULT SMALL SIZES ========== */
     .container {
       width: 100%;
       max-width: 100%;
@@ -552,7 +552,299 @@
       padding-top: 0.2rem;
     }
 
-    /* No desktop-specific styling - everything above applies to ALL devices equally */
+    /* ========== DESKTOP MODE - 500% ENLARGEMENT (5x BIGGER) ========== */
+    /* This ONLY applies on screens 1024px and wider */
+    @media (min-width: 1024px) {
+      /* Container padding increased */
+      .container {
+        padding: 3rem 2rem 5rem;
+      }
+      
+      /* Hero section - enlarged */
+      .hero {
+        margin-bottom: 5rem;
+        padding: 5rem 4rem;
+        border-radius: 120px;
+      }
+      
+      .hero h1 {
+        font-size: 6rem;
+        gap: 30px;
+        margin-bottom: 1.5rem;
+      }
+      
+      .hero-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 40px;
+      }
+      
+      .hero-badge {
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+        margin: 1.5rem 0;
+        border-radius: 120px;
+      }
+      
+      .hero-badge i {
+        font-size: 1.6rem;
+      }
+      
+      .hero h2 {
+        font-size: 4rem;
+        margin: 1.2rem 0;
+      }
+      
+      .hero-description {
+        font-size: 1.6rem;
+        max-width: 900px;
+        margin: 1.5rem auto;
+        line-height: 1.5;
+      }
+      
+      /* Stats row - enlarged */
+      .stats-row {
+        gap: 4rem;
+        margin-top: 2rem;
+      }
+      
+      .stat-item {
+        padding: 1rem 2.5rem;
+        border-radius: 100px;
+      }
+      
+      .stat-number {
+        font-size: 3.5rem;
+      }
+      
+      .stat-label {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+      }
+      
+      /* Buttons - enlarged 500% */
+      .btn-premium {
+        padding: 1.5rem 4rem;
+        font-size: 1.8rem;
+        gap: 20px;
+        border-radius: 150px;
+        margin-top: 1.5rem;
+      }
+      
+      .btn-premium i {
+        font-size: 1.8rem;
+      }
+      
+      /* Niche cards - enlarged */
+      .niche-grid {
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+      
+      .niche-card {
+        max-width: 800px;
+        border-radius: 70px;
+        padding: 3rem 2.5rem;
+      }
+      
+      .niche-card-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 30px;
+        margin-bottom: 1.5rem;
+      }
+      
+      .niche-card h3 {
+        font-size: 2.8rem;
+        margin-bottom: 0.8rem;
+      }
+      
+      .niche-card p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+      }
+      
+      /* Section titles - enlarged */
+      .section-title {
+        margin-bottom: 3rem;
+      }
+      
+      .section-title h3 {
+        font-size: 2.8rem;
+        gap: 20px;
+        padding: 0.8rem 3rem;
+        border-radius: 120px;
+      }
+      
+      .section-title p {
+        font-size: 1.3rem;
+        margin-top: 0.8rem;
+      }
+      
+      /* Series cards - enlarged */
+      .series-grid {
+        gap: 2.5rem;
+      }
+      
+      .series-card {
+        width: 400px;
+        padding: 2rem 1.5rem;
+        border-radius: 60px;
+      }
+      
+      .rank {
+        font-size: 3rem;
+        width: 90px;
+        margin-bottom: 0.8rem;
+      }
+      
+      .series-card h4 {
+        font-size: 1.8rem;
+        margin: 0.6rem 0;
+      }
+      
+      .series-card div {
+        font-size: 1.4rem;
+      }
+      
+      .premium-badge {
+        padding: 6px 18px;
+        font-size: 1rem;
+        border-radius: 80px;
+        margin-top: 0.8rem;
+      }
+      
+      /* Trending categories - enlarged */
+      .trending-categories {
+        margin: 4rem 0;
+      }
+      
+      .trending-grid {
+        gap: 2rem;
+      }
+      
+      .category-card {
+        border-radius: 50px;
+      }
+      
+      .category-img {
+        height: 280px;
+      }
+      
+      .category-overlay {
+        font-size: 2.2rem;
+        padding: 1.2rem 0;
+      }
+      
+      .category-info {
+        padding: 1.2rem;
+      }
+      
+      .category-info p {
+        font-size: 1.2rem;
+        gap: 10px;
+      }
+      
+      .trending-badge {
+        padding: 5px 15px;
+        font-size: 0.9rem;
+        border-radius: 60px;
+      }
+      
+      /* Premium activation card - enlarged */
+      .premium-activation {
+        margin: 4rem 0;
+      }
+      
+      .premium-card {
+        padding: 3.5rem 2.5rem;
+        border-radius: 80px;
+      }
+      
+      .free-badge {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+      }
+      
+      .premium-card h2 {
+        font-size: 3rem;
+        margin-bottom: 0.8rem;
+      }
+      
+      .price-tag {
+        margin: 1.2rem 0;
+      }
+      
+      .old-price {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+      }
+      
+      .new-price {
+        font-size: 3.5rem;
+      }
+      
+      .features-grid {
+        gap: 1.2rem;
+        margin: 2rem auto;
+        max-width: 700px;
+      }
+      
+      .feature-item {
+        font-size: 1.3rem;
+        gap: 15px;
+      }
+      
+      .feature-item i {
+        font-size: 1.4rem;
+        width: 30px;
+      }
+      
+      .activate-btn {
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
+        gap: 15px;
+        border-radius: 100px;
+        margin: 1rem 0 0.5rem;
+      }
+      
+      .activate-btn i {
+        font-size: 1.6rem;
+      }
+      
+      .small-note {
+        font-size: 1rem;
+      }
+      
+      /* Back button - enlarged */
+      .back-btn {
+        top: 30px;
+        left: 30px;
+        padding: 15px 30px;
+        font-size: 1.4rem;
+        border-radius: 100px;
+      }
+      
+      /* Footer - enlarged */
+      .footer-bottom {
+        margin-top: 4rem;
+        padding: 2rem;
+        font-size: 1.1rem;
+      }
+      
+      /* Premium originals section */
+      .premium-originals {
+        margin: 4rem 0 3rem;
+      }
+      
+      /* Series card stars */
+      .series-card .rank + div {
+        font-size: 1.4rem;
+      }
+    }
   </style>
 </head>
 <body>
